@@ -32,6 +32,7 @@
     }
     
     public int id_lote { get { if (ddl_lote.Items.Count > 0) return Int32.Parse(ddl_lote.SelectedValue); else return 0; } }
+    public int id_urbanizacion { get { if (ddl_urbanizacion.Items.Count > 0) return Int32.Parse(ddl_urbanizacion.SelectedValue); else return 0; } } // Req. Capital Adeudado
     public Decimal precio_total { get { return Decimal.Parse(lbl_precio_total.Text); } }
     public decimal costo_total { get { return decimal.Parse(lbl_costo_total.Text); } }
     private bool ver_datos_lote { get { return bool.Parse(lbl_ver_datos_lote.Text); } set { lbl_ver_datos_lote.Text = value.ToString(); } }

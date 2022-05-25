@@ -1,4 +1,5 @@
 <%@ Control Language="VB" ClassName="contratoFormVenta" %>
+<%@ Import Namespace="System.Data" %>
 
 <script runat="server">
     Public ReadOnly Property precio() As Decimal
@@ -65,6 +66,32 @@
         End Get
     End Property
     
+    ' Req. Capital Adeudado
+    Public ReadOnly Property capital_adeudado() As Decimal
+        Get
+            If String.IsNullOrEmpty(txt_capital_adeudado.Text.Trim) Then
+                txt_capital_adeudado.Text = 0
+            End If
+            Return Decimal.Parse(txt_capital_adeudado.Text)
+        End Get
+    End Property
+    Public ReadOnly Property porcentaje_capital_deudor() As Decimal
+        Get
+            If String.IsNullOrEmpty(lbl_porcentaje_capital_deudor.Text.Trim) Then
+                lbl_porcentaje_capital_deudor.Text = 0
+            End If
+            Return Decimal.Parse(lbl_porcentaje_capital_deudor.Text)
+        End Get
+    End Property
+    Public ReadOnly Property id_parametro_capital_deudor() As Decimal
+        Get
+            If String.IsNullOrEmpty(lbl_id_parametro_capital_deudor.Text.Trim) Then
+                lbl_id_parametro_capital_deudor.Text = 0
+            End If
+            Return Decimal.Parse(lbl_id_parametro_capital_deudor.Text)
+        End Get
+    End Property
+    '
     Public Property codigo_moneda() As String
         Get
             Return lbl_codigo_moneda.Text
@@ -93,7 +120,58 @@
         rbl_preferencial.SelectedValue = "false"
         rbl_preferencial.Enabled = permiso.Verificar(Profile.id_usuario, Profile.entorno.id_rol, "contratoLote", "registrar_preferencial")
         AplicarDescuentos()
+        
+        ' Req. Capital Adeudado
+        chkCapitalAdeudado.Checked = False
+        lbl_capital_adeudado.Text = "0"
+        pnlCapAdeudado1.Visible = False
+        pnlCapAdeudado2.Visible = False
+        '
     End Sub
+    
+    ' Req. Capital Adeudado
+    Public Sub ResetCapAdeudado(ByVal _precio As Integer)
+        txt_precio.Text = _precio
+        txt_desc_por.Text = "0"
+        txt_desc_sus.Text = "0"
+        rbl_contado.SelectedValue = "false"
+        txt_inicial.Enabled = True
+        txt_inicial.Text = "0"
+        txt_cliente.Text = ""
+        txt_nit.Text = ""
+        txt_observacion.Text = ""
+
+        rbl_preferencial.SelectedValue = "false"
+        rbl_preferencial.Enabled = permiso.Verificar(Profile.id_usuario, Profile.entorno.id_rol, "contratoLote", "registrar_preferencial")
+        AplicarDescuentos()
+        
+        chkCapitalAdeudado.Checked = True
+        Dim dtCD As DataTable = terrasur.parametro_capital_deudor.ListaActivo()
+        Dim porcentajeCapitalDeudor As Decimal = 0
+        Dim idParametroCapitalDeudor As Integer = 0
+        If dtCD.Rows.Count > 0 Then
+            idParametroCapitalDeudor = Decimal.Parse(dtCD.Rows(0)("id_parametrocapitaldeudor"))
+            porcentajeCapitalDeudor = Decimal.Parse(dtCD.Rows(0)("pocentaje_capital_deudor"))
+        End If
+        lbl_id_parametro_capital_deudor.Text = idParametroCapitalDeudor.ToString()
+        lbl_porcentaje_capital_deudor.Text = porcentajeCapitalDeudor.ToString()
+        lbl_capital_adeudado.Text = "Capital Adeudado (" & porcentajeCapitalDeudor.ToString.Replace(",", ".") & "%)"
+        Dim capitalAdeudado As Decimal = Math.Round(_precio * (porcentajeCapitalDeudor / 100), 0)
+        txt_capital_adeudado.Text = capitalAdeudado
+        txt_precio_final.Text = Math.Round(_precio - capitalAdeudado, 0)
+        pnlCapAdeudado1.Visible = True
+        pnlCapAdeudado2.Visible = True
+    End Sub
+    
+    Protected Sub chkCapitalAdeudado_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles chkCapitalAdeudado.CheckedChanged
+        If chkCapitalAdeudado.Checked Then
+            txt_capital_adeudado.Text = Math.Round(precio * (porcentaje_capital_deudor / 100), 0)
+        Else
+            txt_capital_adeudado.Text = "0"
+        End If
+        AplicarDescuentos()
+    End Sub
+    '
     
     Public Function Verificar(ByVal Id_lote As Integer) As Boolean
         Dim correcto As Boolean = True
@@ -129,16 +207,24 @@
                 txt_precio_final.Text = Math.Round(precio - (precio * (desc_por / 100)), 0)
                 Return False
             Else
-                txt_precio_final.Text = Math.Round(precio - (precio * (desc_por / 100)) - desc_sus, 0)
+                
+                ' Req. Capital Adeudado
+                If capital_adeudado > 0 Then
+                    txt_precio_final.Text = Math.Round(precio - capital_adeudado - (precio * (desc_por / 100)) - desc_sus, 0)
+                Else
+                    txt_precio_final.Text = Math.Round(precio - (precio * (desc_por / 100)) - desc_sus, 0)
+                End If
+                '
+                
                 If contado Or cuota_inicial > precio_final Then
                     txt_inicial.Text = txt_precio_final.Text
                     rbl_contado.SelectedValue = "true"
                     txt_inicial.Enabled = False
                 End If
                 Return True
-            End If
+                End If
         Else
-            Return False
+                Return False
         End If
     End Function
     Private Function VerificarCuotaInicial(ByVal Id_lote As Integer) As Boolean
@@ -189,6 +275,8 @@
     
 </script>
 <asp:Label ID="lbl_codigo_moneda" runat="server" Text="$us" Visible="false"></asp:Label>
+<asp:Label ID="lbl_porcentaje_capital_deudor" runat="server" Text="0" Visible="false"></asp:Label>
+<asp:Label ID="lbl_id_parametro_capital_deudor" runat="server" Text="0" Visible="false"></asp:Label>
 <table class="contratoFormTable" align="center" cellpadding="0" cellspacing="0">
     <tr>
         <td class="contratoFormTdMsg" colspan="2">
@@ -200,6 +288,10 @@
             <table cellpadding="0" cellspacing="0">
                 <tr>
                     <td class="contratoFormTdHorEnun"><asp:Label ID="lbl_precio_enun" runat="server" Text="Precio total ($us)"></asp:Label></td>
+                    <asp:Panel ID="pnlCapAdeudado1" runat="server" Visible="false">
+                        <td class="contratoFormTdHorEnun"><asp:Label ID="lbl_capital_adeudado" runat="server" Text="Capital Adeudado"></asp:Label></td>
+                        <td class="contratoFormTdHorEnun"></td>
+                    </asp:Panel>
                     <td class="contratoFormTdHorEnun">Descuento(%)</td>
                     <td class="contratoFormTdHorEnun"><asp:Label ID="lbl_desc_enun" runat="server" Text="Descuento($us)"></asp:Label></td>
                     <td class="contratoFormTdHorEnun"></td>
@@ -209,6 +301,14 @@
                     <td class="contratoFormTdHorDato">
                         <asp:TextBox ID="txt_precio" runat="server" SkinID="txtSingleLine100" Enabled="false"></asp:TextBox>
                     </td>
+                    <asp:Panel ID="pnlCapAdeudado2" runat="server" Visible="false">
+                        <td class="contratoFormTdHorDato">
+                            <asp:TextBox ID="txt_capital_adeudado" runat="server" SkinID="txtSingleLine100" Enabled="false"></asp:TextBox>
+                        </td>
+                        <td class="contratoFormTdHorDato">
+                            <asp:CheckBox ID="chkCapitalAdeudado" runat="server" Text="Usar Capital Adeudado" AutoPostBack="True" />
+                        </td>
+                    </asp:Panel>
                     <td class="contratoFormTdHorDato">
                         <asp:TextBox ID="txt_desc_por" runat="server" SkinID="txtSingleLine100" Text="0" MaxLength="5" onkeyup="e=event || window.event;el=e.srcElement || e.target;if(el.value.indexOf('.')>-1){el.value=el.value.split('.').join(',');}"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfv_desc_por" runat="server" ControlToValidate="txt_desc_por" Display="Dynamic" SetFocusOnError="true" Text="*" ErrorMessage="Debe introducir el descuento (en porcentaje)" ValidationGroup="contrato"></asp:RequiredFieldValidator>

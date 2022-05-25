@@ -24,7 +24,13 @@
         End If
     End Sub
     Protected Sub cambio_lote(ByVal sender As Object, ByVal e As System.EventArgs)
-        ContratoFormVenta1.Reset(ContratoFormLote1.precio_total)
+        ' Req. Capital Adeudado
+        If terrasur.capital_adeudado_urbanizacion.VerificarUrbanizacion(ContratoFormLote1.id_urbanizacion) Then
+            ContratoFormVenta1.ResetCapAdeudado(ContratoFormLote1.precio_total)
+        Else
+            ContratoFormVenta1.Reset(ContratoFormLote1.precio_total)
+        End If
+        '
     End Sub
 
     Protected Sub Reset()
@@ -124,7 +130,7 @@
                         ContratoFormVenta1.cliente = ContratoFormTitular1.paterno
                         ContratoFormVenta1.nit = ContratoFormTitular1.nit
                     End If
-                    ContratoViewVenta1.Cargar(ContratoFormVenta1.precio, ContratoFormVenta1.desc_por, ContratoFormVenta1.desc_sus, ContratoFormVenta1.precio_final, ContratoFormVenta1.contado, ContratoFormVenta1.cuota_inicial, ContratoFormVenta1.cliente, ContratoFormVenta1.nit, ContratoFormVenta1.observacion, ContratoFormVenta1.preferencial, codigom)
+                    ContratoViewVenta1.Cargar(ContratoFormVenta1.precio, ContratoFormVenta1.desc_por, ContratoFormVenta1.desc_sus, ContratoFormVenta1.precio_final, ContratoFormVenta1.contado, ContratoFormVenta1.cuota_inicial, ContratoFormVenta1.cliente, ContratoFormVenta1.nit, ContratoFormVenta1.observacion, ContratoFormVenta1.preferencial, codigom, ContratoFormVenta1.capital_adeudado, ContratoFormVenta1.porcentaje_capital_deudor)
                     If ContratoFormVenta1.contado Then
                         ContratoViewPlanPago1.Cargar(0, 0, 0, 0, 0, DateTime.Now.Date, codigom, 0)
                         panel_view_plan_pago.Visible = False
@@ -207,7 +213,14 @@
                         Dim segObj As New seguro_provida(contratoVentaObj.id_contrato, Profile.id_usuario, ContratoFormPlanPago1.num_seguro)
                         segObj.Asignar(True)
                     End If
-
+                    
+                    ' Req. Capital Adeudado
+                    If ContratoFormVenta1.capital_adeudado > 0 Then
+                        Dim capitalAdeudadoObj As New capital_adeudado(ContratoFormVenta1.id_parametro_capital_deudor, contratoVentaObj.id_contrato, ContratoFormVenta1.capital_adeudado, DateTime.Today, Profile.id_usuario, True, DateTime.Today)
+                        capitalAdeudadoObj.Insertar(Profile.id_usuario)
+                    End If
+                    '
+                    
                     btn_step4_previous.Enabled = False
                     btn_insertar.Enabled = False
                     btn_step4_cancel.Visible = False

@@ -60,7 +60,14 @@ namespace terrasur
         #region Métodos que NO requieren constructor
         public static DataTable Lista()
         {
-            DbCommand cmd = db1.GetStoredProcCommand("06 parametro_capital_deudor_Lista");
+            DbCommand cmd = db1.GetStoredProcCommand("parametro_capital_deudor_Lista");
+            cmd.CommandTimeout = int.Parse(ConfigurationManager.AppSettings["CommandTimeout"]);
+            return db1.ExecuteDataSet(cmd).Tables[0];
+        }
+
+        public static DataTable ListaActivo()
+        {
+            DbCommand cmd = db1.GetStoredProcCommand("parametro_capital_deudor_ListaActivo");
             cmd.CommandTimeout = int.Parse(ConfigurationManager.AppSettings["CommandTimeout"]);
             return db1.ExecuteDataSet(cmd).Tables[0];
         }

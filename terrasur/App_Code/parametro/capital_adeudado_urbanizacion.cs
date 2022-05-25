@@ -45,6 +45,20 @@ namespace terrasur
             cmd.CommandTimeout = int.Parse(ConfigurationManager.AppSettings["CommandTimeout"]);
             return db1.ExecuteDataSet(cmd).Tables[0];
         }
+
+        // Req. Capital Adeudado
+        public static bool VerificarUrbanizacion(int Id_urbanizacion)
+        {
+            try
+            {
+                DbCommand cmd = db1.GetStoredProcCommand("capital_adeudado_urbanizacion_Verificar");
+                db1.AddInParameter(cmd, "id_urbanizacion", DbType.Int32, Id_urbanizacion);
+                if ((int)db1.ExecuteScalar(cmd) == 0) return false;
+                else return true;
+            }
+            catch { return false; }
+        }
+        //
         #endregion
 
         #region Métodos que requieren constructor
