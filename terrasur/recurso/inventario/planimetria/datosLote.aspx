@@ -1,0 +1,26 @@
+﻿<%@ Page Language="VB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)
+        If Not Page.IsPostBack Then
+            If Request.QueryString("id") IsNot Nothing Then
+                Session("id_lote") = Integer.Parse(Request.QueryString("id"))
+                Response.Redirect("~/recurso/inventario/lote/loteDetalle.aspx")
+            End If
+        End If
+    End Sub
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Página sin título</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    </form>
+</body>
+</html>

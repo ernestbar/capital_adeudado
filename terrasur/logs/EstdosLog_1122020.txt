@@ -1,0 +1,7 @@
+Consulta estado de cuenta del contrato:|26226|Usuario:|hhuanca|Fecha y hora:|01/12/2020 16:33:45|Equipo|:192.168.14.4
+Consulta estado de cuenta del contrato:|26226|Usuario:|hhuanca|Fecha y hora:|01/12/2020 16:35:01|Equipo|:192.168.14.4
+Consulta estado de cuenta del contrato:|26226|Usuario:|hhuanca|Fecha y hora:|01/12/2020 16:36:22|Equipo|:192.168.14.4
+Consulta estado de cuenta del contrato:|23884|Usuario:|hhuanca|Fecha y hora:|01/12/2020 16:38:56|Equipo|:192.168.14.4
+Consulta estado de cuenta del contrato:|23400|Usuario:|SMAMANI|Fecha y hora:|01/12/2020 17:15:55|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|23400|Usuario:|SMAMANI|Fecha y hora:|01/12/2020 17:20:31|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:||Usuario:|SMAMANI|Fecha y hora:|01/12/2020 17:20:59|Equipo|:192.168.14.3

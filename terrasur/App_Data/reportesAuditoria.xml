@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<reportes>
+  <reporte codigo="audit_reporte_asignacion_promotor" nombre="Asignación de promotores a contratos" parametro="false" contrato="true" entero="Id. Promotor" cadena="Promotor"/>
+  <reporte codigo="audit_reporte_contrato_nuevo" nombre="Registro de nuevos contratos" parametro="false" contrato="true" entero="" cadena=""/>
+  <reporte codigo="audit_reporte_reversion_anulada" nombre="Reversiones anuladas" parametro="false" contrato="true" entero="Id. Reversión" cadena=""/>
+  <reporte codigo="audit_reporte_liquidacion" nombre="Liquidación de contratos" parametro="false" contrato="true" entero="" cadena=""/>
+  <reporte codigo="audit_reporte_transaccion" nombre="Transacciones realizadas" parametro="false" contrato="true" entero="Id. Transacción" cadena=""/>
+  <reporte codigo="audit_reporte_lote" nombre="Modificaciones de datos de lotes" parametro="false" contrato="true" entero="Id. Lote" cadena="Lote"/>
+  <reporte codigo="audit_reporte_cliente" nombre="Modificaciones de datos de clientes" parametro="false" contrato="true" entero="Id. Cliente" cadena="Cliente"/>
+  <reporte codigo="audit_reporte_usuario" nombre="Modificaciones de datos de usuarios" parametro="false" contrato="true" entero="Id. Usuario" cadena="Usuario"/>
+  <reporte codigo="audit_reporte_tipo_cambio" nombre="Modificaciones del tipo de cambio" parametro="false" contrato="false" entero="" cadena=""/>
+  <reporte codigo="audit_reporte_ciclo_comercial" nombre="Modificaciones de datos de ciclos comerciales" parametro="false" contrato="false" entero="" cadena=""/>
+  <reporte codigo="audit_reporte_recibo_cobrador_transaccion" nombre="Modificación en la asignación de recibos de cobrador a pagos" parametro="false" contrato="true" entero="Nº recibo de cobrador" cadena=""/>
+	<reporte codigo="audit_reporte_reprogramacion" nombre="Reprogramaciones" parametro="false" contrato="true" entero="" cadena=""/>
+	<reporte codigo="audit_reporte_pago_anulado" nombre="Anulación de pagos" parametro="false" contrato="true" entero="Id. Pago" cadena=""/>
+  <reporte codigo="audit_reporte_servicio_vendido_anulado" nombre="Anulación de venta de servicios" parametro="false" contrato="true" entero="Id. Servicio" cadena="Servicio"/>
+  <reporte codigo="audit_reporte_reprogramacion_anulada" nombre="Anulación de reprogramaciones" parametro="false" contrato="true" entero="Id. Plan Pago" cadena=""/>
+  <reporte codigo="audit_reporte_factura_anulada" nombre="Anulación de facturas" parametro="false" contrato="true" entero="Nº factura" cadena=""/>
+  <reporte codigo="audit_reporte_recibo_anulado" nombre="Anulación de recibos" parametro="false" contrato="true" entero="Nº recibo" cadena=""/>
+  <reporte codigo="audit_reporte_comprobante_anulado" nombre="Anulación de comprobantes DPR" parametro="false" contrato="true" entero="Nº comprobante" cadena=""/>
+  <reporte codigo="audit_reporte_comision_promotor_eliminado" nombre="Eliminación de comisiones a promotores" parametro="false" contrato="true" entero="Id. Promotor" cadena="Promotor"/>
+  <reporte codigo="audit_reporte_lote_estado" nombre="Cambio de estado de lotes" parametro="false" contrato="true" entero="Id. Lote" cadena="Lote"/>
+  <reporte codigo="audit_reporte_lote_negocio" nombre="Cambio de negocio de lotes" parametro="false" contrato="true" entero="Id. Lote" cadena="Lote"/>
+  <reporte codigo="audit_reporte_contrato_tipo_cliente" nombre="Cambio de tipo de cliente de contratos" parametro="false" contrato="true" entero="" cadena=""/>
+  <reporte codigo="audit_reporte_contrato_lote" nombre="Cambio de lote de contratos" parametro="false" contrato="true" entero="" cadena=""/>
+  <!--<reporte codigo="audit_reporte_contrato_servicio_funerario" nombre="Cambio de servicios funerarios de contratos" parametro="false" contrato="true" entero="Id. Servicio Funerario" cadena="Servicio Funerario"/>-->
+  <reporte codigo="audit_reporte_contrato_cliente" nombre="Cambio de titular de contratos" parametro="false" contrato="true" entero="Id. Cliente" cadena="Cliente"/>
+  <reporte codigo="audit_reporte_pago_fuera_hora" nombre="Pagos fuera de hora (Nafibo)" parametro="false" contrato="true" entero="" cadena=""/>
+  <reporte codigo="audit_reporte_recibo_regularizacion" nombre="Modificación de Recibos de Regularización" parametro="false" contrato="true" entero="" cadena="Cliente"/>
+  <reporte codigo="audit_reporte_recibo_gastos" nombre="Modificación de Recibos de Gastos (Caja)" parametro="false" contrato="false" entero="Id. Recibo" cadena=""/>
+
+  <reporte codigo="audit_reporte_tarjeta_credito" nombre="Modificación de Tarjetas de crédito" parametro="false" contrato="true" entero="" cadena="Nº tarjeta"/>
+  <reporte codigo="audit_reporte_tarjeta_credito_contrato" nombre="Asignación de Contratos a Tarjetas de crédito" parametro="false" contrato="true" entero="" cadena="Nº tarjeta"/>
+  <reporte codigo="audit_reporte_grupo_transaccion" nombre="Modificación de Grupos de transacciones (Debito)" parametro="false" contrato="false" entero="Grupo de transacciones" cadena=""/>
+  <reporte codigo="audit_reporte_tarjeta_credito_transaccion" nombre="Modificación de transacciones de Debito automático" parametro="false" contrato="true" entero="Grupo de transacciones" cadena="Nº tarjeta"/>
+  <reporte codigo="audit_reporte_intercambio" nombre="Modificaciones de datos de intercambios" parametro="false" contrato="true" entero="" cadena="Empresa/Descrip."/>
+
+  <reporte codigo="audit_reporte_banco" nombre="Bancos" parametro="true" contrato="false" entero="Id. Banco" cadena="Banco"/>
+  <reporte codigo="audit_reporte_dpr" nombre="Pagos en documento (DPRs)" parametro="true" contrato="false" entero="Id. DPR" cadena="DPR"/>
+  <reporte codigo="audit_reporte_parametro_facturacion" nombre="Parámetros de facturación" parametro="true" contrato="false" entero="Id. Par. Facturación" cadena="Razón Social"/>
+  <reporte codigo="audit_reporte_parametro_facturacion_negocio" nombre="Asignación de Parámetros de facturación a Negocios" parametro="true" contrato="false" entero="Id. Par. Facturación" cadena="Razón Social"/>
+  <reporte codigo="audit_reporte_parametro_general" nombre="Parámetros generales" parametro="true" contrato="false" entero="Id. Parámetro" cadena="Parámetro"/>
+  <reporte codigo="audit_reporte_lugar_cobro" nombre="Lugares de cobro" parametro="true" contrato="false" entero="Id. Lugar de cobro" cadena="Lugar de cobro"/>
+  <reporte codigo="audit_reporte_motivo_desactivacion" nombre="Motivos de desactivación" parametro="true" contrato="false" entero="Id. Motivo de desactivación" cadena="Motivo de desactivación"/>
+  <reporte codigo="audit_reporte_motivo_reversion" nombre="Motivos de reversión" parametro="true" contrato="false" entero="Id. Motivo de reversión" cadena="Motivo de reversión"/>
+  <reporte codigo="audit_reporte_servicio" nombre="Otros servicios" parametro="true" contrato="false" entero="Id. Servicio" cadena="Servicio"/>
+  <!--<reporte codigo="audit_reporte_parametro_comision_promotor" nombre="Comisiones a promotores" parametro="true" contrato="false" entero="Orden" cadena=""/>-->
+  <!--<reporte codigo="audit_reporte_servicio_funerario" nombre="Servicios funerarios" parametro="true" contrato="false" entero="Id. Servicio Funerario" cadena="Servicio Funerario"/>-->
+  <!--<reporte codigo="audit_reporte_procedencia_restos" nombre="Procedencia de restos" parametro="true" contrato="false" entero="Id. Procedencia de restos" cadena="Procedencia de restos"/>-->
+
+  <reporte codigo="audit_reporte_re_motivo" nombre="Motivos de reembolso" parametro="false" contrato="false" entero="Id. motivo" cadena="Código o nombre"/>
+  <reporte codigo="audit_reporte_re_item" nombre="Elementos de reembolso" parametro="false" contrato="false" entero="Id. ítem" cadena="Código o nombre"/>
+  <reporte codigo="audit_reporte_re_usuario_reembolso" nombre="Usuarios que procesan reembolsos" parametro="false" contrato="false" entero="" cadena="Usuario (que procesa)"/>
+  <reporte codigo="audit_reporte_re_reembolso" nombre="Modificación de datos de reembolsos" parametro="false" contrato="true" entero="" cadena="Usuario (que procesa)"/>
+  <reporte codigo="audit_reporte_re_item_reembolso" nombre="Elementos asignados a reembolsos" parametro="false" contrato="true" entero="" cadena="Elemento"/>
+  <reporte codigo="audit_reporte_re_contrato_destino" nombre="Contrato destino de reembolsos" parametro="false" contrato="true" entero="" cadena=""/>
+  <reporte codigo="audit_reporte_re_pago" nombre="Pagos de reembolsos" parametro="false" contrato="true" entero="" cadena=""/>
+</reportes>

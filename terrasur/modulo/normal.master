@@ -1,0 +1,164 @@
+<%@ Master Language="VB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+    Protected Sub Menu1_PreRender(ByVal sender As Object, ByVal e As System.EventArgs) Handles Menu1.PreRender
+        Try
+            general.MenuEliminarNodos(Menu1, Profile.GetPropertyValue("menu_modulos." & Profile.entorno.codigo_modulo))
+            Menu1.Items(0).Text = Profile.entorno.nombre_modulo
+            Menu1.Items(0).NavigateUrl = "~/modulo/" + Profile.entorno.codigo_modulo + "/Default.aspx"
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Protected Sub SiteMapPath1_ItemDataBound(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.SiteMapNodeItemEventArgs) Handles SiteMapPath1.ItemDataBound
+        If e.Item.ItemType = SiteMapNodeItemType.Root Then
+            CType(e.Item.Controls(0), HyperLink).Text = Profile.entorno.nombre_modulo
+            CType(e.Item.Controls(0), HyperLink).NavigateUrl = "~/modulo/" & Profile.entorno.codigo_modulo & "/Default.aspx"
+        End If
+    End Sub
+
+    'Protected Sub Menu1_DataBound(ByVal sender As Object, ByVal e As System.EventArgs) Handles Menu1.DataBound
+    '    Try
+    '        general.MenuEliminarNodos(Menu1, Profile.GetPropertyValue("menu_modulos." & Profile.entorno.codigo_modulo))
+    '    Catch ex As Exception
+    '    End Try
+    'End Sub
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)
+        If Not Page.IsPostBack Then
+            If Profile.entorno.codigo_modulo <> "compras" Then
+                'SiteMapDataSource1.SiteMapProvider = Profile.entorno.codigo_modulo
+                'SiteMapPath1.SiteMapProvider = Profile.entorno.codigo_modulo
+                lbl_sistema.Text = "Sistema de cartera"
+                hl_modulo.Text = Profile.entorno.nombre_modulo
+                hl_modulo.NavigateUrl = "~/modulo/" & Profile.entorno.codigo_modulo & "/Default.aspx"
+                lbl_fecha.Text = DateTime.Now.ToString("d")
+                Dim tc As New tipo_cambio(DateTime.Now)
+                If tc.id_tipocambio > 0 Then
+                    lbl_tipocambio_compra.Text = tc.compra.ToString("F2")
+                    lbl_tipocambio_venta.Text = tc.venta.ToString("F2")
+                Else
+                    lbl_tipocambio_compra.Text = "----"
+                    lbl_tipocambio_venta.Text = "----"
+                End If
+            
+                If Profile.imagen <> "" And Profile.imagen <> ConfigurationManager.AppSettings("usuario_dir_imagen_vacio") Then
+                    img_usuario.ImageUrl = Profile.imagen
+                    img_usuario.Visible = True
+                Else
+                    img_usuario.ImageUrl = ""
+                    img_usuario.Visible = False
+                End If
+           
+                lbl_usuario.Text = Profile.nombre_persona & " (" & Profile.nombre_usuario & ")"
+                'DefinirTipoDeCambio()
+            Else
+                FormsAuthentication.SignOut()
+                Response.Redirect("~/Default.aspx")
+            End If
+        End If
+        'If SiteMapDataSource1.SiteMapProvider = "" Then
+        '    SiteMapDataSource1.SiteMapProvider = Profile.entorno.codigo_modulo
+        '    SiteMapPath1.SiteMapProvider = Profile.entorno.codigo_modulo
+        'End If
+    End Sub
+    
+    'Protected Sub DefinirTipoDeCambio()
+    '    If Profile.entorno.codigo_modulo = "mod2" Then
+    '        If Not tipo_cambio.Verificar(DateTime.Now.Date) Then
+    '            Response.Redirect("~/recurso/caja/tipoCambio/Default.aspx")
+    '        End If
+    '    End If
+    'End Sub
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Sistema de manejo de cartera</title>
+    <link rel="shortcut icon" href="../favicon.ico"/>
+</head>
+<body class="masterBody">
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" class="masterTable" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="masterTdEncab">
+                    <table border="0" class="masterTableEncab" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="masterTdSisModRec">
+                                <table border="0" class="masterTableSisModRec" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td rowspan="2" class="masterTdSis">
+                                            <asp:Label ID="lbl_sistema" runat="server"></asp:Label>
+                                        </td>
+                                        <td  colspan="2" class="masterTdMod">
+                                            <asp:HyperLink ID="hl_modulo" runat="server" SkinID="hlMasterModulo" NavigateUrl="~/modulo/adm/Default.aspx">Administración</asp:HyperLink>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="masterTdRec"><asp:contentplaceholder id="cph_r" runat="server"></asp:contentplaceholder></td>
+                                        <td class="masterTdRec"><asp:Image ID="img_usuario" runat="server" Visible="false" Height="40" Width="40" ></asp:Image></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="masterTdFechaTcUsuarioLogout">
+                                <table border="0" class="masterTableFechaTcUsuarioLogout" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="masterTdFechaTc">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td class="masterTdFechaEnun"><asp:Label ID="lbl_fecha_enun" runat="server" Text="Fecha:"></asp:Label></td>
+                                                    <td class="masterTdFechaDato"><asp:Label ID="lbl_fecha" runat="server"></asp:Label></td>
+                                                    <td class="masterTdTcEnun"><asp:Label ID="lbl_tipocambio_compra_enun" runat="server" Text="TC Oficial:"></asp:Label></td>
+                                                    <td class="masterTdTcDato"><asp:Label ID="lbl_tipocambio_compra" runat="server"></asp:Label></td>
+                                                    <td class="masterTdTcEnun"><asp:Label ID="lbl_tipocambio_venta_enun" runat="server" Visible="false" Text="TC Venta:"></asp:Label></td>
+                                                    <td class="masterTdTcDato"><asp:Label ID="lbl_tipocambio_venta" runat="server" Visible="false"></asp:Label></td>
+                                                    <td class="masterTdTcEnun"><asp:Label ID="lbl_sucursal_enun" runat="server" Text="Sucursal Nº"></asp:Label></td>
+                                                    <td class="masterTdTcDato"><asp:Label ID="lbl_sucursal" runat="server" Text="<%$ AppSettings:num_sucursal %>"></asp:Label></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class="masterTdUsuarioLogout">
+                                            <table align="right" border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td class="masterTdUsuario"><asp:Label ID="lbl_usuario" runat="server"></asp:Label></td>
+                                                    <td class="masterTdLogout"><asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutPageUrl="~/Default.aspx" LoginText="Iniciar sesión" LogoutText="Cerrar sesión"/></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="masterTdMenuSitemap">
+                    <table border="0" class="masterTableMenuSitemap" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="masterTdMenu">
+                                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1"></asp:Menu>
+                            </td>
+                            <td class="masterTdSitemap">
+                                <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+                            </td>
+                        </tr>
+                    </table>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="masterTdContenido">
+                    <asp:contentplaceholder id="cph_c" runat="server"></asp:contentplaceholder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

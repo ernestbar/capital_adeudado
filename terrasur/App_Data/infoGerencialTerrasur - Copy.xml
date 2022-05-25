@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<infoGerencial>
+  <persona activo="true" id_persona="1" nombre="Rolando Kempff" email="rkempff@terrasur.com.bo" repIngresos="true" repVentas="true" repReversiones="true" repMora="true" repCxc="true" />
+  <persona activo="true" id_persona="2" nombre="Carla Roldan" email="croldan@terrasur.com.bo" repIngresos="true" repVentas="true" repReversiones="true" repMora="true" repCxc="true" />
+  <persona activo="true" id_persona="3" nombre="Julio Cusicanqui" email="jcusicanqui@terrasur.com.bo" repIngresos="true" repVentas="true" repReversiones="true" repMora="true" repCxc="true" />
+  <persona activo="true" id_persona="4" nombre="Felix Nina" email="fnina@terrasur.com.bo" repIngresos="true" repVentas="true" repReversiones="true" repMora="true" repCxc="true" />
+  <persona activo="true" id_persona="5" nombre="Gabriela Guzman" email="gguzman@terrasur.com.bo" repIngresos="true" repVentas="true" repReversiones="true" repMora="true" repCxc="true" />
+  <persona activo="true" id_persona="6" nombre="Ernesto Barron" email="ebarron@terrasur.com.bo" repIngresos="true" repVentas="true" repReversiones="true" repMora="true" repCxc="true" />
+  <persona activo="true" id_persona="7" nombre="Edwin Molina" email="emolina@terrasur.com.bo" repIngresos="true" repVentas="true" repReversiones="true" repMora="true" repCxc="true" />
+</infoGerencial>

@@ -1,0 +1,5 @@
+Consulta estado de cuenta del contrato:|2646|Usuario:|HHUANCA|Fecha y hora:|09/01/2021 8:24:16|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:|5754|Usuario:|HHUANCA|Fecha y hora:|09/01/2021 10:26:15|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:|5754|Usuario:|HHUANCA|Fecha y hora:|09/01/2021 10:26:27|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:|22699|Usuario:|HHUANCA|Fecha y hora:|09/01/2021 10:28:01|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:|18431|Usuario:|HHUANCA|Fecha y hora:|09/01/2021 10:50:32|Equipo|:192.168.17.4

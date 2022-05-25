@@ -1,0 +1,13 @@
+Consulta estado de cuenta del contrato:|22143|Usuario:|mtejerina|Fecha y hora:|31/07/2021 10:20:44|Equipo|:192.168.14.5
+Consulta estado de cuenta del contrato:|25500|Usuario:|SMAMANI|Fecha y hora:|31/07/2021 11:06:36|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|13145|Usuario:|mtejerina|Fecha y hora:|31/07/2021 11:14:07|Equipo|:192.168.14.5
+Consulta estado de cuenta del contrato:|28239|Usuario:|SMAMANI|Fecha y hora:|31/07/2021 11:18:06|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:||Usuario:|mtejerina|Fecha y hora:|31/07/2021 11:19:45|Equipo|:192.168.14.5
+Consulta estado de cuenta del contrato:|26953|Usuario:|SMAMANI|Fecha y hora:|31/07/2021 12:00:07|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|26953|Usuario:|mtejerina|Fecha y hora:|31/07/2021 12:05:51|Equipo|:192.168.14.5
+Consulta estado de cuenta del contrato:|9927184|Usuario:|SMAMANI|Fecha y hora:|31/07/2021 12:11:54|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|26953|Usuario:|SMAMANI|Fecha y hora:|31/07/2021 12:12:45|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|9927184|Usuario:|SMAMANI|Fecha y hora:|31/07/2021 12:15:50|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|26953|Usuario:|SMAMANI|Fecha y hora:|31/07/2021 13:06:38|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|26953|Usuario:|SMAMANI|Fecha y hora:|31/07/2021 13:06:51|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|27036|Usuario:|SMAMANI|Fecha y hora:|31/07/2021 13:09:37|Equipo|:192.168.14.3

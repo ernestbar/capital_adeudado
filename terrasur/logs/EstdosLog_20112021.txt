@@ -1,0 +1,9 @@
+Consulta estado de cuenta del contrato:|23667|Usuario:|nballivian|Fecha y hora:|20/11/2021 10:18:27|Equipo|:192.168.14.6
+Consulta estado de cuenta del contrato:|23589|Usuario:|nballivian|Fecha y hora:|20/11/2021 11:29:19|Equipo|:192.168.14.6
+Consulta estado de cuenta del contrato:||Usuario:|nballivian|Fecha y hora:|20/11/2021 11:32:09|Equipo|:192.168.14.6
+Consulta estado de cuenta del contrato:|28339|Usuario:|ebarron|Fecha y hora:|20/11/2021 11:39:18|Equipo|:192.168.16.2
+Consulta estado de cuenta del contrato:|28339|Usuario:|ebarron|Fecha y hora:|20/11/2021 11:43:03|Equipo|:192.168.16.2
+Consulta estado de cuenta del contrato:|28339|Usuario:|ebarron|Fecha y hora:|20/11/2021 11:44:51|Equipo|:192.168.16.2
+Consulta estado de cuenta del contrato:|28339|Usuario:|ebarron|Fecha y hora:|20/11/2021 11:51:01|Equipo|:192.168.16.2
+Consulta estado de cuenta del contrato:|28339|Usuario:|ebarron|Fecha y hora:|20/11/2021 11:53:16|Equipo|:192.168.16.2
+Consulta estado de cuenta del contrato:|9928623|Usuario:|nballivian|Fecha y hora:|20/11/2021 12:38:47|Equipo|:192.168.14.6

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.10.10.15:1539/SintesisService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/terrasur" />
+  <xs:element name="verificarParametroFacturacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_sucursal" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="verificarParametroFacturacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="verificarParametroFacturacionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="buscarCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="num_contrato" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ci_cliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eeff" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sucursal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="buscarClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/terrasur" minOccurs="0" name="buscarClienteResult" nillable="true" type="q1:ArrayOfcontratoCliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="solicitarTipoPago">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="num_contrato" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eeff" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sucursal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="solicitarTipoPagoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/terrasur" minOccurs="0" name="solicitarTipoPagoResult" nillable="true" type="q2:ArrayOfinfoTipoPago" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="solicitarContrato">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="num_contrato" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eeff" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sucursal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="solicitarContratoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/terrasur" minOccurs="0" name="solicitarContratoResult" nillable="true" type="q3:infoContrato" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="solicitarPago">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="num_contrato" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigo_tipo_pago" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eeff" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sucursal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="solicitarPagoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/terrasur" minOccurs="0" name="solicitarPagoResult" nillable="true" type="q4:ArrayOfinfoPago" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="conciliarPago">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_pago" type="xs:int" />
+        <xs:element minOccurs="0" name="monto_pago" type="xs:double" />
+        <xs:element minOccurs="0" name="recibo_num" type="xs:int" />
+        <xs:element minOccurs="0" name="recibo_efectivo_sus" type="xs:double" />
+        <xs:element minOccurs="0" name="recibo_efectivo_bs" type="xs:double" />
+        <xs:element minOccurs="0" name="factura_num" type="xs:int" />
+        <xs:element minOccurs="0" name="factura_bs_monto" type="xs:double" />
+        <xs:element minOccurs="0" name="factura_codigo_control" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="factura_cliente_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="factura_cliente_nit" type="xs:double" />
+        <xs:element minOccurs="0" name="eeff" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sucursal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="conciliarPagoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conciliarPagoResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="buscarDatosPago">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_pago" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="buscarDatosPagoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/terrasur" minOccurs="0" name="buscarDatosPagoResult" nillable="true" type="q5:ArrayOfinfoReciboFactura" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="verificarAutorizacionAnulacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_pago" type="xs:int" />
+        <xs:element minOccurs="0" name="eeff" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sucursal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="verificarAutorizacionAnulacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="verificarAutorizacionAnulacionResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="anularPago">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_pago" type="xs:int" />
+        <xs:element minOccurs="0" name="eeff" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sucursal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="anularPagoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="anularPagoResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="testOdoo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="testOdooResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="testOdooResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="autenticarOdoo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="autenticarOdooResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="autenticarOdooResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarMovimientosOdoo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_company" type="xs:int" />
+        <xs:element minOccurs="0" name="contrato" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lote" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id_transaccion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipo_cambio" type="xs:decimal" />
+        <xs:element minOccurs="0" name="tipo_operacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cuota_inicial" type="xs:decimal" />
+        <xs:element minOccurs="0" name="monto_cuota_normal" type="xs:decimal" />
+        <xs:element minOccurs="0" name="monto_interes" type="xs:decimal" />
+        <xs:element minOccurs="0" name="monto_capital" type="xs:decimal" />
+        <xs:element minOccurs="0" name="precio_final" type="xs:decimal" />
+        <xs:element minOccurs="0" name="saldo" type="xs:decimal" />
+        <xs:element minOccurs="0" name="otros_serv_con_factura" type="xs:decimal" />
+        <xs:element minOccurs="0" name="otros_serv_sin_factura" type="xs:decimal" />
+        <xs:element minOccurs="0" name="cuenta_analitica_cartera" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cuenta_anlitica_name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cuenta_analitica_code" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="efectivo" type="xs:boolean" />
+        <xs:element minOccurs="0" name="urbanizacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="otro_servicio_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="anulacion" type="xs:boolean" />
+        <xs:element minOccurs="0" name="id_usuario" type="xs:int" />
+        <xs:element minOccurs="0" name="IP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fecha_hora" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="costo_total_lote" type="xs:decimal" />
+        <xs:element minOccurs="0" name="costo_pagado" type="xs:decimal" />
+        <xs:element minOccurs="0" name="saldo_costo" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarMovimientosOdooResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertarMovimientosOdooResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listaCuentasOdoo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listaCuentasOdooResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="listaCuentasOdooResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listaCuentasAnaliticasOdoo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listaCuentasAnaliticasOdooResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="listaCuentasAnaliticasOdooResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,53 @@
+﻿.cajaIngresoTable{ border-width:0px; width:100%;}
+.cajaIngresoTdContenido{ text-align:center;}
+.cajaIngresoTdMsg{ text-align:center;}
+.cajaIngresoLabelPermitido{ color:Blue; font-family:Arial; font-size:14px; font-weight:bold;}
+.cajaIngresoLabelMensaje{ color:Red; font-family:Arial; font-size:14px; font-weight:bold;}
+.cajaIngresoTdEnun{ text-align:left; vertical-align:top; font-family:Arial; font-size:13px; font-weight:normal; padding:1px 5px;}
+.cajaIngresoTdDato{ text-align:left; vertical-align:top; font-family:Arial; font-size:14px; font-weight:bold; padding:1px 5px;}
+.cajaIngresoTdHorEnun{ text-align:left; vertical-align:bottom; font-family:Arial; font-size:13px; font-weight:normal; padding:1px 5px;}
+.cajaIngresoTdHorDato{ text-align:left; vertical-align:top; font-family:Arial; font-size:14px; font-weight:bold; padding:1px 5px;}
+.cajaIngresoTdButton{ text-align:right;}
+.cajaIngresoTdEspacio{ width:20px;}
+
+.cajaPagoTable{ width:100%;}
+.cajaPagoTdContenido{ text-align:center;}
+.cajaPagoTdButton{ text-align:center;}
+.cajaPagoTdMsg{ text-align:left;}
+.cajaPagoButton{ height:28px; background-color:#F5FDF3; background-image:url('images/btn/btnClaro.gif'); color:Black; font-family:Arial; font-weight:bold; font-size:17px; background-position:left -2px; }
+.cajaPagoTdEnun{ text-align:left; vertical-align:bottom; font-family:Arial; font-size:14px; font-weight:bold; padding:1px 5px;}
+.cajaPagoTdDato{ text-align:left; vertical-align:bottom; font-family:Arial; font-size:14px; font-weight:bold; padding:1px 5px;}
+.cajaPagoTextBoxMonto{ width:105px; height:30px; text-align:right; font-family:Arial; font-size:25px; font-weight:bold; color:Blue;}
+
+
+.cajaCobroMontoTdEnun{ vertical-align:bottom; font-family:Arial; font-size:14px; font-weight:bold; padding:1px 5px 4px 5px;}
+.cajaCobroMontoTdDato{ vertical-align:bottom; font-family:Arial; font-size:25px; font-weight:bold; padding:0px 5px;}
+
+.cajaCobroFormaTdEnun{ vertical-align:bottom; text-align:left; font-family:Arial; font-size:14px; font-weight:bold; padding:0 4px 3px 4px;}
+.cajaCobroFormaTdDato{ vertical-align:bottom; text-align:left; font-family:Arial; font-size:14px; font-weight:normal; }
+.cajaCobroFormaTdEspacio{ width:15px; }
+.cajaCobroFormaTdOpcion{ vertical-align:bottom; text-align:left; font-weight:bold;}
+.cajaCobroTextBoxMonto{ width:110px; height:25px; text-align:right; font-family:Arial; font-size:22px; font-weight:bold; color:Blue;}
+.cajaCobroTextBoxNumChTj{ width:160px; text-align:center; font-family:Arial; font-size:14px; font-weight:bold; color:Black;}
+.cajaCobroTextBoxClienteNombre{ width:150px; text-align:left; font-family:Arial; font-size:14px; font-weight:bold; color:Black; }
+.cajaCobroTextBoxClienteNit{ width:100px; text-align:center; font-family:Arial; font-size:14px; font-weight:bold; color:Black; }
+.cajaCobroTextBoxReciboInactivo,.cajaCobroTextBoxReciboActivo{ width:100px; text-align:center; font-family:Arial; font-size:14px; font-weight:bold; color:Black; }
+/*.cajaCobroTextBoxReciboInactivo{ width:100px; text-align:center; font-weight:bold; font-size:14px; color:Black; background-color:White; }
+.cajaCobroTextBoxReciboActivo{ width:100px; text-align:center; font-weight:bold; font-size:16px; color:#00FFFF; background-color:Black; }*/
+.cajaCobroFacturaTdOpciones{ text-align:left; vertical-align:bottom; font-family:Arial; font-size:13px; font-weight:bold; color:Black; }
+.cajaCobroEfectivoTdOpciones{ vertical-align:top; text-align:left; font-family:Arial; font-size:14px; font-weight:bold; color:Black; }
+.cajaCobroTdButton{ text-align:right; vertical-align:middle;}
+.cajaCobroButtonAceptar{ height:35px; background-color:#F5FDF3; background-image:url('images/btn/btnClaro.gif'); color:Blue; font-family:Arial; font-weight:bold; font-size:20px; background-position:left 1px; }
+.cajaCobroButtonCancelar{ height:25px; background-color:#F5FDF3; background-image:url('images/btn/btnClaro.gif'); color:Red; font-family:Arial; font-weight:bold; font-size:15px; background-position:left -4px; }
+
+
+.cajaGvHeader{ background-image:url('images/gv/header.gif'); color: White; font-family:Arial; font-weight: bold; font-size:14px; text-align:center;}
+.cajaGvRow,.cajaGvRowUltimo,.cajaGvRowNuevo{font-family:Arial; text-align:left; font-size:14px; text-align:right; font-weight:normal; color:Black;}
+.cajaGvRow{ background-color: #F5FDF3; }
+.cajaGvRowUltimo{ background-color:#ECECEC;}
+.cajaGvRowNuevo{ background-color:#FFFFE7;}
+.cajaGvCellDate{ text-align:center;}
+.cajaGvCellTotal{ text-align:right; background-color:Yellow; font-weight:bold; }
+.cajaGvCellTipoEnun{ text-align:left; font-weight:bold; }
+
+.cajaImprimirButton{ height:25px; font-size:15px; font-weight:bold; color:Blue;}

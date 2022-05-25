@@ -1,0 +1,54 @@
+﻿.contratoFormTable{ border-width:0px;}
+.contratoFormTdMsg{ text-align:left;}
+.contratoFormTdEspacio{ width:20px;}
+.contratoFormTdEnun{ text-align:left; vertical-align:middle; font-family:Arial; font-size:12px; font-weight:bold; padding:1px 5px 1px 0;}
+.contratoFormTdDato{ text-align:left; vertical-align:middle; font-family:Arial; font-size:14px; font-weight:normal; padding:1px 2px;}
+.contratoFormTdHorEnun{ text-align:left; vertical-align:bottom; font-family:Arial; font-size:12px; font-weight:bold; padding:1px 2px;}
+.contratoFormTdHorDato{ text-align:left; vertical-align:top; font-family:Arial; font-size:14px; font-weight:normal; padding:2px 2px 1px 2px;}
+
+.contratoFormTdButton{ text-align:right;}
+.contratoFormTdLeft{ width:40px;}
+
+.contratoWizardTitle{ text-align:left; background-image:url('images/gv/header.gif'); color: White; font-family:Arial; font-size:15px; font-weight:bold; padding:2px 10px;}
+.contratoWizardStepTd{ text-align:left; padding:0 10px; background-color:#F5FDF3;}
+.contratoWizardStepTable{ text-align:left;}
+.contratoWizardPanel{}
+.contratoWizardPanel fieldset legend{ font-family:Arial; font-weight:bold; font-size:14px; color:#0F3D00; font-style:italic;}
+
+.contratoViewTable{ border-width:0px;}
+.contratoViewTdEspacio{ width:20px;}
+.contratoViewTdEnun{ text-align:left; vertical-align:top; font-family:Arial; font-size:12px; font-weight:bold; padding:2px 5px 1px 5px;}
+.contratoViewTdDato{ text-align:left; vertical-align:top; font-family:Arial; font-size:14px; font-weight:normal; padding:1px;}
+.contratoViewTdHorEnun{ text-align:left; vertical-align:bottom; font-family:Arial; font-size:12px; font-weight:bold; padding:5px 10px 1px 10px;}
+.contratoViewTdHorDato{ text-align:left; vertical-align:top; font-family:Arial; font-size:14px; font-weight:normal; padding:1px 10px;}
+
+
+.contratoNumeroEnun{ text-align:left; vertical-align:bottom; font-family:Arial; font-size:14px; font-weight:bold; color:Black;}
+.contratoNumeroDato{ text-align:left; vertical-align:bottom; font-family:Arial; font-size:22px; font-weight:bold; color:Black;}
+
+
+.contratoDatosTable{}
+.contratoDatosTdGrupo{ text-align:left; vertical-align:top; padding:0;}
+.contratoDatosTdEnun{ text-align:left; vertical-align:top; font-family:Arial; font-size:12px; font-weight:normal; color:Black; padding:0 5px; }
+.contratoDatosTdDato{ text-align:left; vertical-align:top; font-family:Arial; font-size:13px; font-weight:bold; color:Black; padding:0 5px; }
+.contratoDatosTdDatoNumerico{ text-align:right; vertical-align:top; font-family:Arial; font-size:13px; font-weight:bold; color:Black; padding:0 5px; }
+
+.contratoDatosTdNumEnun{ text-align:left; vertical-align:middle; font-family:Arial; font-size:13px; font-weight:bold; color:Black; padding:0 5px;}
+.contratoDatosTdNumDato{ text-align:left; vertical-align:middle; font-family:Arial; font-size:22px; font-weight:bold; color:Black; padding:0; }
+.contratoDatosTdNumEspacio{ width:12px;}
+.contratoDatosTdEstadoEnun{ text-align:left; vertical-align:middle; font-family:Arial; font-size:13px; font-weight:bold; color:Black; padding:0 5px;}
+.contratoDatosTdEstadoDato{ text-align:left; vertical-align:middle; font-family:Arial; font-size:15px; font-weight:bold; color:Black; padding:0; }
+
+
+.contratoBuscarTable tr td { padding:0;}
+.contratoBuscarTdCriterio{ text-align:center;}
+.contratoBuscarTdMsg{ text-align:left;}
+.contratoBuscarTdResultado{ text-align:left; font-family:Arial; font-size:13px; font-weight:bold; color:Blue;}
+.contratoBuscarTdOpciones{ text-align:center;}
+
+.contratoBuscarCriterioTable tr td{ padding:0;}
+.contratoBuscarCriterioTdEnun{ text-align:right; font-family:Arial; font-size:13px; font-weight:bold; color:Black;}
+.contratoBuscarCriterioTdButton{ text-align:center;}
+
+
+.contratoTdTipoCliente{ vertical-align:middle; font-family:Arial; font-size:14px; font-weight:bold; color:Black; padding: 0 5px;}

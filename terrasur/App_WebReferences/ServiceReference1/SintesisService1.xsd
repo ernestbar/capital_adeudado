@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/terrasur" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/terrasur" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfcontratoCliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="contratoCliente" nillable="true" type="tns:contratoCliente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfcontratoCliente" nillable="true" type="tns:ArrayOfcontratoCliente" />
+  <xs:complexType name="contratoCliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado_contrato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre_cliente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="num_contrato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="permitir_cobro" type="xs:int" />
+      <xs:element minOccurs="0" name="producto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="contratoCliente" nillable="true" type="tns:contratoCliente" />
+  <xs:complexType name="ArrayOfinfoTipoPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="infoTipoPago" nillable="true" type="tns:infoTipoPago" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfinfoTipoPago" nillable="true" type="tns:ArrayOfinfoTipoPago" />
+  <xs:complexType name="infoTipoPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="infoTipoPago" nillable="true" type="tns:infoTipoPago" />
+  <xs:complexType name="infoContrato">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ci_cliente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="factura_cliente_nit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="factura_cliente_nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="moneda" type="xs:int" />
+      <xs:element minOccurs="0" name="nit_negocio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre_cliente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="num_contrato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="producto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="promotor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="recibo_mensaje" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tc_cobranza" type="xs:double" />
+      <xs:element minOccurs="0" name="unidad_negocio" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="infoContrato" nillable="true" type="tns:infoContrato" />
+  <xs:complexType name="ArrayOfinfoPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="infoPago" nillable="true" type="tns:infoPago" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfinfoPago" nillable="true" type="tns:ArrayOfinfoPago" />
+  <xs:complexType name="infoPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="capital" type="xs:double" />
+      <xs:element minOccurs="0" name="concepto_pago" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="factura" type="xs:int" />
+      <xs:element minOccurs="0" name="factura_bs_capital" type="xs:double" />
+      <xs:element minOccurs="0" name="factura_bs_interes" type="xs:double" />
+      <xs:element minOccurs="0" name="factura_bs_mantenimiento" type="xs:double" />
+      <xs:element minOccurs="0" name="factura_bs_monto" type="xs:double" />
+      <xs:element minOccurs="0" name="factura_bs_seguto" type="xs:double" />
+      <xs:element minOccurs="0" name="factura_tc" type="xs:double" />
+      <xs:element minOccurs="0" name="fecha_interes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_pago" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_proximo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id_pago" type="xs:int" />
+      <xs:element minOccurs="0" name="interes" type="xs:double" />
+      <xs:element minOccurs="0" name="mantenimiento" type="xs:double" />
+      <xs:element minOccurs="0" name="moneda" type="xs:int" />
+      <xs:element minOccurs="0" name="monto_pago" type="xs:double" />
+      <xs:element minOccurs="0" name="num_contrato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="num_pago" type="xs:int" />
+      <xs:element minOccurs="0" name="saldo" type="xs:double" />
+      <xs:element minOccurs="0" name="seguro" type="xs:double" />
+      <xs:element minOccurs="0" name="tc_cobranza" type="xs:double" />
+      <xs:element minOccurs="0" name="variable" type="xs:int" />
+      <xs:element minOccurs="0" name="variable_monto_maximo" type="xs:double" />
+      <xs:element minOccurs="0" name="variable_monto_minimo" type="xs:double" />
+      <xs:element minOccurs="0" name="variable_saldo_anterior" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="infoPago" nillable="true" type="tns:infoPago" />
+  <xs:complexType name="ArrayOfinfoReciboFactura">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="infoReciboFactura" nillable="true" type="tns:infoReciboFactura" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfinfoReciboFactura" nillable="true" type="tns:ArrayOfinfoReciboFactura" />
+  <xs:complexType name="infoReciboFactura">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amortizacion" type="xs:double" />
+      <xs:element minOccurs="0" name="cliente_nit" type="xs:double" />
+      <xs:element minOccurs="0" name="cliente_nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigo_moneda" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="concepto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="costo_m2_sus" type="xs:double" />
+      <xs:element minOccurs="0" name="encabezado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_limite" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_proximo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="id_pago" type="xs:int" />
+      <xs:element minOccurs="0" name="interes" type="xs:double" />
+      <xs:element minOccurs="0" name="interes_dias" type="xs:int" />
+      <xs:element minOccurs="0" name="interes_dias_total" type="xs:int" />
+      <xs:element minOccurs="0" name="interes_fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="localizacion_nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lote_codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mantenimiento_fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="mantenimiento_meses" type="xs:int" />
+      <xs:element minOccurs="0" name="mantenimiento_sus" type="xs:double" />
+      <xs:element minOccurs="0" name="manzano_codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="monto_bs" type="xs:double" />
+      <xs:element minOccurs="0" name="monto_pago" type="xs:double" />
+      <xs:element minOccurs="0" name="monto_sus" type="xs:double" />
+      <xs:element minOccurs="0" name="nit" type="xs:double" />
+      <xs:element minOccurs="0" name="nombre_cliente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="num_autorizacion" type="xs:double" />
+      <xs:element minOccurs="0" name="num_contrato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="num_cuotas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="num_factura" type="xs:int" />
+      <xs:element minOccurs="0" name="num_pagos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="num_recibo" type="xs:int" />
+      <xs:element minOccurs="0" name="numero_control" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="precio_m2_sus" type="xs:double" />
+      <xs:element minOccurs="0" name="razon_social" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="saldo" type="xs:double" />
+      <xs:element minOccurs="0" name="seguro" type="xs:double" />
+      <xs:element minOccurs="0" name="seguro_fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="seguro_meses" type="xs:int" />
+      <xs:element minOccurs="0" name="superficie_m2" type="xs:double" />
+      <xs:element minOccurs="0" name="tipo_cambio" type="xs:double" />
+      <xs:element minOccurs="0" name="urbanizacion_nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="urbanizacion_nombre_corto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="infoReciboFactura" nillable="true" type="tns:infoReciboFactura" />
+</xs:schema>

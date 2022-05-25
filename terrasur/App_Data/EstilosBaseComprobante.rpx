@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="4">
+	<Object type="DataDynamics.ActiveReports.ActiveReport3" name="EstilosBaseComprobante">
+		<Property name="StyleSheet">
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; </Argument>
+					<Argument type="System.String">Normal</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-size: 16pt; font-weight: bold; </Argument>
+					<Argument type="System.String">Heading1</Argument>
+					<Argument type="System.String">Normal</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule"> 
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic; </Argument>
+					<Argument type="System.String">Heading2</Argument>
+					<Argument type="System.String">Normal</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-size: 13pt; font-weight: bold; </Argument>
+					<Argument type="System.String">Heading3</Argument>
+					<Argument type="System.String">Normal</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: bold; font-size: 9pt; color: Black; </Argument>
+					<Argument type="System.String">comprobanteEncabezadoEmpresa</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: bold; font-size: 7pt; color: Black; </Argument>
+					<Argument type="System.String">comprobanteEncabezadoActividad</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: bold; font-size: 7pt; color: Black; </Argument>
+					<Argument type="System.String">comprobanteEncabezadoCasaMatriz</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: normal; font-size: 7pt; color: Black; </Argument>
+					<Argument type="System.String">comprobanteEncabezadoDireccion</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: normal; font-size: 7pt; color: Black; </Argument>
+					<Argument type="System.String">comprobanteEncabezadoTelefono</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: normal; font-size: 7pt; color: Black; </Argument>
+					<Argument type="System.String">comprobanteEncabezadoLugar</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Courier New; text-align: right; font-style: normal; text-decoration: none; font-weight: bold; font-size:13pt; color: Black; </Argument>
+					<Argument type="System.String">comprobanteTituloEnun</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Courier New; text-align: center; font-style: normal; text-decoration: none; color: Black; font-size: 13pt; font-weight: normal; </Argument>
+					<Argument type="System.String">comprobanteTituloDato</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Courier New; text-align: left; font-style: normal; text-decoration: none; color: Black; font-size: 12pt; font-weight: bold; </Argument>
+					<Argument type="System.String">comprobanteNumeroContrato</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Courier New; text-align: left; font-style: normal; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: normal; </Argument>
+					<Argument type="System.String">comprobanteFecha</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Courier New; text-align: left; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: bold; font-style: normal; </Argument>
+					<Argument type="System.String">comprobanteConceptoEnun</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Courier New; text-align: left; font-style: normal; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: normal; </Argument>
+					<Argument type="System.String">comprobanteConceptoDato</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Courier New; text-align: left; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: bold; font-style: normal; </Argument>
+					<Argument type="System.String">comprobanteDetalleEnun</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Courier New; text-align: left; vertical-align:bottom; font-style: normal; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: normal; </Argument>
+					<Argument type="System.String">comprobanteDetalleDato</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Courier New; text-align: center; text-decoration: none; font-weight: bold; font-size: 9.0pt; color: Black; font-style: normal; </Argument>
+					<Argument type="System.String">comprobanteDetalleTablaEnun</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Courier New; text-align: right; text-decoration: none; font-weight: normal; font-size: 8.0pt; color: Black; font-style: normal; </Argument>
+					<Argument type="System.String">comprobanteDetalleTablaDato</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Arial; text-align: left; font-style: normal; text-decoration: none; font-size: 7pt; color: Black; font-weight: bold; </Argument>
+					<Argument type="System.String">comprobanteNota</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Courier New; text-align: center; font-style: italic; text-decoration: none; font-weight: bold; font-size: 10pt; color: Black; </Argument>
+					<Argument type="System.String">comprobanteDetalleTablaGrupo</Argument>
+				</InstanceDescriptor>
+			</Item>
+			<Item type="DDCssLib.StyleSheetRule">
+				<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+					<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-size: 9pt; color: Black; font-weight: bold; </Argument>
+					<Argument type="System.String">comprobanteFirmas</Argument>
+				</InstanceDescriptor>
+			</Item>
+		</Property>
+	</Object>
+</ActiveReportsLayout>

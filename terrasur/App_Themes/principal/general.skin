@@ -1,0 +1,239 @@
+<asp:Menu runat="server" Target="_self" Orientation="Horizontal" CssClass="menu" ForeColor="Black">
+    <DynamicMenuStyle CssClass="menuDinamic" ForeColor="Black"/>
+    <StaticMenuItemStyle VerticalPadding="4px" HorizontalPadding="12px" />
+    <DynamicMenuItemStyle VerticalPadding="4px" HorizontalPadding="12px" />
+    <StaticHoverStyle CssClass="menuStaticHover" ForeColor="White"/>
+    <DynamicHoverStyle CssClass="menuDynamicHover" ForeColor="White"/>
+    <StaticSelectedStyle CssClass="menuStaticSelected" ForeColor="White"/>
+    <DynamicSelectedStyle CssClass="menuDynamicSelected" ForeColor="White"/>
+</asp:Menu>
+
+
+<asp:SiteMapPath runat="server" CssClass="siteMap"></asp:SiteMapPath>
+
+
+<asp:LoginName runat="server" CssClass="loginName" />
+
+
+<asp:LoginStatus runat="server" CssClass="loginStatus" />
+
+
+<asp:Calendar runat="server" NextPrevFormat="ShortMonth" CssClass="cal">
+    <TitleStyle CssClass="calTitle"/>
+    <NextPrevStyle CssClass="calNextPrev"/>
+    <DayHeaderStyle CssClass="calDayheader"/>
+    <WeekendDayStyle CssClass="calWeekendDay" />
+    <SelectedDayStyle CssClass="calSelectedDay" />
+    <TodayDayStyle CssClass="calTodayDay" />
+    <DayStyle CssClass="calDay"/>
+    <OtherMonthDayStyle CssClass="calOtherMonthDay" />
+</asp:Calendar>
+<ew:CalendarPopup runat="server" Width="70px" DayNameFormat="Short" CssClass="cal" PopupLocation="Bottom">
+    <MonthHeaderStyle CssClass="calTitle" />
+    <DayHeaderStyle CssClass="calDayheader" />
+    <WeekendStyle CssClass="calWeekendDay" />
+    <SelectedDateStyle CssClass="calSelectedDay" />
+    <TodayDayStyle CssClass="calTodayDay" />
+</ew:CalendarPopup>
+<ewc:CalendarPopup runat="server" Width="100px" DayNameFormat="Short" CssClass="cal" PopupLocation="Bottom">
+    <MonthHeaderStyle CssClass="calTitle" />
+    <DayHeaderStyle CssClass="calDayheader" />
+    <WeekendStyle CssClass="calWeekendDay" />
+    <SelectedDateStyle CssClass="calSelectedDay" />
+    <TodayDayStyle CssClass="calTodayDay" />
+</ewc:CalendarPopup>
+
+<ew:TimePicker runat="server" 
+        Width="50px" PopupHeight="200px" PopupWidth="250px" 
+        MinuteInterval="TenMinutes" NumberOfColumns="6" PopupLocation="Bottom">
+    <TextBoxLabelStyle CssClass="txtTextBox" />
+    <ButtonStyle CssClass="btnVolver" />
+    <SelectedTimeStyle CssClass="tpSelectedTime" />
+    <TimeStyle CssClass="tpTime" />
+</ew:TimePicker>
+<ewc:TimePicker runat="server" 
+        Width="50px" PopupHeight="200px" PopupWidth="250px" 
+        MinuteInterval="TenMinutes" NumberOfColumns="6" PopupLocation="Bottom">
+    <TextBoxLabelStyle CssClass="txtTextBox" />
+    <ButtonStyle CssClass="btnVolver" />
+    <SelectedTimeStyle CssClass="tpSelectedTime" />
+    <TimeStyle CssClass="tpTime" />
+</ewc:TimePicker>
+
+<ew:ListTransfer runat="server" CssClass="linkButton" />
+<ewc:ListTransfer runat="server" CssClass="linkButton" />
+
+
+<asp:GridView runat="server" CellPadding="2" GridLines="Vertical">
+    <PagerSettings Position="Top" Mode="NextPreviousFirstLast"/>
+    <PagerStyle CssClass="gvPager"/>
+    <HeaderStyle CssClass="gvHeader" />
+    <FooterStyle CssClass="gvFooter"/>
+    <RowStyle CssClass="gvRow0" />
+    <AlternatingRowStyle CssClass="gvRow1" />
+    <SelectedRowStyle CssClass="gvRowSelected" />
+    <EmptyDataRowStyle CssClass="gvEmptyDataRow" />
+</asp:GridView>
+<asp:WizardGridView runat="server" CellPadding="2" GridLines="Vertical" EvenRowBackColor="#F5FDF3" OddRowBackColor="White" MouseOverBackColor="#CFF0C7">
+    <PagerSettings Position="Top" Mode="NextPreviousFirstLast"/>
+    <PagerStyle CssClass="gvPager"/>
+    <HeaderStyle CssClass="gvHeader" />
+    <FooterStyle CssClass="gvFooter"/>
+    <RowStyle CssClass="gvRow0" />
+    <AlternatingRowStyle CssClass="gvRow1" />
+    <SelectedRowStyle CssClass="gvRowSelected" />
+    <EmptyDataRowStyle CssClass="gvEmptyDataRow" />
+</asp:WizardGridView>
+
+
+
+<asp:Msg runat="server" CssClass="msgMensaje"></asp:Msg>
+<asp:Label SkinID="lblMsg" runat="server" CssClass="msgMensaje"></asp:Label>
+
+<asp:RequiredFieldValidator runat="server" CssClass="valRequiredFieldValidator" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
+<asp:RangeValidator runat="server" CssClass="valRangeValidator" Text="*" ForeColor="Red"></asp:RangeValidator>
+<asp:RegularExpressionValidator runat="server" CssClass="valRegularExpressionValidator" Text="*" ForeColor="Red"></asp:RegularExpressionValidator>
+<asp:CompareValidator runat="server" CssClass="valCompareValidator" Text="*" ForeColor="Red"></asp:CompareValidator>
+<asp:ValidationSummary runat="server" CssClass="valValidationSummary" DisplayMode="List" ForeColor="Red"/>
+
+
+<asp:Button runat="server" CssClass="btnButton" />
+<asp:Button SkinID="btnVolver" runat="server" CssClass="btnVolver" />
+<asp:Button SkinID="btnAccion" runat="server" CssClass="btnAccion" />
+<asp:ButtonAction runat="server" CssClass="btnAccion" />
+<asp:ImageButton SkinID="btnDelete" runat="server" ImageUrl="~/images/gv/delete.gif" />
+
+<asp:Label runat="server" CssClass="lblLabel"></asp:Label>
+<asp:Label SkinID="lblEnun" runat="server" CssClass="lblEnun"></asp:Label>
+<asp:Label SkinID="lblDato" runat="server" CssClass="lblDato"></asp:Label>
+
+
+<asp:DropDownList runat="server" CssClass="ddlDropDownList" BackColor="white"></asp:DropDownList>
+<asp:ListBox runat="server" CssClass="lbListBox"></asp:ListBox>
+<asp:BulletedList runat="server" CssClass="blBulletedList"></asp:BulletedList>
+<asp:CheckBox runat="server" CssClass="cbCheckBox"/>
+<asp:CheckBoxList runat="server" CssClass="cblCheckBoxList"></asp:CheckBoxList>
+<asp:RadioButton runat="server" CssClass="rbRadioButton"/>
+<asp:RadioButtonList runat="server" CssClass="rblRadioButtonList"></asp:RadioButtonList>
+
+<asp:RadioButtonList SkinID="rblContratoMoneda" runat="server" RepeatDirection="Horizontal" CssClass="rblContratoMoneda" Font-Bold="true" Font-Size="X-Large"></asp:RadioButtonList>
+
+<asp:RadioButtonList SkinID="rblReporteFormato" runat="server" RepeatDirection="Horizontal"></asp:RadioButtonList>
+
+<asp:TextBox SkinID="txtPassword" runat="server" Width="200px"></asp:TextBox>
+
+<asp:TextBox runat="server" CssClass="txtTextBox"></asp:TextBox>
+<asp:TextBox SkinID="txtSingleLine50" runat="server" CssClass="txtTextBox" Width="50px"></asp:TextBox>
+<asp:TextBox SkinID="txtSingleLine100" runat="server" CssClass="txtTextBox" Width="100px"></asp:TextBox>
+<asp:TextBox SkinID="txtSingleLine200" runat="server" CssClass="txtTextBox" Width="200px"></asp:TextBox>
+<asp:TextBox SkinID="txtSingleLine400" runat="server" CssClass="txtTextBox" Width="400px"></asp:TextBox>
+<asp:TextBox SkinID="txtSingleLine600" runat="server" CssClass="txtTextBox" Width="600px"></asp:TextBox>
+
+<asp:TextBox SkinID="txtMultiLine300x3" runat="server" CssClass="txtTextBox" Width="300px" Height="60px"></asp:TextBox>
+<asp:TextBox SkinID="txtMultiLine400x4" runat="server" CssClass="txtTextBox" Width="400px" Height="80px"></asp:TextBox>
+<asp:TextBox SkinID="txtMultiLine400x6" runat="server" CssClass="txtTextBox" Width="400px" Height="120px"></asp:TextBox>
+
+<ew:NumericBox runat="server" CssClass="txtTextBox"></ew:NumericBox>
+<ew:NumericBox SkinID="nbNumericBox50" runat="server" CssClass="txtTextBox" Width="50px"></ew:NumericBox>
+<ew:NumericBox SkinID="nbNumericBox100" runat="server" CssClass="txtTextBox" Width="100px"></ew:NumericBox>
+<ew:NumericBox SkinID="nbNumericBox200" runat="server" CssClass="txtTextBox" Width="200px"></ew:NumericBox>
+<ew:NumericBox SkinID="nbNumericBox400" runat="server" CssClass="txtTextBox" Width="400px"></ew:NumericBox>
+
+<ewc:NumericBox runat="server" CssClass="txtTextBox"></ewc:NumericBox>
+<ewc:NumericBox SkinID="nbcNumericBox50" runat="server" CssClass="txtTextBox" Width="50px"></ewc:NumericBox>
+<ewc:NumericBox SkinID="nbcNumericBox100" runat="server" CssClass="txtTextBox" Width="100px"></ewc:NumericBox>
+<ewc:NumericBox SkinID="nbcNumericBox200" runat="server" CssClass="txtTextBox" Width="200px"></ewc:NumericBox>
+<ewc:NumericBox SkinID="nbcNumericBox400" runat="server" CssClass="txtTextBox" Width="400px"></ewc:NumericBox>
+
+<ew:MaskedTextBox runat="server" CssClass="txtTextBox"></ew:MaskedTextBox>
+<ew:MaskedTextBox SkinID="mtbMaskedTextBox50" runat="server" CssClass="txtTextBox" Width="50px"></ew:MaskedTextBox>
+<ew:MaskedTextBox SkinID="mtbMaskedTextBox100" runat="server" CssClass="txtTextBox" Width="100px"></ew:MaskedTextBox>
+<ew:MaskedTextBox SkinID="mtbMaskedTextBox200" runat="server" CssClass="txtTextBox" Width="200px"></ew:MaskedTextBox>
+<ew:MaskedTextBox SkinID="mtbMaskedTextBox400" runat="server" CssClass="txtTextBox" Width="400px"></ew:MaskedTextBox>
+
+<ewc:MaskedTextBox runat="server" CssClass="txtTextBox"></ewc:MaskedTextBox>
+<ewc:MaskedTextBox SkinID="mtbcMaskedTextBox50" runat="server" CssClass="txtTextBox" Width="50px"></ewc:MaskedTextBox>
+<ewc:MaskedTextBox SkinID="mtbcMaskedTextBox100" runat="server" CssClass="txtTextBox" Width="100px"></ewc:MaskedTextBox>
+<ewc:MaskedTextBox SkinID="mtbcMaskedTextBox200" runat="server" CssClass="txtTextBox" Width="200px"></ewc:MaskedTextBox>
+<ewc:MaskedTextBox SkinID="mtbcMaskedTextBox400" runat="server" CssClass="txtTextBox" Width="400px"></ewc:MaskedTextBox>
+
+<asp:FileUpload runat="server" CssClass="fuFileUpload"/>
+<asp:FileUpload SkinID="fuFileUpload200" runat="server" Width="200px" CssClass="fuFileUpload"/>
+<asp:FileUpload SkinID="fuFileUpload300" runat="server" Width="300px" CssClass="fuFileUpload"/>
+<asp:FileUpload SkinID="fuFileUpload400" runat="server" Width="400px" CssClass="fuFileUpload"/>
+
+
+<asp:LinkButton runat="server" CssClass="linkButton"></asp:LinkButton>
+<asp:HyperLink runat="server" CssClass="hyperLink"></asp:HyperLink>
+
+
+<asp:HyperLink runat="server" SkinID="hlMasterRecurso" CssClass="hlMasterRecurso"></asp:HyperLink>
+<asp:HyperLink runat="server" SkinID="hlMasterModulo" CssClass="hlMasterModulo"></asp:HyperLink>
+
+
+<asp:HyperLink runat="server" SkinID="hlVer" Target="_blank" Text="Detalles" ImageUrl="~/images/gv/view.gif"></asp:HyperLink>
+
+
+
+<asp:WebPartZone runat="server" CssClass="wpZone" WebPartVerbRenderMode="TitleBar">
+    <CloseVerb Visible="False"/>
+    <PartStyle CssClass="wpPart" />
+    <PartTitleStyle CssClass="wpPartTitle" />
+    <RestoreVerb ImageUrl="images/wp/down.gif"/>
+    <MinimizeVerb Visible="False" ImageUrl="images/wp/up.gif"/>
+</asp:WebPartZone>
+<asp:LinkButton SkinID="lbWebPart" runat="server" CssClass="wpLinkButton"></asp:LinkButton>
+<asp:HyperLink SkinID="hlWebPart" runat="server" CssClass="wpLinkButton"></asp:HyperLink>
+<asp:Button SkinID="btnWebPart" runat="server" CssClass="btnWebPart"/>
+<asp:Label SkinID="lblWebPartTitle" runat="server" CssClass="lblWebPartTitle"></asp:Label>
+
+
+
+<asp:TextBox SkinID="txtTipoCambio" runat="server" CssClass="txtTipoCambio"></asp:TextBox>
+
+<asp:Label SkinID="lbl_CajaIngresoPermitido" runat="server" CssClass="cajaIngresoLabelPermitido"></asp:Label>
+<asp:Label SkinID="lbl_CajaIngresoMensaje" runat="server" CssClass="cajaIngresoLabelMensaje"></asp:Label>
+
+<asp:Button SkinID="btnCajaPago" runat="server" CssClass="cajaPagoButton"/>
+<asp:TextBox SkinID="txtCajaPagoMonto" runat="server" CssClass="cajaPagoTextBoxMonto"></asp:TextBox>
+<asp:TextBox SkinID="txtCajaCobroMonto" runat="server" CssClass="cajaCobroTextBoxMonto"></asp:TextBox>
+<asp:TextBox SkinID="txtCajaCobroNumChTj" runat="server" CssClass="cajaCobroTextBoxNumChTj"></asp:TextBox>
+<asp:TextBox SkinID="txtCajaCobroClienteNombre" runat="server" CssClass="cajaCobroTextBoxClienteNombre"></asp:TextBox>
+<asp:TextBox SkinID="txtCajaCobroClienteNit" runat="server" CssClass="cajaCobroTextBoxClienteNit"></asp:TextBox>
+<asp:ButtonAction SkinID="btnCajaCobroAceptar" runat="server" CssClass="cajaCobroButtonAceptar"/>
+<asp:Button SkinID="btnCajaCobroCancelar" runat="server" CssClass="cajaCobroButtonCancelar"/>
+
+<asp:GridView SkinID="gvCajaPagos" runat="server" CellPadding="2" GridLines="Vertical">
+    <HeaderStyle CssClass="cajaGvHeader" />
+    <RowStyle CssClass="cajaGvRow" />
+    <AlternatingRowStyle CssClass="cajaGvRow" />
+</asp:GridView>
+
+
+<asp:RadioButtonList SkinID="rblCicloComercial" runat="server" CssClass="rblCicloComercial"></asp:RadioButtonList>
+<asp:Panel SkinID="panelCicloComercial" runat="server" CssClass="panelCicloComercial"></asp:Panel>
+
+<asp:LinkButton runat="server" SkinID="lbUsuarioRol" CssClass="usuarioRolLinkButton"></asp:LinkButton>
+
+
+<asp:Panel runat="server" CssClass="panel"></asp:Panel>
+
+
+<asp:Login runat="server" CssClass="login">
+    <TitleTextStyle CssClass="loginTitleText"/>
+    <LabelStyle CssClass="loginLabel"/>
+    <TextBoxStyle CssClass="loginTextBox"/>
+    <LoginButtonStyle CssClass="loginButton"/>
+    <ValidatorTextStyle CssClass="loginValidatorText"/>
+    <FailureTextStyle CssClass="loginFailureText"/>
+</asp:Login>
+
+<asp:LinkButton runat="server" SkinID="lbUserUpdate" CssClass="lbUserUpdate"></asp:LinkButton>
+
+<asp:LinkButton runat="server" SkinID="lbNombreModulo" CssClass="lbNombreModulo"></asp:LinkButton>
+
+
+
+
+
+

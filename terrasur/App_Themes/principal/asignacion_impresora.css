@@ -1,0 +1,10 @@
+﻿.impresoraFormTable{ border-style:solid; border-color:Black; border-width:1px;  vertical-align:top; width:100%;}
+.impresoraFormTdEspacio{ width:20px;}
+.impresoraFormTdEnun{ border-style:solid; border-width:1px; text-align:center; vertical-align:top; padding:1px; font-weight:bold; width:33%;}
+.impresoraFormTdDato{ border-style:solid; border-width:1px; text-align:left; vertical-align:top; padding:1px;width:33%;}
+
+.impresoraViewTable{ border-style:solid; border-color:Black; border-width:1px;  vertical-align:top; width:100%;}
+.impresoraViewTdEspacio{ width:20px;}
+.impresoraViewTdEnun{ border-style:solid; border-width:1px; text-align:center; vertical-align:top; padding:1px; font-weight:bold; width:33%;}
+.impresoraViewTdDato{ border-style:solid; border-width:1px; text-align:left; vertical-align:top; padding:1px;width:33%;}
+ 

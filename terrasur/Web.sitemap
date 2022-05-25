@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode>
+    <siteMapNode resourceKey="caja" title="Caja">
+      <siteMapNode resourceKey="tipoCambio" title="Tipo de cambio" url="~/recurso/caja/tipoCambio/Default.aspx"/>
+      <siteMapNode resourceKey="contratoPago" title="Caja - Pagos" url="~/recurso/caja/contratoPago.aspx"/>
+      <siteMapNode resourceKey="contratoAnulacion" title="Caja - Anulaciones" url="~/recurso/caja/contratoAnulacion.aspx"/>
+      <siteMapNode resourceKey="pagoOtroServicioNoCliente" title="Venta de servicios (Cli. Transitorio)" url="~/recurso/caja/pagoOtroServicioNoCliente/Default.aspx"/>
+      <siteMapNode resourceKey="anulacion" title="Anulaciones/Reimpresiones">
+        <siteMapNode resourceKey="factura" title="Anulación/Reimpresión de facturas" url="~/recurso/caja/anulacion/anulacionFacturas.aspx"/>
+        <siteMapNode resourceKey="recibo" title="Anulación/Reimpresión de recibos" url="~/recurso/caja/anulacion/anulacionRecibos.aspx"/>
+        <siteMapNode resourceKey="dpr" title="Anulación/Reimpresión de comprobantes" url="~/recurso/caja/anulacion/anulacionComprobantes.aspx"/>
+      </siteMapNode>
+      <siteMapNode resourceKey="liquidacionReimprimir" title="Reimprimir proforma de liquidación" url="~/recurso/caja/liquidacion/reimprimirProforma.aspx"/>
+      <siteMapNode resourceKey="reporteCaja" title="Reportes de caja">
+        <siteMapNode resourceKey="reporteIngresosDetalle" title="Ingresos en detalle" url="~/recurso/caja/reporteCaja/reporteIngresosDetalle.aspx"/>
+        <siteMapNode resourceKey="reporteIngresosTotalesUrbanizacion" title="Ingresos totales por sector" url="~/recurso/caja/reporteCaja/reporteIngresosTotalesUrbanizacion.aspx"/>
+        <siteMapNode resourceKey="reporteIngresosNafiboDetalle" title="Ingresos NAFIBO en detalle" url="~/recurso/caja/reporteCaja/reporteIngresosNafiboDetalle.aspx"/>
+        <siteMapNode resourceKey="reporteIngresosNafiboTotalesUrbanizacion" title="Ingresos NAFIBO totales por sector" url="~/recurso/caja/reporteCaja/reporteIngresosNafiboTotalesUrbanizacion.aspx"/>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode resourceKey="clienteZona" title="Clientes y Zonificación">
+      <siteMapNode resourceKey="sectorZona" title="Sectores de la ciudad" url="~/recurso/clienteZona/sectorZona/Default.aspx"/>
+      <siteMapNode resourceKey="zona" title="Zonas" url="~/recurso/clienteZona/zona/Default.aspx"/>
+      <siteMapNode resourceKey="cliente" title="Clientes" url="~/recurso/clienteZona/cliente/Default.aspx"/>
+      <siteMapNode resourceKey="kardex" title="Kardex" url="~/recurso/clienteZona/kardex/Default.aspx?t="/>
+    </siteMapNode>
+    <siteMapNode resourceKey="cobranza" title="Cobranzas">
+      <siteMapNode resourceKey="cobrador" title="Cobradores" url="~/recurso/cobranza/cobrador/Default.aspx"/>
+      <siteMapNode resourceKey="dosificacion" title="Dosificación de recibos" url="~/recurso/cobranza/dosificacion/Default.aspx"/>
+      <siteMapNode resourceKey="busquedaRecibo" title="Búsqueda de recibo de cobrador" url="~/recurso/cobranza/dosificacion/busquedaRecibo.aspx"/>
+      <siteMapNode resourceKey="asignaCobrador" title="Asignación de cobradores" url="~/recurso/cobranza/asignaCobrador/Default.aspx"/>
+      <siteMapNode resourceKey="reporteCobranza" title="Reportes de cobranza">
+        <siteMapNode resourceKey="reportePorCobrador" title="Reporte de pagos depositados por cobrador" url="~/recurso/cobranza/reporteCobranza/reportePorCobrador.aspx"/>
+        <siteMapNode resourceKey="reporteAsignacion" title="Asignación de recibos oficiales a cobradores" url="~/recurso/cobranza/reporteCobranza/reporteAsignacion.aspx"/>
+        <siteMapNode resourceKey="reporteControlDiario" title="Control diario de recibos oficiales por cobrador" url="~/recurso/cobranza/reporteCobranza/reporteControlDiario.aspx"/>
+        <siteMapNode resourceKey="reporteClienteZona" title="Reporte de cliente por zonas" url="~/recurso/cobranza/reporteCobranza/reporteClienteZona.aspx"/>
+        <siteMapNode resourceKey="reporteContratosCobradorCobrar" title="Reporte de contratos a cobrar por cobrador" url="~/recurso/cobranza/reporteCobranza/reporteContratosCobradorCobrar.aspx"/>
+        <siteMapNode resourceKey="reporteAsignacionCobrador" title="Reporte de contratos asignados por cobrador" url="~/recurso/cobranza/reporteCobranza/reporteAsignacionCobrador.aspx"/>
+        <siteMapNode resourceKey="reporteReciboCobrador" title="Reporte de recibos de cobrador" url="~/recurso/cobranza/reporteCobranza/reporteReciboCobrador.aspx"/>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode resourceKey="contabilidad" title="Contabilidad">
+      <siteMapNode resourceKey="reporteContabilidad" title="Reportes de contabilidad">
+        <siteMapNode resourceKey="reporteCxcDetalle" title="Cuentas por Cobrar (detalle)" url="~/recurso/contabilidad/reporteContabilidad/reporteCxcDetalle.aspx"/>
+        <siteMapNode resourceKey="reporteCxcResumen" title="Cuentas por Cobrar (resumen)" url="~/recurso/contabilidad/reporteContabilidad/reporteCxcResumen.aspx"/>
+        <siteMapNode resourceKey="reporteCxcGerencial" title="Cuentas por Cobrar (gerencial)" url="~/recurso/contabilidad/reporteContabilidad/reporteCxcGerencial.aspx"/>
+        <siteMapNode resourceKey="reporteVentaCobranza" title="Ventas y Cobranzas" url="~/recurso/contabilidad/reporteContabilidad/reporteVentaCobranza.aspx"/>
+        <siteMapNode resourceKey="reporteVentaCostoDetalle" title="Ventas y Costos diferidos (detalle)" url="~/recurso/contabilidad/reporteContabilidad/reporteVentaCostoDetalle.aspx"/>
+        <siteMapNode resourceKey="reporteVentaCostoResumen" title="Ventas y Costos diferidos (resumen)" url="~/recurso/contabilidad/reporteContabilidad/reporteVentaCostoResumen.aspx"/>
+        <siteMapNode resourceKey="reporteComposicionCuota" title="Reporte de Composición de Cuota" url="~/recurso/contabilidad/reporteContabilidad/reporteComposicionCuota.aspx"/>
+        <siteMapNode resourceKey="reporteMorocidadContrato" title="Reporte de Morosidad por Contrato" url="~/recurso/contabilidad/reporteContabilidad/reporteMorocidadContrato.aspx"/>
+        <siteMapNode resourceKey="reporteMorocidadCliente" title="Reporte de Morosidad por Cliente" url="~/recurso/contabilidad/reporteContabilidad/reporteMorocidadCliente.aspx"/>
+        <siteMapNode resourceKey="reporteMorocidadPromotor" title="Reporte de Morosidad por Promotor" url="~/recurso/contabilidad/reporteContabilidad/reporteMorocidadPromotor.aspx"/>
+        <siteMapNode resourceKey="reporteLibroVentasInterno" title="Libro de Ventas IVA (Interno)" url="~/recurso/contabilidad/reporteContabilidad/reporteLibroVentasInterno.aspx"/>
+        <siteMapNode resourceKey="reporteLibroVentasRenta" title="Libro de Ventas IVA (Renta)" url="~/recurso/contabilidad/reporteContabilidad/reporteLibroVentasRenta.aspx"/>
+        <siteMapNode resourceKey="reporteInventarioDetalle" title="Reporte contable de inventario (detalle)" url="~/recurso/contabilidad/reporteContabilidad/reporteInventarioDetalle.aspx"/>
+        <siteMapNode resourceKey="reporteInventarioResumen" title="Reporte contable de inventario (resumen)" url="~/recurso/contabilidad/reporteContabilidad/reporteInventarioResumen.aspx"/>
+        <siteMapNode resourceKey="reporteOtrosServiciosDetalle" title="Reporte de Otros Servicios (detalle)" url="~/recurso/contabilidad/reporteContabilidad/reporteOtrosServiciosDetalle.aspx"/>
+        <siteMapNode resourceKey="reporteOtrosServiciosResumen" title="Reporte de Otros Servicios (resumen)" url="~/recurso/contabilidad/reporteContabilidad/reporteOtrosServiciosResumen.aspx"/>
+        <siteMapNode resourceKey="reportePagosDprDetalle" title="Reporte de Pagos en Documento (detalle)" url="~/recurso/contabilidad/reporteContabilidad/reportePagosDprDetalle.aspx"/>
+        <siteMapNode resourceKey="reportePagosDprResumen" title="Reporte de Pagos en Documento (resumen)" url="~/recurso/contabilidad/reporteContabilidad/reportePagosDprResumen.aspx"/>
+        <siteMapNode resourceKey="reporteTransferenciaDetalle" title="Reporte de transferencias (Detalle)" url="~/recurso/contabilidad/reporteContabilidad/reporteTransferenciaDetalle.aspx"/>
+        <siteMapNode resourceKey="reporteTransferenciaResumen" title="Reporte de transferencias (Resumen)" url="~/recurso/contabilidad/reporteContabilidad/reporteTransferenciaResumen.aspx"/>
+        <siteMapNode resourceKey="reporteResumenCxC" title="Resumen de Cuentas por cobrar por sector" url="~/recurso/contabilidad/reporteContabilidad/reporteResumenCxC.aspx"/>
+        <siteMapNode resourceKey="reporteResumenCxCDetalle" title="Resumen de Cuentas por cobrar (Detalle)" url="~/recurso/contabilidad/reporteContabilidad/reporteResumenCxCDetalle.aspx"/>
+        <siteMapNode resourceKey="reporteResumenCxCGerencial" title="Resumen de Cuentas por cobrar (Gerencial)" url="~/recurso/contabilidad/reporteContabilidad/reporteResumenCxCGerencial.aspx"/>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode resourceKey="herramienta" title="Herramientas">
+      <siteMapNode resourceKey="simulador" title="Simulación de plan de pagos" url="~/recurso/herramienta/simulador/Default.aspx"/>
+    </siteMapNode>
+    <siteMapNode resourceKey="marketing" title="Marketing">
+      <siteMapNode resourceKey="ciclo" title="Ciclos comerciales" url="~/recurso/marketing/ciclo/Default.aspx"/>
+      <siteMapNode resourceKey="promotor" title="Promotores" url="~/recurso/marketing/promotor/Default.aspx"/>
+      <siteMapNode resourceKey="grupo" title="Grupos de venta" url="~/recurso/marketing/grupo/Default.aspx"/>
+      <siteMapNode resourceKey="asignaPromotor" title="Cambio de asignación de promotores" url="~/recurso/marketing/asignaPromotor/Default.aspx"/>
+      <siteMapNode resourceKey="reporteMarketing" title="Reportes de marketing">
+        <siteMapNode resourceKey="reporteVentasTotales" title="Reporte de ventas totales" url="~/recurso/marketing/reporteMarketing/reporteVentasTotales.aspx"/>
+        <siteMapNode resourceKey="reporteGerencialVentas" title="Venta de lotes Gerencial" url="~/recurso/marketing/reporteMarketing/reporteGerencialVentas.aspx"/>
+        <siteMapNode resourceKey="reporteVentasGeneral" title="Reporte de ventas general" url="~/recurso/marketing/reporteMarketing/reporteVentasGeneral.aspx"/>
+        <siteMapNode resourceKey="reporteVentasDetalle" title="Venta de lotes (en detalle)" url="~/recurso/marketing/reporteMarketing/reporteVentasDetalle.aspx"/>
+        <siteMapNode resourceKey="reporteMora" title="Reporte de cartera en mora" url="~/recurso/marketing/reporteMarketing/reporteMora.aspx"/>
+        <siteMapNode resourceKey="reporteComisionDirector" title="Reporte de comisiones a directores" url="~/recurso/marketing/reporteMarketing/reporteComisionDirector.aspx"/>
+        <siteMapNode resourceKey="reporteComisionPromotor" title="Reporte para el cálculo de comisiones por promotor" url="~/recurso/marketing/reporteMarketing/reporteComisionPromotor.aspx"/>
+        <siteMapNode resourceKey="reporteComisionPromotorArrastre" title="Planilla de comisiones con arrastres (por promotor)" url="~/recurso/marketing/reporteMarketing/reporteComisionPromotorArrastre.aspx"/>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode resourceKey="contrato" title="Contratos">
+      <siteMapNode resourceKey="contratoLote" title="Contrato de venta de lote">
+        <siteMapNode resourceKey="registrar" title="Registrar" url="~/recurso/contrato/contratoLote/Default.aspx"/>
+        <siteMapNode resourceKey="ver_listado" title="Ver Listado" url="~/recurso/contrato/contratoLote/listado.aspx"/>
+      </siteMapNode>
+      <siteMapNode resourceKey="observacion" title="Observaciones a contratos" url="~/recurso/contrato/observacion/Default.aspx"/>
+      <siteMapNode resourceKey="cambioTipoCliente" title="Cambio de tipo de cliente" url="~/recurso/contrato/cambioTipoCliente/Default.aspx"/>
+      <siteMapNode resourceKey="cambioTitular" title="Cambio de titular" url="~/recurso/contrato/cambioTitular/Default.aspx"/>
+      <siteMapNode resourceKey="cambioLote" title="Cambio de lote" url="~/recurso/contrato/cambioLote/Default.aspx"/>
+      <siteMapNode resourceKey="reprogramacion" title="Reprogramaciones" url="~/recurso/contrato/reprogramacion/Default.aspx"/>
+      <siteMapNode resourceKey="reversion" title="Reversiones">
+        <siteMapNode resourceKey="mora_ver" title="Reversión por Mora" url="~/recurso/contrato/reversion/contratoReversionMora.aspx"/>
+        <siteMapNode resourceKey="fuerza_ver" title="Reversión por Fuerza" url="~/recurso/contrato/reversion/contratoReversionFuerza.aspx"/>
+        <siteMapNode resourceKey="deshacer" title="Deshacer reversión" url="~/recurso/contrato/reversion/contratoReversionDeshacer.aspx"/>
+      </siteMapNode>
+      <siteMapNode resourceKey="transferencia" title="Transferencias" url="~/recurso/contrato/transferencia/Default.aspx"/>
+      <siteMapNode resourceKey="reporteContrato" title="Reportes de contratos">
+        <siteMapNode resourceKey="reporteContratoDatosDetalle" title="Datos detallados de contrato" url="~/recurso/contrato/reporteContrato/reporteContratoDatosDetalle.aspx?t="/>
+        <siteMapNode resourceKey="reporteContratoReversion" title="Reversiones" url="~/recurso/contrato/reporteContrato/reporteContratoReversion.aspx?t="/>
+        <siteMapNode resourceKey="reporteContratoEstadoCuenta" title="Estado de cuenta" url="~/recurso/contrato/reporteContrato/reporteContratoEstadoCuenta.aspx?t="/>
+        <siteMapNode resourceKey="reporteContratoEstadoCuentaDetalle" title="Estado de cuenta en detalle" url="~/recurso/contrato/reporteContrato/reporteContratoEstadoCuentaDetalle.aspx?t="/>
+        <siteMapNode resourceKey="reporteContratoPlanPagoOriginal" title="Plan de pagos original" url="~/recurso/contrato/reporteContrato/reporteContratoPlanPagoOriginal.aspx?t="/>
+        <siteMapNode resourceKey="reporteContratoPlanPagoRestante" title="Plan de pagos restante" url="~/recurso/contrato/reporteContrato/reporteContratoPlanPagoRestante.aspx?t="/>
+        <siteMapNode resourceKey="reporteContratoPlanPagoVigente" title="Plan de pagos vigente" url="~/recurso/contrato/reporteContrato/reporteContratoPlanPagoVigente.aspx?t="/>
+        <siteMapNode resourceKey="reporteContratoPlanPagoVigenteDetalle" title="Plan de pagos vigente en detalle" url="~/recurso/contrato/reporteContrato/reporteContratoPlanPagoVigenteDetalle.aspx?t="/>
+		<siteMapNode resourceKey="reporteContratoPreasignacion" title="Preasignación de Lote" url="~/recurso/contrato/reporteContrato/reporteContratoPreasignacion.aspx?t="/>
+	</siteMapNode>
+    </siteMapNode>
+    <siteMapNode resourceKey="inventario" title="Inventario">
+      <siteMapNode resourceKey="localizacion" title="Localizaciones" url="~/recurso/inventario/localizacion/Default.aspx"/>
+      <siteMapNode resourceKey="urbanizacion" title="Sectores" url="~/recurso/inventario/urbanizacion/Default.aspx"/>
+      <siteMapNode resourceKey="manzano" title="Manzanos" url="~/recurso/inventario/manzano/Default.aspx"/>
+      <siteMapNode resourceKey="lote" title="Lotes" url="~/recurso/inventario/lote/Default.aspx"/>
+      <siteMapNode resourceKey="reporteInventario" title="Reportes de inventario">
+        <siteMapNode resourceKey="reporteLoteDetalle" title="Inventario de lotes Detalle" url="~/recurso/inventario/reporteInventario/reporteLoteDetalle.aspx"/>
+        <siteMapNode resourceKey="reporteLoteResumen" title="Inventario de lotes Resumen" url="~/recurso/inventario/reporteInventario/reporteLoteResumen.aspx"/>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode resourceKey="usuario" title="Usuarios">
+      <siteMapNode resourceKey="usuarioTodos" title="Usuarios del sistema" url="~/recurso/usuario/usuarioTodos/Default.aspx"/>
+      <siteMapNode resourceKey="impresora" title="Impresoras" url="~/recurso/usuario/impresora/Default.aspx"/>
+      <siteMapNode resourceKey="asignacion_impresora" title="Asignación de Impresoras" url="~/recurso/usuario/asignacion_impresora/Default.aspx"/>
+    </siteMapNode>
+    <siteMapNode resourceKey="parametro" title="Parámetros">
+      <siteMapNode resourceKey="banco" title="Bancos" url="~/recurso/parametro/banco/Default.aspx"/>
+      <siteMapNode resourceKey="dpr" title="Pagos en documento (DPRs)" url="~/recurso/parametro/dpr/Default.aspx"/>
+      <siteMapNode resourceKey="facturacion" title="Parámetros de facturación" url="~/recurso/parametro/facturacion/Default.aspx"/>
+      <siteMapNode resourceKey="fijo" title="Parámetros fijos" url="~/recurso/parametro/fijo/Default.aspx"/>
+      <siteMapNode resourceKey="general" title="Parámetros generales" url="~/recurso/parametro/general/Default.aspx"/>
+      <siteMapNode resourceKey="lugarCobro" title="Lugares de cobro" url="~/recurso/parametro/lugarCobro/Default.aspx"/>
+      <siteMapNode resourceKey="motivoDesactivacion" title="Motivos de desactivación" url="~/recurso/parametro/motivoDesactivacion/Default.aspx"/>
+      <siteMapNode resourceKey="motivoReversion" title="Motivos de reversión" url="~/recurso/parametro/motivoReversion/Default.aspx"/>
+      <siteMapNode resourceKey="otroServicio" title="Otros servicios" url="~/recurso/parametro/otroServicio/Default.aspx"/>
+    </siteMapNode>
+    <siteMapNode resourceKey="auditoria" title="Auditoría">
+      <siteMapNode resourceKey="reporteAuditoria" title="Reportes de auditoría" url="~/recurso/auditoria/reporteAuditoria/Default.aspx"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

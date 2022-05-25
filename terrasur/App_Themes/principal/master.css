@@ -1,0 +1,49 @@
+﻿.masterBody{ margin:0px;  background-image:url('images/fondo.gif'); background-position:center center; background-attachment:fixed; background-repeat:no-repeat;}
+.masterTable{ width:100%; border-width:0px; padding:0px;}
+
+.masterTdEncab{ background-image:url('images/pageEncab.gif'); color:White; font-family:Arial; vertical-align: middle; padding: 10px 10px 2px 10px;}
+.masterTableEncab{ width:100%;border-width:0px; }
+
+.masterTdSisModRec{ padding:0;}
+.masterTableSisModRec{ border-width:0px; width:100%;}
+.masterTdSis{ background-image:url('images/icono.gif'); background-position:left center; background-repeat:no-repeat; text-align:left; vertical-align:middle; padding:5px 0 10px 70px; font-family:Arial; font-size:22px; font-weight:bold;}
+.masterTdMod{ text-align:right; vertical-align:top; padding:2px 0;}
+.masterTdRec{ text-align:right; vertical-align:top; padding:0; font-family:Arial; font-size:15px; font-weight:bold; font-style:italic; }
+
+.masterTdFechaTcUsuarioLogout{ padding:0;}
+.masterTableFechaTcUsuarioLogout{ border-width:0px; width:100%;}
+.masterTdFechaTc{ text-align:left; padding:0;}
+.masterTdFechaEnun{ vertical-align:bottom; font-family:Arial; font-size:13px; font-weight:bold;}
+.masterTdFechaDato{ vertical-align:bottom; font-family:Arial; font-size:15px; font-weight:bold; padding-left:5px; font-style:italic;}
+.masterTdTcEnun{ vertical-align:bottom; font-family:Arial; font-size:13px; font-weight:bold; padding-left:15px;}
+.masterTdTcDato{ vertical-align:bottom; font-family:Arial; font-size:15px; font-weight:bold; padding-left:5px; font-style:italic;}
+.masterTdUsuarioLogout{ text-align:right;}
+.masterTdUsuario{ vertical-align:bottom; font-family:Arial; font-size:15px; font-weight:bold; font-style:italic; text-transform:capitalize;}
+.masterTdLogout{ padding-left:15px;}
+
+
+.masterTdMenuSitemap{ text-align:left; background-image:url('images/btn/btnClaro.gif');}
+.masterTableMenuSitemap{ border-width:0px;}
+.masterTdMenu{ text-align:left;}
+.masterTdSitemap{ padding-left:20px; text-align:left;}
+
+
+.masterTdContenido{ text-align:center; font-family:Arial; font-size:13px;}
+ 
+  
+.masterRecursoTable{ border-width:0px;}
+.masterRecursoTdRecurso{ text-align:left;}
+.masterRecursoTdEspacio{ width:75px;}
+.masterRecursoTdGrupo{ font-family:Arial; font-size:13px; font-weight:bold; text-align:right; font-style:italic; padding:0 0 3px 0;}
+
+
+
+.hlMasterModulo{ font-family:Arial; font-weight:bold; font-size:20px; padding: 1px; text-decoration:none;}
+.hlMasterModulo{ color:#FFAF31;}
+a.hlMasterModulo:hover { color:#FFAF31; text-decoration:underline; }
+a.hlMasterModulo:link,a.hlMasterModulo:visited{}
+
+.hlMasterRecurso{ font-family:Arial; font-weight:bold; font-size:17px; padding: 1px; text-decoration:none;}
+.hlMasterRecurso{ color:White;}
+a.hlMasterRecurso:hover { color:White; text-decoration:underline; }
+a.hlMasterRecurso:link,a.hlMasterRecurso:visited{}

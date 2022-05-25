@@ -1,0 +1,13 @@
+Consulta estado de cuenta del contrato:|17475|Usuario:|cmercado|Fecha y hora:|22/12/2021 9:05:18|Equipo|:192.168.14.8
+Consulta estado de cuenta del contrato:|17478|Usuario:|cmercado|Fecha y hora:|22/12/2021 9:06:27|Equipo|:192.168.14.8
+Consulta estado de cuenta del contrato:|17480|Usuario:|cmercado|Fecha y hora:|22/12/2021 9:07:27|Equipo|:192.168.14.8
+Consulta estado de cuenta del contrato:|16895|Usuario:|cmercado|Fecha y hora:|22/12/2021 9:08:11|Equipo|:192.168.14.8
+Consulta estado de cuenta del contrato:|16895|Usuario:|cmercado|Fecha y hora:|22/12/2021 9:15:42|Equipo|:192.168.14.8
+Consulta estado de cuenta del contrato:|28833|Usuario:|cmercado|Fecha y hora:|22/12/2021 10:13:59|Equipo|:192.168.14.8
+Consulta estado de cuenta del contrato:|6380M|Usuario:|cmercado|Fecha y hora:|22/12/2021 10:14:17|Equipo|:192.168.14.8
+Consulta estado de cuenta del contrato:|21667|Usuario:|MJAUREGUI|Fecha y hora:|22/12/2021 10:56:37|Equipo|:192.168.12.4
+Consulta estado de cuenta del contrato:|26867|Usuario:|cmercado|Fecha y hora:|22/12/2021 11:06:43|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|26867|Usuario:|nballivian|Fecha y hora:|22/12/2021 12:14:02|Equipo|:192.168.14.6
+Consulta estado de cuenta del contrato:|4419|Usuario:|nballivian|Fecha y hora:|22/12/2021 14:36:24|Equipo|:192.168.14.6
+Consulta estado de cuenta del contrato:|4419|Usuario:|nballivian|Fecha y hora:|22/12/2021 14:36:47|Equipo|:192.168.14.6
+Consulta estado de cuenta del contrato:|19132|Usuario:|dmamani|Fecha y hora:|22/12/2021 15:40:40|Equipo|:192.168.14.2

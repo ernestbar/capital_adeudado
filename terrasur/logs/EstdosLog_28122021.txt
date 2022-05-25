@@ -1,0 +1,5 @@
+Consulta estado de cuenta del contrato:|13225|Usuario:|dmamani|Fecha y hora:|28/12/2021 9:00:12|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|13225|Usuario:|dmamani|Fecha y hora:|28/12/2021 9:40:31|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|22440|Usuario:|dmamani|Fecha y hora:|28/12/2021 12:13:57|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|15521|Usuario:|dmamani|Fecha y hora:|28/12/2021 13:33:48|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|28187|Usuario:|dmamani|Fecha y hora:|28/12/2021 15:25:56|Equipo|:192.168.14.2

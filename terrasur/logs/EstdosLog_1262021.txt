@@ -1,0 +1,6 @@
+Consulta estado de cuenta del contrato:|28158|Usuario:|SMAMANI|Fecha y hora:|12/06/2021 9:03:46|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|26448|Usuario:|SMAMANI|Fecha y hora:|12/06/2021 9:11:20|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|12501|Usuario:|SMAMANI|Fecha y hora:|12/06/2021 10:32:51|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|13565|Usuario:|SMAMANI|Fecha y hora:|12/06/2021 10:38:03|Equipo|:192.168.14.3
+Imprime estado de cuenta del contrato:|13565|Usuario:|SMAMANI|Fecha y hora:|12/06/2021 10:58:21|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|15418|Usuario:|SMAMANI|Fecha y hora:|12/06/2021 12:31:36|Equipo|:192.168.14.3

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://10.10.10.15/FacturacionWS/WSFacturacion.svc?xsd=xsd2" filename="WSFacturacion.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://10.10.10.15/FacturacionWS/WSFacturacion.svc?xsd=xsd1" filename="WSFacturacion0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://10.10.10.15/FacturacionWS/WSFacturacion.svc?wsdl" filename="WSFacturacion.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://10.10.10.15/FacturacionWS/WSFacturacion.svc?xsd=xsd0" filename="WSFacturacion1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://10.10.10.15/FacturacionWS/WSFacturacion.svc?xsd=xsd3" filename="WSFacturacion2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://10.10.10.15/FacturacionWS/WSFacturacion.svc?disco" filename="WSFacturacion.disco" />
+  </Results>
+</DiscoveryClientResultsFile>

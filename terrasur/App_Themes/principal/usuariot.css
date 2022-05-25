@@ -1,0 +1,9 @@
+﻿.usuarioTdRoles{ vertical-align:top; text-align:left; width: 200px;}
+
+.usuarioRolTable{ width:100%;}
+.usuarioRolTd{ text-align:left;}
+
+.usuarioRolLinkButton{ font-family:Arial; font-weight: bold; font-size:11pt; padding: 0px 10px 1px 10px;}
+.usuarioRolLinkButton{ background-image:url('images/btn/btnOscuro.gif'); color:White; }
+a.usuarioRolLinkButton:hover { background-image:url('images/btn/btnClaro.gif'); color:Black;}
+a.usuarioRolLinkButton:link,a.usuarioRolLinkButton:visited { text-decoration:none; }

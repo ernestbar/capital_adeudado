@@ -1,0 +1,14 @@
+Consulta estado de cuenta del contrato:|25676|Usuario:|lsilvestre|Fecha y hora:|12/03/2022 9:50:01|Equipo|:192.168.12.12
+Consulta estado de cuenta del contrato:|17379|Usuario:|cmercado|Fecha y hora:|12/03/2022 10:21:30|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|26384|Usuario:|cmercado|Fecha y hora:|12/03/2022 10:37:16|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|17358|Usuario:|cmercado|Fecha y hora:|12/03/2022 10:39:34|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|17365|Usuario:|cmercado|Fecha y hora:|12/03/2022 10:42:44|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|17367|Usuario:|cmercado|Fecha y hora:|12/03/2022 10:44:02|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:||Usuario:|cmercado|Fecha y hora:|12/03/2022 10:44:49|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|9571|Usuario:|cmercado|Fecha y hora:|12/03/2022 10:57:32|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|27424|Usuario:|cmercado|Fecha y hora:|12/03/2022 11:14:50|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|25363|Usuario:|cmercado|Fecha y hora:|12/03/2022 11:27:56|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|25362|Usuario:|cmercado|Fecha y hora:|12/03/2022 11:28:47|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|17367|Usuario:|amendoza|Fecha y hora:|12/03/2022 11:49:30|Equipo|:192.168.17.8
+Consulta estado de cuenta del contrato:|17365|Usuario:|amendoza|Fecha y hora:|12/03/2022 11:50:14|Equipo|:192.168.17.8
+Consulta estado de cuenta del contrato:|17358|Usuario:|amendoza|Fecha y hora:|12/03/2022 11:50:41|Equipo|:192.168.17.8

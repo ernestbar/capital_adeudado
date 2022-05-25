@@ -1,0 +1,10 @@
+Consulta estado de cuenta del contrato:|24923|Usuario:|mtejerina|Fecha y hora:|15/01/2022 9:13:40|Equipo|:192.168.14.5
+Consulta estado de cuenta del contrato:|24923|Usuario:|mtejerina|Fecha y hora:|15/01/2022 9:13:54|Equipo|:192.168.14.5
+Consulta estado de cuenta del contrato:|21422M|Usuario:|cmercado|Fecha y hora:|15/01/2022 10:37:43|Equipo|:192.168.14.8
+Consulta estado de cuenta del contrato:|21422M|Usuario:|cmercado|Fecha y hora:|15/01/2022 10:38:14|Equipo|:192.168.14.8
+Consulta estado de cuenta del contrato:|21422|Usuario:|cmercado|Fecha y hora:|15/01/2022 10:40:04|Equipo|:192.168.14.8
+Consulta estado de cuenta del contrato:|19173|Usuario:|cmercado|Fecha y hora:|15/01/2022 10:43:56|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|27951|Usuario:|cmercado|Fecha y hora:|15/01/2022 10:50:32|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|27797|Usuario:|cmercado|Fecha y hora:|15/01/2022 10:56:42|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|28816|Usuario:|cmercado|Fecha y hora:|15/01/2022 11:14:11|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:||Usuario:|cmercado|Fecha y hora:|15/01/2022 11:33:32|Equipo|:192.168.14.28

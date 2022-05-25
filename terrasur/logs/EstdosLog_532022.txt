@@ -1,0 +1,12 @@
+Consulta estado de cuenta del contrato:|22689|Usuario:|acuba|Fecha y hora:|05/03/2022 9:07:10|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|23628|Usuario:|acuba|Fecha y hora:|05/03/2022 9:19:18|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|14029|Usuario:|acuba|Fecha y hora:|05/03/2022 10:10:33|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|14029|Usuario:|acuba|Fecha y hora:|05/03/2022 10:14:11|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|14029|Usuario:|acuba|Fecha y hora:|05/03/2022 10:14:25|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|26386|Usuario:|acuba|Fecha y hora:|05/03/2022 10:20:00|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|26386|Usuario:|acuba|Fecha y hora:|05/03/2022 10:20:14|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|27001|Usuario:|acuba|Fecha y hora:|05/03/2022 10:31:39|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|17720|Usuario:|acuba|Fecha y hora:|05/03/2022 10:35:57|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|16288|Usuario:|acuba|Fecha y hora:|05/03/2022 10:43:00|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|26386|Usuario:|acuba|Fecha y hora:|05/03/2022 10:57:21|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|15839|Usuario:|acuba|Fecha y hora:|05/03/2022 11:24:27|Equipo|:192.168.14.3

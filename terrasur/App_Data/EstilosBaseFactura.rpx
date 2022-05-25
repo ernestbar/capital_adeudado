@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="4">
+  <Object type="DataDynamics.ActiveReports.ActiveReport3" name="EstilosBaseFactura">
+    <Property name="StyleSheet">
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; </Argument>
+          <Argument type="System.String">Normal</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-size: 16pt; font-weight: bold; </Argument>
+          <Argument type="System.String">Heading1</Argument>
+          <Argument type="System.String">Normal</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic; </Argument>
+          <Argument type="System.String">Heading2</Argument>
+          <Argument type="System.String">Normal</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-size: 13pt; font-weight: bold; </Argument>
+          <Argument type="System.String">Heading3</Argument>
+          <Argument type="System.String">Normal</Argument>
+        </InstanceDescriptor>
+      </Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+				<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: bold; font-size: 9pt; color: Black; </Argument>
+				<Argument type="System.String">facturaEncabezadoEmpresa</Argument>
+			</InstanceDescriptor>
+		</Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+				<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: bold; font-size: 7pt; color: Black; </Argument>
+				<Argument type="System.String">facturaEncabezadoActividad</Argument>
+			</InstanceDescriptor>
+		</Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+				<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: bold; font-size: 7pt; color: Black; </Argument>
+				<Argument type="System.String">facturaEncabezadoCasaMatriz</Argument>
+			</InstanceDescriptor>
+		</Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+				<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: normal; font-size: 7pt; color: Black; </Argument>
+				<Argument type="System.String">facturaEncabezadoDireccion</Argument>
+			</InstanceDescriptor>
+		</Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+				<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: normal; font-size: 7pt; color: Black; </Argument>
+				<Argument type="System.String">facturaEncabezadoTelefono</Argument>
+			</InstanceDescriptor>
+		</Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+			<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: normal; font-size: 7pt; color: Black; </Argument>
+				<Argument type="System.String">facturaEncabezadoLugar</Argument>
+			</InstanceDescriptor>
+		</Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: letf; font-style: normal; text-decoration: none; font-weight: bold; font-size: 9.5pt; color: Black; </Argument>
+          <Argument type="System.String">facturaTituloEnun</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: center; font-style: normal; text-decoration: none; color: Black; font-size: 9.5pt; font-weight: normal; </Argument>
+          <Argument type="System.String">facturaTituloDato</Argument>
+        </InstanceDescriptor>
+      </Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+				<Argument type="System.String">font-family: Courier New; text-align: center; font-style: normal; text-decoration: none; color: Black; font-size: 12pt; font-weight: bold; </Argument>
+				<Argument type="System.String">facturaNumeroContrato</Argument>
+			</InstanceDescriptor>
+		</Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: left; font-style: normal; text-decoration: none; font-size: 13pt; color: Black; font-weight: bold; </Argument>
+          <Argument type="System.String">facturaNombre</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: left; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: bold; font-style: normal; </Argument>
+          <Argument type="System.String">facturaConceptoEnun</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: left; font-style: normal; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: normal; </Argument>
+          <Argument type="System.String">facturaConceptoDato</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: left; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: bold; font-style: normal; </Argument>
+          <Argument type="System.String">facturaDetalleEnun</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: left; vertical-align:bottom; font-style: normal; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: normal; </Argument>
+          <Argument type="System.String">facturaDetalleDato</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: left; text-decoration: none; font-weight: bold; font-size: 9.5pt; color: Black; font-style: normal; </Argument>
+          <Argument type="System.String">facturaPieEnun</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: left; text-decoration: none; font-weight: normal; font-size: 9.5pt; color: Black; font-style: normal; </Argument>
+          <Argument type="System.String">facturaPieDato</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-size: 7pt; color: Black; font-weight: bold; </Argument>
+          <Argument type="System.String">facturaNota1</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: center; font-style: italic; text-decoration: none; font-weight: bold; font-size: 10pt; color: Black; </Argument>
+          <Argument type="System.String">facturaNota2</Argument>
+        </InstanceDescriptor>
+      </Item>
+    </Property>
+  </Object>
+</ActiveReportsLayout>

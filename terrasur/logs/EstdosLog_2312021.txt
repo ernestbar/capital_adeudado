@@ -1,0 +1,6 @@
+Consulta estado de cuenta del contrato:|26036|Usuario:|FNINA|Fecha y hora:|23/01/2021 9:28:32|Equipo|:192.168.12.5
+Imprime estado de cuenta del contrato:|26036|Usuario:|FNINA|Fecha y hora:|23/01/2021 9:28:36|Equipo|:192.168.12.5
+Consulta estado de cuenta del contrato:|26037|Usuario:|FNINA|Fecha y hora:|23/01/2021 9:29:06|Equipo|:192.168.12.5
+Imprime estado de cuenta del contrato:|26037|Usuario:|FNINA|Fecha y hora:|23/01/2021 9:29:10|Equipo|:192.168.12.5
+Consulta estado de cuenta del contrato:|16354|Usuario:|FNINA|Fecha y hora:|23/01/2021 9:34:56|Equipo|:192.168.12.5
+Imprime estado de cuenta del contrato:|16354|Usuario:|FNINA|Fecha y hora:|23/01/2021 9:35:06|Equipo|:192.168.12.5

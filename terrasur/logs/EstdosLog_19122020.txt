@@ -1,0 +1,2 @@
+Consulta estado de cuenta del contrato:|26675|Usuario:|evaldez|Fecha y hora:|19/12/2020 10:25:02|Equipo|:192.168.16.6
+Consulta estado de cuenta del contrato:|23574|Usuario:|evaldez|Fecha y hora:|19/12/2020 10:30:05|Equipo|:192.168.16.6

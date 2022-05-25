@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="4">
+  <Object type="DataDynamics.ActiveReports.ActiveReport3" name="EstilosBaseRecibo">
+    <Property name="StyleSheet">
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; </Argument>
+          <Argument type="System.String">Normal</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-size: 16pt; font-weight: bold; </Argument>
+          <Argument type="System.String">Heading1</Argument>
+          <Argument type="System.String">Normal</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic; </Argument>
+          <Argument type="System.String">Heading2</Argument>
+          <Argument type="System.String">Normal</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-size: 13pt; font-weight: bold; </Argument>
+          <Argument type="System.String">Heading3</Argument>
+          <Argument type="System.String">Normal</Argument>
+        </InstanceDescriptor>
+      </Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+				<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: bold; font-size: 9pt; color: Black; </Argument>
+				<Argument type="System.String">reciboEncabezadoEmpresa</Argument>
+			</InstanceDescriptor>
+		</Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+				<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: bold; font-size: 7pt; color: Black; </Argument>
+				<Argument type="System.String">reciboEncabezadoActividad</Argument>
+			</InstanceDescriptor>
+		</Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+				<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: bold; font-size: 7pt; color: Black; </Argument>
+				<Argument type="System.String">reciboEncabezadoCasaMatriz</Argument>
+			</InstanceDescriptor>
+		</Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+				<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: normal; font-size: 7pt; color: Black; </Argument>
+				<Argument type="System.String">reciboEncabezadoDireccion</Argument>
+			</InstanceDescriptor>
+		</Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+				<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: normal; font-size: 7pt; color: Black; </Argument>
+				<Argument type="System.String">reciboEncabezadoTelefono</Argument>
+			</InstanceDescriptor>
+		</Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+				<Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-weight: normal; font-size: 7pt; color: Black; </Argument>
+				<Argument type="System.String">reciboEncabezadoLugar</Argument>
+			</InstanceDescriptor>
+		</Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: right; font-style: normal; text-decoration: none; font-weight: bold; font-size: 12pt; color: Black; </Argument>
+          <Argument type="System.String">reciboTituloEnun</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: center; font-style: normal; text-decoration: none; color: Black; font-size: 10pt; font-weight: normal; </Argument>
+          <Argument type="System.String">reciboTituloDato</Argument>
+        </InstanceDescriptor>
+      </Item>
+		<Item type="DDCssLib.StyleSheetRule">
+			<InstanceDescriptor type="DDCssLib.StyleSheetRule">
+				<Argument type="System.String">font-family: Courier New; text-align: center; font-style: normal; text-decoration: none; color: Black; font-size: 12pt; font-weight: bold; </Argument>
+				<Argument type="System.String">reciboNumeroContrato</Argument>
+			</InstanceDescriptor>
+		</Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: left; font-style: normal; text-decoration: none; font-size: 8.5pt; color: Black; font-weight: normal; </Argument>
+          <Argument type="System.String">reciboFecha</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: left; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: bold; font-style: normal; </Argument>
+          <Argument type="System.String">reciboConceptoEnun</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: left; font-style: normal; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: normal; </Argument>
+          <Argument type="System.String">reciboConceptoDato</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: left; text-decoration: none; font-size: 9.0pt; color: Black; font-weight: bold; font-style: normal; </Argument>
+          <Argument type="System.String">reciboDetalleEnun</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: left; vertical-align:bottom; font-style: normal; text-decoration: none; font-size: 9.0pt; color: Black; font-weight: normal; </Argument>
+          <Argument type="System.String">reciboDetalleDato</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: center; text-decoration: none; font-weight: bold; font-size: 9.0pt; color: Black; font-style: normal; </Argument>
+          <Argument type="System.String">reciboDetalleTablaEnun</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: right; text-decoration: none; font-weight: normal; font-size: 8.0pt; color: Black; font-style: normal; </Argument>
+          <Argument type="System.String">reciboDetalleTablaDato</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: left; font-style: normal; text-decoration: none; font-size: 8pt; color: Black; font-weight: bold; </Argument>
+          <Argument type="System.String">reciboNota</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Courier New; text-align: center; font-style: normal; text-decoration: none; font-weight: bold; font-size: 10pt; color: Black; </Argument>
+          <Argument type="System.String">reciboDetalleTablaGrupo</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; font-size: 9pt; color: Black; font-weight: bold; </Argument>
+          <Argument type="System.String">reciboFirmas</Argument>
+        </InstanceDescriptor>
+      </Item>
+    </Property>
+  </Object>
+</ActiveReportsLayout>

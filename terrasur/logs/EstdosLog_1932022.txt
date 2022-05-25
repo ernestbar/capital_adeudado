@@ -1,0 +1,4 @@
+Consulta estado de cuenta del contrato:||Usuario:|mtejerina|Fecha y hora:|19/03/2022 9:14:28|Equipo|:192.168.14.5
+Consulta estado de cuenta del contrato:|23667|Usuario:|cmercado|Fecha y hora:|19/03/2022 9:21:21|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|22185|Usuario:|dmamani|Fecha y hora:|19/03/2022 10:07:34|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|13186|Usuario:|dmamani|Fecha y hora:|19/03/2022 10:20:49|Equipo|:192.168.14.2

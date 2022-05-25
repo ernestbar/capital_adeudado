@@ -1,0 +1,16 @@
+Consulta estado de cuenta del contrato:|13637|Usuario:|SMAMANI|Fecha y hora:|24/12/2020 8:20:04|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|13735|Usuario:|SMAMANI|Fecha y hora:|24/12/2020 8:20:49|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|20152|Usuario:|SMAMANI|Fecha y hora:|24/12/2020 9:15:09|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|17688|Usuario:|SMAMANI|Fecha y hora:|24/12/2020 9:17:52|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|21979|Usuario:|SMAMANI|Fecha y hora:|24/12/2020 9:22:39|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|27694|Usuario:|SMAMANI|Fecha y hora:|24/12/2020 9:39:44|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|27575|Usuario:|SMAMANI|Fecha y hora:|24/12/2020 9:41:27|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|27497|Usuario:|SMAMANI|Fecha y hora:|24/12/2020 9:42:59|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|27481|Usuario:|SMAMANI|Fecha y hora:|24/12/2020 9:43:33|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|26100|Usuario:|SMAMANI|Fecha y hora:|24/12/2020 9:44:40|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|20003|Usuario:|SMAMANI|Fecha y hora:|24/12/2020 9:45:21|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|21762|Usuario:|fcarpio|Fecha y hora:|24/12/2020 10:21:05|Equipo|:192.168.12.11
+Consulta estado de cuenta del contrato:|19839|Usuario:|SMAMANI|Fecha y hora:|24/12/2020 11:10:29|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|23688|Usuario:|SMAMANI|Fecha y hora:|24/12/2020 11:46:51|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:||Usuario:|SMAMANI|Fecha y hora:|24/12/2020 12:53:25|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:||Usuario:|SMAMANI|Fecha y hora:|24/12/2020 12:54:09|Equipo|:192.168.14.3

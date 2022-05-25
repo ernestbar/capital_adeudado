@@ -1,0 +1,9 @@
+Consulta estado de cuenta del contrato:|24709|Usuario:|amendoza|Fecha y hora:|24/07/2021 9:03:13|Equipo|:192.168.17.8
+Consulta estado de cuenta del contrato:|24709|Usuario:|amendoza|Fecha y hora:|24/07/2021 9:03:13|Equipo|:192.168.17.8
+Consulta estado de cuenta del contrato:|28348|Usuario:|cmercado|Fecha y hora:|24/07/2021 10:00:46|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|28349|Usuario:|cmercado|Fecha y hora:|24/07/2021 10:01:10|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|15606|Usuario:|cmercado|Fecha y hora:|24/07/2021 11:28:04|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|25521|Usuario:|cmercado|Fecha y hora:|24/07/2021 11:31:59|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|25522|Usuario:|cmercado|Fecha y hora:|24/07/2021 11:32:23|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|13145|Usuario:|cmercado|Fecha y hora:|24/07/2021 11:48:24|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:||Usuario:|amendoza|Fecha y hora:|24/07/2021 12:04:52|Equipo|:192.168.17.8

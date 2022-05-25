@@ -1,0 +1,13 @@
+﻿.tipoCambioTable{ border-width:0px; background-color:#CFF0C7;}
+.tipoCambioTdTitle{ text-align:center; background-image:url('images/gv/header.gif'); color: White; font-family:Arial; font-size:15px; font-weight:bold; padding:2px 15px;}
+.tipoCambioTdHistorico{ text-align:right;}
+.tipoCambioTdFecha{ text-align:center; vertical-align:top; font-family:Arial; font-size:14px; font-weight:bold; padding: 2px 10px;}
+.tipoCambioTdMsg{ text-align:left; vertical-align:top; padding: 2px;}
+.tipoCambioTdButton{ text-align:center;}
+
+.tipoCambioTdEnun{ text-align:center; font-weight:bold; font-family:Arial; font-size:14px; color:Black; padding: 2px;}
+.tipoCambioTdEspacio{ width:20px;}
+.tipoCambioTdDato{ text-align:center; }
+
+
+.txtTipoCambio{ text-align:right; background-color:White; width:70px; height:22px; font-size:20px; font-weight:bold; color:Black; }

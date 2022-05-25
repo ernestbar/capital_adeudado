@@ -1,0 +1,16 @@
+Consulta estado de cuenta del contrato:|17214|Usuario:|alciraes|Fecha y hora:|23/12/2021 9:45:22|Equipo|:192.168.13.3
+Imprime estado de cuenta del contrato:|17214|Usuario:|alciraes|Fecha y hora:|23/12/2021 9:46:16|Equipo|:192.168.13.3
+Imprime estado de cuenta del contrato:|17214|Usuario:|alciraes|Fecha y hora:|23/12/2021 9:46:45|Equipo|:192.168.13.3
+Imprime estado de cuenta del contrato:|17214|Usuario:|alciraes|Fecha y hora:|23/12/2021 9:47:10|Equipo|:192.168.13.3
+Consulta estado de cuenta del contrato:|26439|Usuario:|cmercado|Fecha y hora:|23/12/2021 10:16:18|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|22116|Usuario:|dmamani|Fecha y hora:|23/12/2021 10:37:21|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|22116|Usuario:|dmamani|Fecha y hora:|23/12/2021 11:06:54|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|22491|Usuario:|emunoz|Fecha y hora:|23/12/2021 11:48:15|Equipo|:192.168.16.12
+Imprime estado de cuenta del contrato:|22491|Usuario:|emunoz|Fecha y hora:|23/12/2021 11:48:40|Equipo|:192.168.16.12
+Consulta estado de cuenta del contrato:|9922301|Usuario:|dmamani|Fecha y hora:|23/12/2021 13:42:21|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|6117|Usuario:|cmercado|Fecha y hora:|23/12/2021 15:58:16|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|6117|Usuario:|MJAUREGUI|Fecha y hora:|23/12/2021 16:37:24|Equipo|:192.168.12.4
+Consulta estado de cuenta del contrato:||Usuario:|cmercado|Fecha y hora:|23/12/2021 16:43:15|Equipo|:192.168.14.8
+Consulta estado de cuenta del contrato:|6117|Usuario:|cmercado|Fecha y hora:|23/12/2021 16:44:13|Equipo|:192.168.14.8
+Imprime estado de cuenta del contrato:|6117|Usuario:|cmercado|Fecha y hora:|23/12/2021 16:44:32|Equipo|:192.168.14.8
+Consulta estado de cuenta del contrato:|6117|Usuario:|dmamani|Fecha y hora:|23/12/2021 16:47:58|Equipo|:192.168.14.2

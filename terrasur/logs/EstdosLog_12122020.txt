@@ -1,0 +1,13 @@
+Consulta estado de cuenta del contrato:||Usuario:|hhuanca|Fecha y hora:|12/12/2020 8:25:53|Equipo|:192.168.14.4
+Consulta estado de cuenta del contrato:||Usuario:|hhuanca|Fecha y hora:|12/12/2020 8:31:47|Equipo|:192.168.14.4
+Consulta estado de cuenta del contrato:||Usuario:|hhuanca|Fecha y hora:|12/12/2020 8:32:16|Equipo|:192.168.14.4
+Consulta estado de cuenta del contrato:||Usuario:|hhuanca|Fecha y hora:|12/12/2020 8:36:50|Equipo|:192.168.14.4
+Consulta estado de cuenta del contrato:||Usuario:|hhuanca|Fecha y hora:|12/12/2020 8:37:47|Equipo|:192.168.14.4
+Consulta estado de cuenta del contrato:|11211|Usuario:|HHUANCA|Fecha y hora:|12/12/2020 8:50:39|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:||Usuario:|HHUANCA|Fecha y hora:|12/12/2020 9:34:04|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:||Usuario:|HHUANCA|Fecha y hora:|12/12/2020 9:34:54|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:||Usuario:|HHUANCA|Fecha y hora:|12/12/2020 9:35:24|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:||Usuario:|HHUANCA|Fecha y hora:|12/12/2020 9:36:07|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:||Usuario:|HHUANCA|Fecha y hora:|12/12/2020 9:37:59|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:||Usuario:|HHUANCA|Fecha y hora:|12/12/2020 9:42:31|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:|6294|Usuario:|HHUANCA|Fecha y hora:|12/12/2020 10:35:13|Equipo|:192.168.17.4

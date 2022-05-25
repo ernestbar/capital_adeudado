@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://10.10.10.15:1539/SintesisService.svc?wsdl" filename="SintesisService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://10.10.10.15:1539/SintesisService.svc?disco" filename="SintesisService.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://10.10.10.15:1539/SintesisService.svc?xsd=xsd0" filename="SintesisService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://10.10.10.15:1539/SintesisService.svc?xsd=xsd1" filename="SintesisService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://10.10.10.15:1539/SintesisService.svc?xsd=xsd2" filename="SintesisService1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

@@ -1,0 +1,7 @@
+Consulta estado de cuenta del contrato:|22658|Usuario:|cmercado|Fecha y hora:|19/02/2022 8:34:57|Equipo|:192.168.14.28
+Imprime estado de cuenta del contrato:|22658|Usuario:|cmercado|Fecha y hora:|19/02/2022 8:35:15|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|27647|Usuario:|cmercado|Fecha y hora:|19/02/2022 9:35:55|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|27648|Usuario:|dmamani|Fecha y hora:|19/02/2022 9:40:27|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|27648|Usuario:|dmamani|Fecha y hora:|19/02/2022 9:41:22|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|27648|Usuario:|dmamani|Fecha y hora:|19/02/2022 9:41:36|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|17744|Usuario:|dmamani|Fecha y hora:|19/02/2022 11:09:27|Equipo|:192.168.14.2

@@ -1,0 +1,25 @@
+﻿.wpTableZone{width:100%; }
+.wpTdUserUpdate{ padding:2px 0 0 0; text-align:center;}
+.wpTdZoneLeft{width:30%; vertical-align:top; }
+.wpTdZoneCenter{width:40%; vertical-align:top; }
+.wpTdZoneRight{width:30%; vertical-align:top; }
+
+.wpZone{ width:100%; }
+.wpPart{ background-color:#FCFFFB; text-align:left; background-image:url('images/fondowp.gif'); background-position:center center; background-attachment:inherit; background-repeat:no-repeat;}
+.wpPartTitle{ text-align:left; background-image:url('images/gv/header.gif'); font-family:Arial; color:White; font-size:14px; font-weight:bold; padding:2px 2px 2px 10px;}
+
+.wpContenidoTable{ width:100%;}
+.wpContenidoTdTitle { text-align:left; padding:1px 5px;}
+.wpContenidoTd{ text-align:left; font-family:Arial; font-size:13px; font-weight:normal; color:Black; padding:1px 5px 1px 20px;}
+.wpContenidoTdButton{ text-align:right; padding:0 5px 0 0;}
+
+/*.wpLinkButton{ color:Black; font-family:Arial; font-size:14px;}
+a.wpLinkButton:link,a.wpLinkButton:visited { text-decoration:none; font-weight:normal; }
+a.wpLinkButton:hover { color:#0F3D00; text-decoration:underline; font-weight:bolder; font-size:13px;}*/
+.wpLinkButton{ color:#0F3D00; font-family:Arial; font-size:14px; text-decoration:underline;}
+a.wpLinkButton:link,a.wpLinkButton:visited { font-weight:normal; }
+a.wpLinkButton:hover { font-weight:bold; font-style:normal; font-size:13px;}
+
+.btnWebPart{ background-color:Black; background-image:url('images/btn/btnOscuro.gif'); background-position:left 3px; color:White; font-family:Arial; font-size:12.5px; font-weight: bold; font-style:italic;}
+
+.lblWebPartTitle,.wpContenidoTdTitle{ font-family:Arial; font-size:14px; font-weight:bold; color:Black;}

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<itemsConsolidados>
+  <item valor="False" texto="Solo la moneda elegida"/>
+  <item valor="True" texto="Consolidado (de ambas monedas)"/>
+</itemsConsolidados>

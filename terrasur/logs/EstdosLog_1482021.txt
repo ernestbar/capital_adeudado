@@ -1,0 +1,12 @@
+Consulta estado de cuenta del contrato:|26448|Usuario:|mtejerina|Fecha y hora:|14/08/2021 9:38:22|Equipo|:192.168.14.5
+Consulta estado de cuenta del contrato:|24329|Usuario:|mtejerina|Fecha y hora:|14/08/2021 9:40:50|Equipo|:192.168.14.5
+Consulta estado de cuenta del contrato:|16652|Usuario:|mtejerina|Fecha y hora:|14/08/2021 9:43:32|Equipo|:192.168.14.5
+Consulta estado de cuenta del contrato:||Usuario:|amendoza|Fecha y hora:|14/08/2021 9:51:07|Equipo|:192.168.17.8
+Consulta estado de cuenta del contrato:||Usuario:|amendoza|Fecha y hora:|14/08/2021 9:52:10|Equipo|:192.168.17.8
+Consulta estado de cuenta del contrato:||Usuario:|amendoza|Fecha y hora:|14/08/2021 9:56:06|Equipo|:192.168.17.8
+Consulta estado de cuenta del contrato:||Usuario:|amendoza|Fecha y hora:|14/08/2021 9:56:46|Equipo|:192.168.17.8
+Consulta estado de cuenta del contrato:||Usuario:|amendoza|Fecha y hora:|14/08/2021 10:46:46|Equipo|:192.168.17.8
+Consulta estado de cuenta del contrato:||Usuario:|amendoza|Fecha y hora:|14/08/2021 10:48:05|Equipo|:192.168.17.8
+Consulta estado de cuenta del contrato:||Usuario:|amendoza|Fecha y hora:|14/08/2021 11:16:35|Equipo|:192.168.17.8
+Consulta estado de cuenta del contrato:||Usuario:|amendoza|Fecha y hora:|14/08/2021 12:15:07|Equipo|:192.168.17.8
+Consulta estado de cuenta del contrato:||Usuario:|amendoza|Fecha y hora:|14/08/2021 12:15:35|Equipo|:192.168.17.8

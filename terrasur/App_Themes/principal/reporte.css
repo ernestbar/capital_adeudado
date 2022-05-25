@@ -1,0 +1,10 @@
+﻿.tdFiltro{ text-align:center;}
+.tableFiltro{ text-align:left; }
+.tdEnun{ vertical-align:top; text-align:left; font-family:Arial; font-size:14px; font-weight:bold;}
+.tdEspacio{ width:15px;}
+
+.rblCicloComercial{ font-family:Arial; font-size:14px; font-style:normal; color:Black;}
+.rblCicloComercial tr td{ padding:0;}
+
+.panelCicloComercial{ text-align:left; background-color:White; display:block;}
+.panelCicloComercial fieldset legend{ font-family:Arial; font-weight:bold; font-size:14px; color:#0F3D00; font-style:italic;}

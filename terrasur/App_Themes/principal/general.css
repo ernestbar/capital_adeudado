@@ -1,0 +1,193 @@
+﻿.priTable{ width:100%;}
+.priTdTitle{ text-align:center; font-weight:bold; font-size:22px; padding:5px 0 0 0;}
+.priTdContenido{ text-align:center; vertical-align:top;}
+
+.tableContenido{ text-align:center;}
+.tdButtonVolver{ text-align:left;}
+.tdDropDown{ text-align:left;}
+.tdButton{ text-align:left;}
+.tdBusqueda{ text-align:left;}
+.tdMsg{ text-align:left;}
+.tdGrid{ text-align:center;}
+.tdButtonNuevaBusqueda{ text-align:right;}
+.tdEncabezado{ text-align:center; font-family:Arial; font-size:16px; font-weight:bold;}
+.tdButtonRealizarAccion{ text-align:center;}
+.tdButtonRealizarAccion1{ text-align:right;}
+
+.tableDDL{}
+.tdDDLEnun{ text-align:right; vertical-align:middle; font-family:Arial; font-size:14px; font-weight:bold; padding: 0 5px 0 0;}
+.tdDDLEspacio{ width:25px;}
+
+
+.formEntTable{ width:100%;}
+.formEntTdTitle{ text-align:center; font-family:Arial; font-size:16px; font-weight:bold; padding:5px 0px;}
+.formEntTdForm{ text-align:center;}
+.formEntTdButton{ text-align:center;}
+.formTable{ border-width:0px;}
+.formTdMsg{ text-align:left;}
+.formTdTitle{ text-align:center; background-image:url('images/gv/header.gif'); color: White; font-family:Arial; font-size:14px; font-weight:bold; padding:2px 0px;}
+.formTdEnun{ text-align:left; vertical-align:top; background-color:#CFF0C7; font-family:Arial; font-size:12px; font-weight:bold; padding: 4px 4px 1px 4px;}
+.formTdDato{ text-align:left; background-color:#F5FDF3; font-family:Arial; font-size:12px; font-weight:normal; padding: 2px 4px;}
+
+
+
+.formHorEntTable{ width:100%;}
+.formHorEntTdTitle{ text-align:center; font-family:Arial; font-size:16px; font-weight:bold; padding:5px 0px;}
+.formHorEntTdForm{ text-align:center;}
+.formHorEntTdButton{ text-align:right;}
+.formHorTable{ border-width:0px;}
+.formHorTdMsg{ text-align:left;}
+.formHorTdTitle{ text-align:center; background-image:url('images/gv/header.gif'); color: White; font-family:Arial; font-size:14px; font-weight:bold; padding:2px 0px;}
+.formHorTdEnun{ text-align:left; vertical-align:bottom; background-color:#CFF0C7; font-family:Arial; font-size:12px; font-weight:bold; padding: 2px 4px;}
+.formHorTdEnun1{ text-align:left; vertical-align:top; background-color:#CFF0C7; font-family:Arial; font-size:12px; font-weight:bold; padding: 2px 4px;}
+.formHorTdDato{ text-align:left; background-color:#F5FDF3; font-family:Arial; font-size:12px; font-weight:normal; padding: 2px 4px;}
+
+
+
+.viewEntTable { width:100%;}
+.viewEntTd { text-align:center;}
+.viewTable{ border-width:0px;}
+.viewTdTitle{ text-align:center; background-image:url('images/gv/header.gif'); color: White; font-family:Arial; font-size:14px; font-weight:bold; padding:2px 10px;}
+.viewTdImage{ text-align:center; background-color:#F5FDF3;}
+.viewTdEnun{ text-align:left; vertical-align:top; background-color:#CFF0C7; font-family:Arial; font-size:12px; font-weight:bold; padding: 2px 4px;}
+.viewTdDato{ text-align:left; background-color:#F5FDF3; font-family:Arial; font-size:12px; font-weight:normal; padding: 2px 4px;}
+
+
+
+.viewHorEntTable { width:100%;}
+.viewHorEntTd { text-align:center;}
+.viewHorTable{ border-width:0px;}
+.viewHorTdTitle{ text-align:center; background-image:url('images/gv/header.gif'); color: White; font-family:Arial; font-size:14px; font-weight:bold; padding:2px 10px;}
+.viewHorTdImage{ text-align:center; background-color:#F5FDF3;}
+.viewHorTdEnun{ text-align:left; vertical-align:bottom; background-color:#CFF0C7; font-family:Arial; font-size:12px; font-weight:bold; padding: 2px 4px;}
+.viewHorTdEnun1{ text-align:left; vertical-align:middle; background-color:#CFF0C7; font-family:Arial; font-size:12px; font-weight:bold; padding: 2px 4px;}
+.viewHorTdDato{ text-align:left; background-color:#F5FDF3; font-family:Arial; font-size:12px; font-weight:normal; padding: 2px 4px;}
+
+
+
+.gvRowSelected { background-color: #CFF0C7; font-family:Arial; text-align:left; font-size:12px; }
+.gvRow0 { background-color: #F5FDF3; font-family:Arial; text-align:left; font-size:12px; }
+.gvRow1 { background-color: White; font-family:Arial; text-align:left; font-size:12px; }
+.gvCell1{ text-align:right;}
+
+.gvHeader{ background-image:url('images/gv/header.gif'); color: White; font-family:Arial; font-weight: bold; font-size:12px; text-align:center; }
+.gvHeader a{color:White; }
+.gvFooter{ background-image:url('images/gv/header.gif'); color: White; font-family:Arial; font-weight: bold; text-align:center; }
+.gvHeaderTransparente{ color:Black; font-family:Arial; font-weight:bold; text-align:center; }
+.gvPager{ font-family:Arial; font-weight:normal; font-size:12px; text-align:right; }
+.gvEmptyDataRow{ color:#0F3D00; font-family:Arial; font-weight:bold; font-size:13px; border-width:0px; text-align:center;}
+.gvButton{ color: #0F3D00; font-family:Arial; font-weight:bold; font-size:13px; font-style:italic; text-decoration:none;}
+a.gvButton:hover{ text-decoration:underline;}
+.gvButtonDelete{ font-family:Arial; font-weight:bold; font-size:13px; color:#0F3D00; text-decoration:none;}
+
+
+
+.msgMensaje,.valRequiredFieldValidator,.valRangeValidator,.valRegularExpressionValidator,.valCompareValidator,.valValidationSummary
+{ color:Red; text-align:left; font-family:Arial; font-weight:bold; font-size:12px; font-style:normal;}
+
+
+
+.btnButton{ background-color:#F5FDF3; background-image:url('images/btn/btnClaro.gif'); color:Black; font-family:Arial; font-weight:bold; font-size:13px; background-position:left -4px; }
+.btnAccion{ background-color:Black; background-image:url('images/btn/btnOscuro.gif'); background-position:left 3px; color:White; font-family:Arial; font-size:13px; font-weight: bold; padding: 0;}
+.btnVolver{ background-color:Black; background-image:url('images/btn/btnOscuro.gif'); background-position:left 3px; color:White; font-family:Arial; font-size:13px; font-weight: bold; background-position:left -4px;}
+
+
+
+.lblLabel{ font-family:Arial;}
+.lblEnun,.formTdEnun{ color:Black; font-family:Arial; font-size:12px; font-weight:bold;}
+.lblDato,.formTdDato{ color:Black; font-family:Arial; font-size:12px; font-weight:normal;}
+
+
+
+.rblContratoMoneda{ font-family:Arial; font-size:50px; font-weight:bold; color:Black;}
+
+.ddlDropDownList,.lbListBox,.blBulletedList,.cbCheckBox,.cblCheckBoxList,.rbRadioButton,.rblRadioButtonList
+{ color:Black; font-family:Arial; font-size:12px; }
+.txtTextBox{ background-color:#FCFFFB; color:Black; font-family:Arial; font-size:13px; }
+.fuFileUpload{ background-color:#FCFFFB; color:Black; font-family:Arial; font-size:13px; }
+
+
+
+/*.linkButton{ font-family:Arial; font-weight: bold; font-size:11pt; padding: 1px 5px 2px 5px;}
+.linkButton{ background-image:url('images/btn/btnClaro.gif'); color:Black; }
+a.linkButton:hover { background-image:url('images/btn/btnOscuro.gif'); color:White;}
+a.linkButton:link,a.linkButton:visited { text-decoration:none;}*/
+.linkButton{ font-family:Arial; font-weight: bold; font-size:14px; text-decoration:underline; padding:0 5px; }
+.linkButton{ color:#0F3D00;}
+a.linkButton:hover { color:Black; font-style:normal;}
+a.linkButton:link,a.linkButton:visited {}
+
+.hyperLink{ color:#1A6B00; font-family:Arial; font-weight:bold; font-size:14px; text-decoration:none; }
+a.hyperLink:hover { text-decoration:underline; color:Black; }
+a.hyperLink:link,a.hlHyperLink:visited { text-decoration:none;}
+
+.linkWebPart{ font-weight: bold; font-size:11pt; padding:2px 10px 2px 10px;}
+.linkWebPart{ background-color:Transparent; color:Green; }
+a.linkWebPart:hover { text-decoration:underline; color:Blue;}
+a.linkWebPart:link,a.linkWebPart:visited { text-decoration:none; }
+
+
+.menu,.menuDinamic,.menuStaticHover,.menuDynamicHover,.menuStaticSelected,.menuDynamicSelected{ font-family:Arial; font-weight:bold; font-size:10pt;}
+.menu,.menuDinamic{ background-image:url('images/btn/menu2.gif'); background-position:right top; color:Black;}
+.menuStaticHover,.menuDynamicHover{ background-image:url('images/btn/menu1.gif'); background-position:right top; color:White;}
+.menuStaticSelected,.menuDynamicSelected{ background-image:url('images/btn/menu1.gif'); background-position:right top; color:#FFAF31;}
+
+
+.siteMap{ font-family:Arial; color:Black; font-weight:bold; font-style:normal; font-size:13px;}
+.siteMap a{ font-size:12px; text-decoration:none; font-style:italic; color:Black;}
+.siteMap a:hover { text-decoration:underline; }
+
+.loginName{ color:Black; font-size:11pt; font-weight:bold; padding-right:5px;}
+
+
+.loginStatus{ font-family:Arial; font-weight:bold; font-size:13px; padding: 1px 7px 1px 7px;}
+.loginStatus{ background-image:url('images/btn/btnClaro.gif'); color:Black;}
+a.loginStatus:hover { background-image:url('images/btn/btnOscuro.gif'); color:White; text-decoration:underline; }
+a.loginStatus:link,a.loginStatus:visited { text-decoration:none; }
+
+
+.cal { background-color:White; color:Black; font-family:Arial; font-size:10px; border-width:0px; }
+.calTitle { background-color: #CFF0C7; font-size:13px; font-weight:bold; }
+.calNextPrev { color:Black; font-weight:bold; font-size:smaller; vertical-align:bottom; }
+.calDayheader { background-color: #CFF0C7; font-weight:bold; font-size:small; padding: 0 2px; }
+.calDay { }
+.calWeekendDay { background-color: #F5FDF3; }
+.calSelectedDay {background-color: #0F3D00; color: White; font-weight: bold; }
+.calTodayDay { background-color: #CFF0C7; }
+.calOtherMonthDay { background-color:#F1F1F1; }
+
+.tpSelectedTime { background-color: #0F3D00; color: White; font-family:Arial; font-size:12px; font-weight: bold;}
+.tpTime{ background-color:White; color:Black; font-family:Arial; font-size:11px; padding:0 3px;}
+
+.panel fieldset legend{ font-family:Arial; font-weight:bold; font-size:13px; color:#0F3D00; font-style:italic;}
+
+.completionList{ text-align:left; font-family:Arial; font-weight:normal; font-size:12px; background-color:White; color:Black; text-transform:capitalize;}
+.completionListItem{ display:block;}
+.completionListHighlightedItem{ background-color:#CFF0C7; font-weight:bold;}
+
+
+.login{ border-style:solid; border-width:1px; border-color:Black; background-color:#F5FDF3; padding:0;}
+.loginTitleText{ background-image:url('images/gv/header.gif'); color: White; font-family:Arial; font-weight: bold; font-size:14px; text-align:center; padding:2px 5px;}
+.loginLabel{ font-family:Arial; font-weight: bold; font-size:13px; text-align:right; padding:0 10px;}
+.loginTextBox{ background-color:White; color:Black; font-family:Arial; font-size:13px;}
+.loginButton{ background-color:Black; background-image:url('images/btn/btnOscuro.gif'); background-position:left 3px; color:White; font-family:Arial; font-size:13px; font-weight: bold; padding: 0;}
+.loginValidatorText{ font-family:Arial; font-weight: bold; font-size:13px; text-align:left; color:Red;}
+.loginFailureText{ font-family:Arial; font-weight: bold; font-size:13px; text-align:left; color:Red;}
+
+
+.lbUserUpdate{ font-family:Arial; font-weight: bold; font-size:11pt; padding: 0px 10px 1px 10px;}
+.lbUserUpdate{ background-image:url('images/btn/btnOscuro.gif'); color:White; }
+a.lbUserUpdate:hover { background-image:url('images/btn/btnClaro.gif'); color:Black;}
+a.lbUserUpdate:link,a.lbUserUpdate:visited { text-decoration:none; }
+
+
+/*.lbNombreModulo{ font-family:Arial; font-weight: bold; font-size:11pt; padding: 0px 10px 1px 10px;}
+.lbNombreModulo{ background-image:url('images/btn/btnOscuro.gif'); color:White; }
+a.lbNombreModulo:hover { background-image:url('images/btn/btnClaro.gif'); color:Black;}
+a.lbNombreModulo:link,a.lbNombreModulo:visited { text-decoration:none; }*/
+.lbNombreModulo { background-repeat: no-repeat;	font-family: Arial;	font-weight: bold; font-size: 22px; text-align: center; vertical-align:bottom; width: 300px; height: 38px; padding:5px 2px 0 2px;}
+.lbNombreModulo{ background-image:url('images/btn1.gif'); color:White; }
+a.lbNombreModulo:hover { background-image:url('images/btn2.gif'); color:#FFAF31;}
+a.lbNombreModulo:link,a.lbNombreModulo:visited { text-decoration:none; }
+
+

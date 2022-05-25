@@ -1,0 +1,10 @@
+Consulta estado de cuenta del contrato:|25817|Usuario:|bhuanca|Fecha y hora:|27/03/2021 9:00:29|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|25753|Usuario:|bhuanca|Fecha y hora:|27/03/2021 9:32:38|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|20380|Usuario:|bhuanca|Fecha y hora:|27/03/2021 10:07:20|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|20380|Usuario:|bhuanca|Fecha y hora:|27/03/2021 10:11:50|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|17639|Usuario:|HHUANCA|Fecha y hora:|27/03/2021 10:20:35|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:|17639|Usuario:|HHUANCA|Fecha y hora:|27/03/2021 10:20:38|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:|16849|Usuario:|bhuanca|Fecha y hora:|27/03/2021 10:26:21|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|18357|Usuario:|HHUANCA|Fecha y hora:|27/03/2021 10:29:16|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:|17639|Usuario:|HHUANCA|Fecha y hora:|27/03/2021 11:29:15|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:|24057|Usuario:|HHUANCA|Fecha y hora:|27/03/2021 11:51:57|Equipo|:192.168.17.4

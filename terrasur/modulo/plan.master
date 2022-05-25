@@ -1,0 +1,97 @@
+<%@ Master Language="VB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+    'Protected Sub Menu1_PreRender(ByVal sender As Object, ByVal e As System.EventArgs) Handles Menu1.PreRender
+    '    Try
+    '        general.MenuEliminarNodos(Menu1, Profile.GetPropertyValue("menu_modulos." & Profile.entorno.codigo_modulo))
+    '        Menu1.Items(0).Text = Profile.entorno.nombre_modulo
+    '        Menu1.Items(0).NavigateUrl = "~/modulo/" + Profile.entorno.codigo_modulo + "/Default.aspx"
+    '    Catch ex As Exception
+    '    End Try
+    'End Sub
+
+    'Protected Sub SiteMapPath1_ItemDataBound(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.SiteMapNodeItemEventArgs) Handles SiteMapPath1.ItemDataBound
+    '    If e.Item.ItemType = SiteMapNodeItemType.Root Then
+    '        CType(e.Item.Controls(0), HyperLink).Text = Profile.entorno.nombre_modulo
+    '        CType(e.Item.Controls(0), HyperLink).NavigateUrl = "~/modulo/" & Profile.entorno.codigo_modulo & "/Default.aspx"
+    '    End If
+    'End Sub
+
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)
+        If Not Page.IsPostBack Then
+            lbl_sistema.Text = "Sistema de cartera"
+            hl_modulo.Text = Profile.entorno.nombre_modulo
+            hl_modulo.NavigateUrl = "~/modulo/" & Profile.entorno.codigo_modulo & "/Default.aspx"
+            
+            If Profile.imagen <> "" And Profile.imagen <> ConfigurationManager.AppSettings("usuario_dir_imagen_vacio") Then
+                img_usuario.ImageUrl = Profile.imagen
+                img_usuario.Visible = True
+            Else
+                img_usuario.ImageUrl = ""
+                img_usuario.Visible = False
+            End If
+         End If
+    End Sub
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Sistema de manejo de cartera</title>
+    <link rel="shortcut icon" href="../favicon.ico"/>
+</head>
+<body class="masterBody">
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" class="masterTable" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="masterTdEncab">
+                    <table border="0" class="masterTableEncab" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="masterTdSisModRec">
+                                <table border="0" class="masterTableSisModRec" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td rowspan="2" class="masterTdSis">
+                                            <asp:Label ID="lbl_sistema" runat="server"></asp:Label>
+                                        </td>
+                                        <td  colspan="2" class="masterTdMod">
+                                            <asp:HyperLink ID="hl_modulo" runat="server" SkinID="hlMasterModulo" NavigateUrl="~/modulo/adm/Default.aspx">Administración</asp:HyperLink>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="masterTdRec"><%--<asp:contentplaceholder id="cph_r" runat="server"></asp:contentplaceholder>--%></td>
+                                        <td class="masterTdRec"><asp:Image ID="img_usuario" runat="server" Visible="false" Height="40" Width="40" ></asp:Image></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <%--<tr>
+                <td class="masterTdMenuSitemap">
+                    <table border="0" class="masterTableMenuSitemap" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="masterTdMenu">
+                                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1"></asp:Menu>
+                            </td>
+                            <td class="masterTdSitemap">
+                                <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+                            </td>
+                        </tr>
+                    </table>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server"/>
+                </td>
+            </tr>--%>
+            <tr>
+                <td class="masterTdContenido">
+                    <asp:contentplaceholder id="cph_c" runat="server"></asp:contentplaceholder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

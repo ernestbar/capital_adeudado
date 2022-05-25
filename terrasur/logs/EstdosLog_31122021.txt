@@ -1,0 +1,9 @@
+Consulta estado de cuenta del contrato:|13958|Usuario:|cmercado|Fecha y hora:|31/12/2021 8:54:25|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|21695|Usuario:|cmercado|Fecha y hora:|31/12/2021 9:19:14|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|26671|Usuario:|dmamani|Fecha y hora:|31/12/2021 9:44:37|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|26520|Usuario:|dmamani|Fecha y hora:|31/12/2021 9:49:49|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|27085|Usuario:|dmamani|Fecha y hora:|31/12/2021 10:07:00|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|18100|Usuario:|dmamani|Fecha y hora:|31/12/2021 11:04:03|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|20714|Usuario:|dmamani|Fecha y hora:|31/12/2021 11:25:08|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|17728|Usuario:|dmamani|Fecha y hora:|31/12/2021 11:37:44|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|23230|Usuario:|dmamani|Fecha y hora:|31/12/2021 11:42:52|Equipo|:192.168.14.2

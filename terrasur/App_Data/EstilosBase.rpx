@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="4">
+  <Object type="DataDynamics.ActiveReports.ActiveReport3" name="EstilosBase">
+    <Property name="StyleSheet">
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; </Argument>
+          <Argument type="System.String">Normal</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-size: 16pt; font-weight: bold; </Argument>
+          <Argument type="System.String">Heading1</Argument>
+          <Argument type="System.String">Normal</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic; </Argument>
+          <Argument type="System.String">Heading2</Argument>
+          <Argument type="System.String">Normal</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-size: 13pt; font-weight: bold; </Argument>
+          <Argument type="System.String">Heading3</Argument>
+          <Argument type="System.String">Normal</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: right; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; </Argument>
+          <Argument type="System.String">estiloFecha</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: center; font-style: normal; text-decoration: none; color: Black; font-size: 16pt; font-weight: bold; </Argument>
+          <Argument type="System.String">estiloTitulo</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: left; font-style: normal; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: bold; </Argument>
+          <Argument type="System.String">estiloEncabEnun</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: left; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: normal; font-style: italic; </Argument>
+          <Argument type="System.String">estiloEncabDato</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: left; text-decoration: none; font-size: 15pt; color: Black; font-weight: bold; font-style: italic; </Argument>
+          <Argument type="System.String">estiloEncabDatoContrato</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: left; font-style: normal; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: bold; </Argument>
+          <Argument type="System.String">estiloGrupoEnun</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: center; background-color:#EFEDED; text-decoration: none; font-size: 10pt; color: Black; font-weight: bold; font-style: italic; </Argument>
+          <Argument type="System.String">estiloDetalleGrupo</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: center; vertical-align:bottom; font-style: normal; text-decoration: none; font-size: 9.5pt; color: Black; font-weight: bold; </Argument>
+          <Argument type="System.String">estiloDetalleEnun</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: right; text-decoration: none; font-weight: normal; font-size: 9.5pt; color: Black; </Argument>
+          <Argument type="System.String">estiloDetalleDato</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: left; text-decoration: none; font-weight: normal; font-size: 9.5pt; color: Black; font-style: normal; </Argument>
+          <Argument type="System.String">estiloDetalleDatoString</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: left; font-style: normal; text-decoration: none; font-size: 10pt; color: Black; font-weight: bold; </Argument>
+          <Argument type="System.String">estiloSubtotalEnun</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: right; font-style: normal; text-decoration: none; font-weight: normal; font-size: 9.5pt; color: Black; </Argument>
+          <Argument type="System.String">estiloSubtotal</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: left; font-style: normal; text-decoration: none; font-size: 10pt; color: Black; font-weight: bold; </Argument>
+          <Argument type="System.String">estiloTotalEnun</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: right; font-style: normal; text-decoration: none; font-weight: normal; font-size: 9.5pt; color: Black; </Argument>
+          <Argument type="System.String">estiloTotal</Argument>
+        </InstanceDescriptor>
+      </Item>
+      <Item type="DDCssLib.StyleSheetRule">
+        <InstanceDescriptor type="DDCssLib.StyleSheetRule">
+          <Argument type="System.String">font-family: Arial; text-align: left; text-decoration: none; color: Black; font-weight: bold; font-style: italic; font-size: 9pt; </Argument>
+          <Argument type="System.String">estiloNota</Argument>
+        </InstanceDescriptor>
+      </Item>
+    </Property>
+    <Property name="Sections">
+      <Reference name="reportHeader1" />
+      <Reference name="pageHeader" />
+      <Reference name="groupHeader1" />
+      <Reference name="detail" />
+      <Reference name="groupFooter1" />
+      <Reference name="pageFooter" />
+      <Reference name="reportFooter1" />
+    </Property>
+    <Property name="PageSettings">
+      <Property name="PaperWidth">8.5</Property>
+      <Property name="PaperHeight">11</Property>
+    </Property>
+  </Object>
+  <Object type="DataDynamics.ActiveReports.PageHeader" name="pageHeader">
+    <Property name="Name">pageHeader</Property>
+    <Property name="Height">0.2041667</Property>
+  </Object>
+  <Object type="DataDynamics.ActiveReports.Detail" name="detail">
+    <Property name="ColumnSpacing">0</Property>
+    <Property name="Name">detail</Property>
+    <Property name="Height">0.1</Property>
+  </Object>
+  <Object type="DataDynamics.ActiveReports.PageFooter" name="pageFooter">
+    <Property name="Name">pageFooter</Property>
+    <Property name="Height">0.1</Property>
+  </Object>
+  <Object type="DataDynamics.ActiveReports.ReportHeader" name="reportHeader1">
+    <Property name="Name">reportHeader1</Property>
+    <Property name="Height">0.1</Property>
+  </Object>
+  <Object type="DataDynamics.ActiveReports.ReportFooter" name="reportFooter1">
+    <Property name="Name">reportFooter1</Property>
+    <Property name="Height">0.25</Property>
+  </Object>
+  <Object type="DataDynamics.ActiveReports.GroupHeader" name="groupHeader1">
+    <Property name="Name">groupHeader1</Property>
+    <Property name="Height">0.25</Property>
+  </Object>
+  <Object type="DataDynamics.ActiveReports.GroupFooter" name="groupFooter1">
+    <Property name="Height">0.1</Property>
+    <Property name="Name">groupFooter1</Property>
+  </Object>
+</ActiveReportsLayout>

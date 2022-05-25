@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<datos>
+  <dato db="T" codigo="MigrarServicios" nombre="Servicios"/>
+  <dato db="T" codigo="MigrarSectoresDeLaCiudad" nombre="Sectores de la ciudad"/>
+  <dato db="T" codigo="MigrarZonas" nombre="Zonas"/>
+  <dato db="T" codigo="MigrarBancos" nombre="Bancos"/>
+  <dato db="T" codigo="MigrarDPRs" nombre="DPRs"/>
+  <dato db="T" codigo="MigrarParametroFacturacion" nombre="Parámetros de facturación"/>
+  <dato db="T" codigo="MigrarCliente" nombre="Clientes"/>
+  <dato db="T" codigo="MigrarClienteTransitorio" nombre="Clientes Transitorios"/>
+  <dato db="T" codigo="MigrarClienteAdicional" nombre="Clientes Adicionales"/>
+  <dato db="T" codigo="MigrarTipoCambio" nombre="Tipo de cambio"/>
+  <dato db="T" codigo="MigrarUsuarioRolGrupo" nombre="Usuarios, Roles y Grupos de Venta"/>
+  <dato db="T" codigo="MigrarCicloComercial" nombre="Ciclos comerciales"/>
+
+  <dato db="T" codigo="MigrarLocalizaciones" nombre="Localizaciones"/>
+  <dato db="T" codigo="MigrarUrbanizaciones" nombre="Sectores"/>
+  <dato db="T" codigo="MigrarManzanos" nombre="Manzanos"/>
+  <dato db="T" codigo="MigrarLotes" nombre="Lotes"/>
+  <dato db="T" codigo="ActualizarNegocioLotes" nombre="Actualización de negocio de lotes (Terrasur)"/>
+  <dato db="T" codigo="MigrarDosificaciones" nombre="Dosificaciones"/>
+
+  <dato db="T" codigo="MigrarContrato" nombre="Contratos"/>
+  <dato db="T" codigo="MigrarCuotaInicial" nombre="Cuotas iniciales"/>
+
+  <dato db="T" codigo="MigrarReprogramaciones" nombre="Reprogramaciones"/>
+
+  <dato db="T" codigo="MigrarCuotaNormal" nombre="Cuotas normales"/>
+  <dato db="T" codigo="MigrarAjusteProximoPago" nombre="Ajuste de la fecha de Próximo Pago"/>
+
+  <dato db="T" codigo="ActualizarPlanPago" nombre="Actualización de Planes de Pagos"/>
+
+  <dato db="T" codigo="MigrarOtrosServiciosContrato" nombre="Servicios Vendidos sobre contratos"/>
+  <dato db="T" codigo="MigrarOtrosServiciosCliTemp" nombre="Servicios Vendidos a clientes transitorios"/>
+  <dato db="T" codigo="MigrarPagoMora" nombre="Pago de Intereses Penales (Mora)"/>
+  <dato db="T" codigo="MigrarContratosNafibo" nombre="Contratos Nafibo"/>
+  <dato db="T" codigo="MigrarAsignacionCobrador" nombre="Asignaciones de cobradores"/>
+  
+  <dato db="T" codigo="MigrarPromotorComisionesRestantes" nombre="Comisiones restantes a promotores"/>
+
+  <dato db="T" codigo="MigrarAjusteContratoSinCliente" nombre="Creación de un cliente INEXISTENTE para contratos sin titular"/>
+
+  <dato db="T" codigo="MigrarReversionesAnuladas" nombre="Reversiones anuladas"/>
+  <dato db="T" codigo="MigrarReversiones" nombre="Reversiones"/>
+  <dato db="T" codigo="MigrarFechaEstadoLoteReversion" nombre="Ajuste de la fecha de reversión en los estados de lotes"/>
+  
+  <dato db="T" codigo="MigrarICA" nombre="Interés corriente acumulado"/>
+
+  <dato db="T" codigo="MigrarAjustePlanPagoContratosNafibo" nombre="Ajuste a Planes de Pago de Contratos Nafibo"/>
+
+  <dato db="T" codigo="MigrarRolesPermisosUsuarios" nombre="Roles y permisos de los usuarios"/>
+
+</datos>

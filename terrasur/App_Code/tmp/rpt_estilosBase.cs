@@ -1,0 +1,283 @@
+using System;
+using System.Drawing;
+using System.Collections;
+using System.ComponentModel;
+using DataDynamics.ActiveReports;
+using DataDynamics.ActiveReports.Document;
+using System.Web;
+
+/// <summary>
+/// Summary description for rpt_estilosBase.
+/// </summary>
+public class rpt_estilosBase : DataDynamics.ActiveReports.ActiveReport3
+{
+
+	public rpt_estilosBase()
+	{
+		//
+		// Required for Windows Form Designer support
+		//
+		InitializeComponent();
+    }
+
+    private ReportHeader reportHeader1;
+    private TextBox textBox1;
+    private TextBox textBox2;
+    private TextBox textBox3;
+    private PageHeader pageHeader;
+    private GroupHeader groupHeader1;
+    private TextBox textBox4;
+    private Detail detail;
+    private TextBox textBox5;
+    private GroupFooter groupFooter1;
+    private PageFooter pageFooter;
+    private ReportFooter reportFooter1;
+    private TextBox textBox6;
+    private Label label1;
+
+	/// <summary>
+	/// Required designer variable.
+	/// </summary>
+	private System.ComponentModel.Container components = null;
+
+	/// <summary>
+	/// Clean up any resources being used.
+	/// </summary>
+	protected override void Dispose( bool disposing )
+	{
+		if( disposing )
+		{
+			if(components != null)
+			{
+				components.Dispose();
+			}
+		}
+		base.Dispose( disposing );
+	}
+    private void rpt_estilosBase_ReportStart(object sender, EventArgs e)
+    {
+        EstilosBase rpt = new EstilosBase();
+        string filepath = HttpRuntime.AppDomainAppPath + "/App_Data/EstilosBase.rpx";
+        rpt.LoadLayout(filepath);
+        for (int i = 4; i < rpt.StyleSheet.Count; i++)
+        {
+            DataDynamics.ActiveReports.Style s = rpt.StyleSheet[i];
+            this.StyleSheet.Add(s.Name);
+            if (s.Value != null)
+            {
+                this.StyleSheet[i].Value = s.Value;
+            }
+        }
+        CargarEstilos();
+    }
+    public void CargarEstilos()
+    {
+        textBox1.ClassName = "estiloTitulo";
+        label1.ClassName = "estiloTitulo";
+        textBox2.ClassName = "estiloEncabEnun";
+        textBox3.ClassName = "estiloEncabDato";
+        textBox4.ClassName = "estiloDetalleEnun";
+        textBox5.ClassName = "estiloDetalleDato";
+        textBox6.ClassName = "estiloNota"; //textBox6.Style = this.StyleSheet["Nota"].Value;
+        
+    }
+	#region ActiveReport Designer generated code
+	/// <summary>
+	/// Required method for Designer support - do not modify
+	/// the contents of this method with the code editor.
+	/// </summary>
+	private void InitializeComponent()
+	{
+        string resourceFileName = "rpt_estilosBase.resx";
+        System.Resources.ResourceManager resources = Resources.rpt_estilosBase.ResourceManager;
+        this.reportHeader1 = new DataDynamics.ActiveReports.ReportHeader();
+        this.textBox1 = new DataDynamics.ActiveReports.TextBox();
+        this.textBox2 = new DataDynamics.ActiveReports.TextBox();
+        this.textBox3 = new DataDynamics.ActiveReports.TextBox();
+        this.pageHeader = new DataDynamics.ActiveReports.PageHeader();
+        this.groupHeader1 = new DataDynamics.ActiveReports.GroupHeader();
+        this.textBox4 = new DataDynamics.ActiveReports.TextBox();
+        this.detail = new DataDynamics.ActiveReports.Detail();
+        this.textBox5 = new DataDynamics.ActiveReports.TextBox();
+        this.groupFooter1 = new DataDynamics.ActiveReports.GroupFooter();
+        this.pageFooter = new DataDynamics.ActiveReports.PageFooter();
+        this.reportFooter1 = new DataDynamics.ActiveReports.ReportFooter();
+        this.textBox6 = new DataDynamics.ActiveReports.TextBox();
+        this.label1 = new DataDynamics.ActiveReports.Label();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox1)).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox2)).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox3)).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox4)).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox5)).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox6)).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)(this.label1)).BeginInit();
+        // 
+        // reportHeader1
+        // 
+        this.reportHeader1.Controls.AddRange(new DataDynamics.ActiveReports.ARControl[] {
+            this.textBox1,
+            this.textBox2,
+            this.textBox3,
+            this.label1});
+        this.reportHeader1.Height = 0.5416666F;
+        this.reportHeader1.Name = "reportHeader1";
+        // 
+        // textBox1
+        // 
+        this.textBox1.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox1.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox1.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox1.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox1.DistinctField = null;
+        this.textBox1.Font = new System.Drawing.Font("Arial", 10F);
+        this.textBox1.Location = ((System.Drawing.PointF)(resources.GetObject("textBox1.Location")));
+        this.textBox1.Name = "textBox1";
+        this.textBox1.OutputFormat = null;
+        this.textBox1.Size = new System.Drawing.SizeF(0.75F, 0.25F);
+        this.textBox1.Text = "Título";
+        // 
+        // textBox2
+        // 
+        this.textBox2.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox2.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox2.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox2.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox2.DistinctField = null;
+        this.textBox2.Font = new System.Drawing.Font("Arial", 10F);
+        this.textBox2.Location = ((System.Drawing.PointF)(resources.GetObject("textBox2.Location")));
+        this.textBox2.Name = "textBox2";
+        this.textBox2.OutputFormat = null;
+        this.textBox2.Size = new System.Drawing.SizeF(1F, 0.1979167F);
+        this.textBox2.Text = "Enun1:";
+        // 
+        // textBox3
+        // 
+        this.textBox3.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox3.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox3.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox3.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox3.DistinctField = null;
+        this.textBox3.Font = new System.Drawing.Font("Arial", 10F);
+        this.textBox3.Location = ((System.Drawing.PointF)(resources.GetObject("textBox3.Location")));
+        this.textBox3.Name = "textBox3";
+        this.textBox3.OutputFormat = null;
+        this.textBox3.Size = new System.Drawing.SizeF(1F, 0.1979167F);
+        this.textBox3.Text = "Dato1";
+        // 
+        // pageHeader
+        // 
+        this.pageHeader.Height = 0.1F;
+        this.pageHeader.Name = "pageHeader";
+        // 
+        // groupHeader1
+        // 
+        this.groupHeader1.Controls.AddRange(new DataDynamics.ActiveReports.ARControl[] {
+            this.textBox4});
+        this.groupHeader1.Height = 0.25F;
+        this.groupHeader1.Name = "groupHeader1";
+        // 
+        // textBox4
+        // 
+        this.textBox4.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox4.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox4.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox4.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox4.DistinctField = null;
+        this.textBox4.Font = new System.Drawing.Font("Arial", 10F);
+        this.textBox4.Location = ((System.Drawing.PointF)(resources.GetObject("textBox4.Location")));
+        this.textBox4.Name = "textBox4";
+        this.textBox4.OutputFormat = null;
+        this.textBox4.Size = new System.Drawing.SizeF(1F, 0.1979167F);
+        this.textBox4.Text = "Cabecera";
+        // 
+        // detail
+        // 
+        this.detail.ColumnSpacing = 0F;
+        this.detail.Controls.AddRange(new DataDynamics.ActiveReports.ARControl[] {
+            this.textBox5});
+        this.detail.Height = 0.2499999F;
+        this.detail.Name = "detail";
+        // 
+        // textBox5
+        // 
+        this.textBox5.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox5.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox5.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox5.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox5.DistinctField = null;
+        this.textBox5.Font = new System.Drawing.Font("Arial", 10F);
+        this.textBox5.Location = ((System.Drawing.PointF)(resources.GetObject("textBox5.Location")));
+        this.textBox5.Name = "textBox5";
+        this.textBox5.OutputFormat = null;
+        this.textBox5.Size = new System.Drawing.SizeF(1F, 0.1979167F);
+        this.textBox5.Text = "Detalle";
+        // 
+        // groupFooter1
+        // 
+        this.groupFooter1.Height = 0.1F;
+        this.groupFooter1.Name = "groupFooter1";
+        // 
+        // pageFooter
+        // 
+        this.pageFooter.Height = 0.25F;
+        this.pageFooter.Name = "pageFooter";
+        // 
+        // reportFooter1
+        // 
+        this.reportFooter1.Controls.AddRange(new DataDynamics.ActiveReports.ARControl[] {
+            this.textBox6});
+        this.reportFooter1.Height = 0.25F;
+        this.reportFooter1.Name = "reportFooter1";
+        // 
+        // textBox6
+        // 
+        this.textBox6.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox6.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox6.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox6.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox6.DistinctField = null;
+        this.textBox6.Font = new System.Drawing.Font("Arial", 10F);
+        this.textBox6.Location = ((System.Drawing.PointF)(resources.GetObject("textBox6.Location")));
+        this.textBox6.Name = "textBox6";
+        this.textBox6.OutputFormat = null;
+        this.textBox6.Size = new System.Drawing.SizeF(1F, 0.1979167F);
+        this.textBox6.Text = "Nota1";
+        // 
+        // label1
+        // 
+        this.label1.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.label1.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.label1.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.label1.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.label1.Font = new System.Drawing.Font("Arial", 10F);
+        this.label1.HyperLink = null;
+        this.label1.Location = ((System.Drawing.PointF)(resources.GetObject("label1.Location")));
+        this.label1.Name = "label1";
+        this.label1.Size = new System.Drawing.SizeF(1F, 0.25F);
+        this.label1.Text = "label1";
+        // 
+        // rpt_estilosBase
+        // 
+        this.PageSettings.PaperHeight = 11F;
+        this.PageSettings.PaperWidth = 8.5F;
+        this.Sections.Add(this.reportHeader1);
+        this.Sections.Add(this.pageHeader);
+        this.Sections.Add(this.groupHeader1);
+        this.Sections.Add(this.detail);
+        this.Sections.Add(this.groupFooter1);
+        this.Sections.Add(this.pageFooter);
+        this.Sections.Add(this.reportFooter1);
+        this.ReportStart += new System.EventHandler(this.rpt_estilosBase_ReportStart);
+        ((System.ComponentModel.ISupportInitialize)(this.textBox1)).EndInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox2)).EndInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox3)).EndInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox4)).EndInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox5)).EndInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox6)).EndInit();
+        ((System.ComponentModel.ISupportInitialize)(this.label1)).EndInit();
+
+	}
+	#endregion
+
+   
+}

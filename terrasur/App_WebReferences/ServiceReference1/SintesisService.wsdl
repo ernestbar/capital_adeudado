@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SintesisService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://10.10.10.15:1539/SintesisService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://10.10.10.15:1539/SintesisService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://10.10.10.15:1539/SintesisService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/terrasur" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISintesisService_verificarParametroFacturacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:verificarParametroFacturacion" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_verificarParametroFacturacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:verificarParametroFacturacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_buscarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscarCliente" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_buscarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_solicitarTipoPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:solicitarTipoPago" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_solicitarTipoPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:solicitarTipoPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_solicitarContrato_InputMessage">
+    <wsdl:part name="parameters" element="tns:solicitarContrato" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_solicitarContrato_OutputMessage">
+    <wsdl:part name="parameters" element="tns:solicitarContratoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_solicitarPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:solicitarPago" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_solicitarPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:solicitarPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_conciliarPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:conciliarPago" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_conciliarPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:conciliarPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_buscarDatosPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscarDatosPago" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_buscarDatosPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarDatosPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_verificarAutorizacionAnulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:verificarAutorizacionAnulacion" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_verificarAutorizacionAnulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:verificarAutorizacionAnulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_anularPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:anularPago" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_anularPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:anularPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_testOdoo_InputMessage">
+    <wsdl:part name="parameters" element="tns:testOdoo" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_testOdoo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:testOdooResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_autenticarOdoo_InputMessage">
+    <wsdl:part name="parameters" element="tns:autenticarOdoo" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_autenticarOdoo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:autenticarOdooResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_insertarMovimientosOdoo_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarMovimientosOdoo" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_insertarMovimientosOdoo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarMovimientosOdooResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_listaCuentasOdoo_InputMessage">
+    <wsdl:part name="parameters" element="tns:listaCuentasOdoo" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_listaCuentasOdoo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listaCuentasOdooResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_listaCuentasAnaliticasOdoo_InputMessage">
+    <wsdl:part name="parameters" element="tns:listaCuentasAnaliticasOdoo" />
+  </wsdl:message>
+  <wsdl:message name="ISintesisService_listaCuentasAnaliticasOdoo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listaCuentasAnaliticasOdooResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISintesisService">
+    <wsdl:operation name="verificarParametroFacturacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/verificarParametroFacturacion" message="tns:ISintesisService_verificarParametroFacturacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/verificarParametroFacturacionResponse" message="tns:ISintesisService_verificarParametroFacturacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/buscarCliente" message="tns:ISintesisService_buscarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/buscarClienteResponse" message="tns:ISintesisService_buscarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="solicitarTipoPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/solicitarTipoPago" message="tns:ISintesisService_solicitarTipoPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/solicitarTipoPagoResponse" message="tns:ISintesisService_solicitarTipoPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="solicitarContrato">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/solicitarContrato" message="tns:ISintesisService_solicitarContrato_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/solicitarContratoResponse" message="tns:ISintesisService_solicitarContrato_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="solicitarPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/solicitarPago" message="tns:ISintesisService_solicitarPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/solicitarPagoResponse" message="tns:ISintesisService_solicitarPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="conciliarPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/conciliarPago" message="tns:ISintesisService_conciliarPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/conciliarPagoResponse" message="tns:ISintesisService_conciliarPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarDatosPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/buscarDatosPago" message="tns:ISintesisService_buscarDatosPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/buscarDatosPagoResponse" message="tns:ISintesisService_buscarDatosPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="verificarAutorizacionAnulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/verificarAutorizacionAnulacion" message="tns:ISintesisService_verificarAutorizacionAnulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/verificarAutorizacionAnulacionResponse" message="tns:ISintesisService_verificarAutorizacionAnulacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="anularPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/anularPago" message="tns:ISintesisService_anularPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/anularPagoResponse" message="tns:ISintesisService_anularPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="testOdoo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/testOdoo" message="tns:ISintesisService_testOdoo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/testOdooResponse" message="tns:ISintesisService_testOdoo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="autenticarOdoo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/autenticarOdoo" message="tns:ISintesisService_autenticarOdoo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/autenticarOdooResponse" message="tns:ISintesisService_autenticarOdoo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarMovimientosOdoo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/insertarMovimientosOdoo" message="tns:ISintesisService_insertarMovimientosOdoo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/insertarMovimientosOdooResponse" message="tns:ISintesisService_insertarMovimientosOdoo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listaCuentasOdoo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/listaCuentasOdoo" message="tns:ISintesisService_listaCuentasOdoo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/listaCuentasOdooResponse" message="tns:ISintesisService_listaCuentasOdoo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listaCuentasAnaliticasOdoo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISintesisService/listaCuentasAnaliticasOdoo" message="tns:ISintesisService_listaCuentasAnaliticasOdoo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISintesisService/listaCuentasAnaliticasOdooResponse" message="tns:ISintesisService_listaCuentasAnaliticasOdoo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISintesisService" type="tns:ISintesisService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="verificarParametroFacturacion">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/verificarParametroFacturacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarCliente">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/buscarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicitarTipoPago">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/solicitarTipoPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicitarContrato">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/solicitarContrato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicitarPago">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/solicitarPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="conciliarPago">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/conciliarPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDatosPago">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/buscarDatosPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verificarAutorizacionAnulacion">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/verificarAutorizacionAnulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="anularPago">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/anularPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testOdoo">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/testOdoo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="autenticarOdoo">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/autenticarOdoo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarMovimientosOdoo">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/insertarMovimientosOdoo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listaCuentasOdoo">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/listaCuentasOdoo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listaCuentasAnaliticasOdoo">
+      <soap:operation soapAction="http://tempuri.org/ISintesisService/listaCuentasAnaliticasOdoo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SintesisService">
+    <wsdl:port name="BasicHttpBinding_ISintesisService" binding="tns:BasicHttpBinding_ISintesisService">
+      <soap:address location="http://10.10.10.15:1539/SintesisService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

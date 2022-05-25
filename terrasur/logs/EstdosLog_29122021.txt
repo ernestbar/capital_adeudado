@@ -1,0 +1,15 @@
+Consulta estado de cuenta del contrato:|20994|Usuario:|lsilvestre|Fecha y hora:|29/12/2021 10:24:40|Equipo|:192.168.12.12
+Consulta estado de cuenta del contrato:|12220|Usuario:|dmamani|Fecha y hora:|29/12/2021 10:41:06|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|10179|Usuario:|dmamani|Fecha y hora:|29/12/2021 11:12:45|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|27673|Usuario:|cmercado|Fecha y hora:|29/12/2021 11:51:33|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|18100|Usuario:|cmercado|Fecha y hora:|29/12/2021 12:02:02|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|28673|Usuario:|jgamboa|Fecha y hora:|29/12/2021 13:25:00|Equipo|:192.168.16.4
+Consulta estado de cuenta del contrato:|28806|Usuario:|jgamboa|Fecha y hora:|29/12/2021 13:25:33|Equipo|:192.168.16.4
+Consulta estado de cuenta del contrato:||Usuario:|cmercado|Fecha y hora:|29/12/2021 14:41:36|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:||Usuario:|cmercado|Fecha y hora:|29/12/2021 14:43:49|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:||Usuario:|cmercado|Fecha y hora:|29/12/2021 14:50:07|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:||Usuario:|cmercado|Fecha y hora:|29/12/2021 14:54:16|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|26676|Usuario:|cmercado|Fecha y hora:|29/12/2021 15:04:48|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|26676|Usuario:|cmercado|Fecha y hora:|29/12/2021 15:10:51|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|22309|Usuario:|dmamani|Fecha y hora:|29/12/2021 15:26:42|Equipo|:192.168.14.2
+Consulta estado de cuenta del contrato:|15055|Usuario:|dmamani|Fecha y hora:|29/12/2021 16:40:23|Equipo|:192.168.14.2

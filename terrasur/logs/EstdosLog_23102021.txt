@@ -1,0 +1,5 @@
+Consulta estado de cuenta del contrato:|22942|Usuario:|nballivian|Fecha y hora:|23/10/2021 10:36:24|Equipo|:192.168.14.6
+Consulta estado de cuenta del contrato:|22942|Usuario:|nballivian|Fecha y hora:|23/10/2021 10:36:38|Equipo|:192.168.14.6
+Imprime estado de cuenta del contrato:|22942|Usuario:|nballivian|Fecha y hora:|23/10/2021 10:38:06|Equipo|:192.168.14.6
+Consulta estado de cuenta del contrato:|23422|Usuario:|nballivian|Fecha y hora:|23/10/2021 10:49:34|Equipo|:192.168.14.6
+Consulta estado de cuenta del contrato:|23422|Usuario:|nballivian|Fecha y hora:|23/10/2021 10:49:47|Equipo|:192.168.14.6

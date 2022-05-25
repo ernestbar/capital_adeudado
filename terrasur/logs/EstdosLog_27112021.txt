@@ -1,0 +1,12 @@
+Consulta estado de cuenta del contrato:|23844|Usuario:|SMAMANI|Fecha y hora:|27/11/2021 10:09:33|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|26866|Usuario:|SMAMANI|Fecha y hora:|27/11/2021 10:09:51|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|26937|Usuario:|SMAMANI|Fecha y hora:|27/11/2021 10:15:24|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|23256|Usuario:|SMAMANI|Fecha y hora:|27/11/2021 10:50:35|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|23255|Usuario:|SMAMANI|Fecha y hora:|27/11/2021 10:52:26|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|22206|Usuario:|SMAMANI|Fecha y hora:|27/11/2021 11:37:46|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|24002|Usuario:|SMAMANI|Fecha y hora:|27/11/2021 11:38:30|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|23255|Usuario:|SMAMANI|Fecha y hora:|27/11/2021 11:39:39|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:||Usuario:|SMAMANI|Fecha y hora:|27/11/2021 11:42:54|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|27274|Usuario:|lsilvestre|Fecha y hora:|27/11/2021 11:47:48|Equipo|:192.168.12.12
+Consulta estado de cuenta del contrato:|20394|Usuario:|SMAMANI|Fecha y hora:|27/11/2021 12:05:41|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|11284M|Usuario:|SMAMANI|Fecha y hora:|27/11/2021 12:32:58|Equipo|:192.168.14.3

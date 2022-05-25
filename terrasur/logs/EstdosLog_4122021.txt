@@ -1,0 +1,6 @@
+Consulta estado de cuenta del contrato:|24331|Usuario:|mtejerina|Fecha y hora:|04/12/2021 9:20:59|Equipo|:192.168.14.5
+Imprime estado de cuenta del contrato:|24331|Usuario:|mtejerina|Fecha y hora:|04/12/2021 9:22:27|Equipo|:192.168.14.5
+Consulta estado de cuenta del contrato:|26448|Usuario:|mtejerina|Fecha y hora:|04/12/2021 10:10:33|Equipo|:192.168.14.5
+Consulta estado de cuenta del contrato:|28819|Usuario:|emunoz|Fecha y hora:|04/12/2021 11:35:21|Equipo|:192.168.16.12
+Consulta estado de cuenta del contrato:|28819|Usuario:|emunoz|Fecha y hora:|04/12/2021 11:39:35|Equipo|:192.168.16.12
+Consulta estado de cuenta del contrato:|21049|Usuario:|mtejerina|Fecha y hora:|04/12/2021 12:11:58|Equipo|:192.168.14.5

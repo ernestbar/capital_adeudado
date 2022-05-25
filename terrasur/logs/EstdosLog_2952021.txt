@@ -1,0 +1,5 @@
+Consulta estado de cuenta del contrato:|10297|Usuario:|cmercado|Fecha y hora:|29/05/2021 10:55:05|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|24199|Usuario:|cmercado|Fecha y hora:|29/05/2021 11:19:58|Equipo|:192.168.14.28
+Consulta estado de cuenta del contrato:|23301|Usuario:|SMAMANI|Fecha y hora:|29/05/2021 11:25:42|Equipo|:192.168.14.3
+Imprime estado de cuenta del contrato:|23301|Usuario:|SMAMANI|Fecha y hora:|29/05/2021 11:28:23|Equipo|:192.168.14.3
+Consulta estado de cuenta del contrato:|23948|Usuario:|cmercado|Fecha y hora:|29/05/2021 11:30:53|Equipo|:192.168.14.28

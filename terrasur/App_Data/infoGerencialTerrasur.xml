@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<infoGerencial>
+  <persona activo="true" id_persona="1" nombre="Gerencia BBR" email="staff_bbr@terrasur.com.bo" repIngresos="true" repVentas="true" repReversiones="true" repMora="true" repCxc="true" />
+</infoGerencial>

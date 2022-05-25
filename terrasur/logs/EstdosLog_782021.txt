@@ -1,0 +1,7 @@
+Consulta estado de cuenta del contrato:|22004|Usuario:|grocabado|Fecha y hora:|07/08/2021 9:37:27|Equipo|:192.168.17.2
+Consulta estado de cuenta del contrato:|28430|Usuario:|grocabado|Fecha y hora:|07/08/2021 9:38:13|Equipo|:192.168.17.2
+Consulta estado de cuenta del contrato:||Usuario:|grocabado|Fecha y hora:|07/08/2021 9:45:31|Equipo|:192.168.17.2
+Consulta estado de cuenta del contrato:|18027|Usuario:|grocabado|Fecha y hora:|07/08/2021 11:27:24|Equipo|:192.168.17.2
+Consulta estado de cuenta del contrato:|18437|Usuario:|HHUANCA|Fecha y hora:|07/08/2021 11:44:29|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:|21800|Usuario:|HHUANCA|Fecha y hora:|07/08/2021 11:55:22|Equipo|:192.168.17.4
+Consulta estado de cuenta del contrato:|23835|Usuario:|lsilvestre|Fecha y hora:|07/08/2021 12:10:00|Equipo|:192.168.12.12
