@@ -44,9 +44,9 @@ namespace terrasur
         #endregion
 
         #region Constructores
-        public capital_adeudado(int Id_capitaladeudado)
+        public capital_adeudado(int Id_contrato)
         {
-            _id_capitaladeudado = Id_capitaladeudado;
+            _id_contrato = Id_contrato;
             RecuperarDatos();
         }
 
@@ -78,9 +78,9 @@ namespace terrasur
             try
             {
                 DbCommand cmd = db1.GetStoredProcCommand("capital_adeudado_RecuperarDatos");
-                db1.AddInParameter(cmd, "id_capitaladeudado", DbType.Int32, _id_capitaladeudado);
+                db1.AddInParameter(cmd, "id_contrato", DbType.Int32, _id_contrato);
+                db1.AddOutParameter(cmd, "id_capitaladeudado", DbType.Int32, 32);
                 db1.AddOutParameter(cmd, "id_parametrocapitaldeudor", DbType.Int32, 32);
-                db1.AddOutParameter(cmd, "id_contrato", DbType.Int32, 32);
                 db1.AddOutParameter(cmd, "monto", DbType.Double, 14);
                 db1.AddOutParameter(cmd, "fecha", DbType.DateTime, 200);
                 db1.AddOutParameter(cmd, "id_usuario", DbType.Int32, 32);
@@ -88,9 +88,9 @@ namespace terrasur
                 db1.AddOutParameter(cmd, "fecha_audit", DbType.DateTime, 200);
                 db1.ExecuteNonQuery(cmd);
 
+                _id_capitaladeudado = (int)db1.GetParameterValue(cmd, "id_capitaladeudado");
                 _id_parametrocapitaldeudor = (int)db1.GetParameterValue(cmd, "id_parametrocapitaldeudor");
-                _id_contrato = (int)db1.GetParameterValue(cmd, "id_contrato");
-                _monto = (decimal)db1.GetParameterValue(cmd, "monto");
+                _monto = (decimal)(double)db1.GetParameterValue(cmd, "monto");
                 _fecha = (DateTime)db1.GetParameterValue(cmd, "fecha");
                 _id_usuario = (int)db1.GetParameterValue(cmd, "id_usuario");
                 _activo = (bool)db1.GetParameterValue(cmd, "activo");

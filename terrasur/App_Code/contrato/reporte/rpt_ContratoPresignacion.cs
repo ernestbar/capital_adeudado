@@ -198,7 +198,6 @@ public class rpt_ContratoPresignacion : DataDynamics.ActiveReports.ActiveReport3
 	/// </summary>
 	private void InitializeComponent()
 	{
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Resources.rpt_ContratoPresignacion));
         this.pageHeader = new DataDynamics.ActiveReports.PageHeader();
         this.detail = new DataDynamics.ActiveReports.Detail();
         this.subReport1 = new DataDynamics.ActiveReports.SubReport();
@@ -218,14 +217,14 @@ public class rpt_ContratoPresignacion : DataDynamics.ActiveReports.ActiveReport3
         this.textBox12 = new DataDynamics.ActiveReports.TextBox();
         this.subReport5 = new DataDynamics.ActiveReports.SubReport();
         this.textBox13 = new DataDynamics.ActiveReports.TextBox();
+        this.textBox14 = new DataDynamics.ActiveReports.TextBox();
+        this.textBox15 = new DataDynamics.ActiveReports.TextBox();
         this.pageFooter = new DataDynamics.ActiveReports.PageFooter();
         this.reportHeader1 = new DataDynamics.ActiveReports.ReportHeader();
         this.textBox1 = new DataDynamics.ActiveReports.TextBox();
         this.textBox36 = new DataDynamics.ActiveReports.TextBox();
         this.picture1 = new DataDynamics.ActiveReports.Picture();
         this.reportFooter1 = new DataDynamics.ActiveReports.ReportFooter();
-        this.textBox14 = new DataDynamics.ActiveReports.TextBox();
-        this.textBox15 = new DataDynamics.ActiveReports.TextBox();
         ((System.ComponentModel.ISupportInitialize)(this.textBox4)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox3)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox2)).BeginInit();
@@ -238,11 +237,11 @@ public class rpt_ContratoPresignacion : DataDynamics.ActiveReports.ActiveReport3
         ((System.ComponentModel.ISupportInitialize)(this.textBox11)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox12)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox13)).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox14)).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox15)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox1)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox36)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.picture1)).BeginInit();
-        ((System.ComponentModel.ISupportInitialize)(this.textBox14)).BeginInit();
-        ((System.ComponentModel.ISupportInitialize)(this.textBox15)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
         // 
         // pageHeader
@@ -455,7 +454,6 @@ public class rpt_ContratoPresignacion : DataDynamics.ActiveReports.ActiveReport3
         this.textBox7.Height = 0.1875F;
         this.textBox7.Left = 1.1875F;
         this.textBox7.Name = "textBox7";
-        this.textBox7.OutputFormat = resources.GetString("textBox7.OutputFormat");
         this.textBox7.Style = "";
         this.textBox7.Text = null;
         this.textBox7.Top = 0.375F;
@@ -546,7 +544,6 @@ public class rpt_ContratoPresignacion : DataDynamics.ActiveReports.ActiveReport3
         this.textBox12.Height = 0.1875F;
         this.textBox12.Left = 1.1875F;
         this.textBox12.Name = "textBox12";
-        this.textBox12.OutputFormat = resources.GetString("textBox12.OutputFormat");
         this.textBox12.Style = "";
         this.textBox12.Text = null;
         this.textBox12.Top = 0.625F;
@@ -588,6 +585,42 @@ public class rpt_ContratoPresignacion : DataDynamics.ActiveReports.ActiveReport3
         this.textBox13.Text = "Moneda:";
         this.textBox13.Top = 0.125F;
         this.textBox13.Width = 0.6875F;
+        // 
+        // textBox14
+        // 
+        this.textBox14.Border.BottomColor = System.Drawing.Color.Black;
+        this.textBox14.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox14.Border.LeftColor = System.Drawing.Color.Black;
+        this.textBox14.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox14.Border.RightColor = System.Drawing.Color.Black;
+        this.textBox14.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox14.Border.TopColor = System.Drawing.Color.Black;
+        this.textBox14.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox14.Height = 0.1875F;
+        this.textBox14.Left = 4.125F;
+        this.textBox14.Name = "textBox14";
+        this.textBox14.Style = "";
+        this.textBox14.Text = "Nº Form. Seguro:";
+        this.textBox14.Top = 0.625F;
+        this.textBox14.Width = 1.25F;
+        // 
+        // textBox15
+        // 
+        this.textBox15.Border.BottomColor = System.Drawing.Color.Black;
+        this.textBox15.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox15.Border.LeftColor = System.Drawing.Color.Black;
+        this.textBox15.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox15.Border.RightColor = System.Drawing.Color.Black;
+        this.textBox15.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox15.Border.TopColor = System.Drawing.Color.Black;
+        this.textBox15.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox15.Height = 0.1875F;
+        this.textBox15.Left = 5.4375F;
+        this.textBox15.Name = "textBox15";
+        this.textBox15.Style = "";
+        this.textBox15.Text = "textBox15";
+        this.textBox15.Top = 0.625F;
+        this.textBox15.Width = 0.5625F;
         // 
         // pageFooter
         // 
@@ -650,8 +683,8 @@ public class rpt_ContratoPresignacion : DataDynamics.ActiveReports.ActiveReport3
         this.picture1.Border.TopColor = System.Drawing.Color.Black;
         this.picture1.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.picture1.Height = 0.4375F;
-        this.picture1.Image = ((System.Drawing.Image)(resources.GetObject("picture1.Image")));
-        this.picture1.ImageData = ((System.IO.Stream)(resources.GetObject("picture1.ImageData")));
+        this.picture1.Image = null;
+        this.picture1.ImageData = null;
         this.picture1.Left = 0F;
         this.picture1.LineWeight = 0F;
         this.picture1.Name = "picture1";
@@ -663,45 +696,8 @@ public class rpt_ContratoPresignacion : DataDynamics.ActiveReports.ActiveReport3
         this.reportFooter1.Height = 0F;
         this.reportFooter1.Name = "reportFooter1";
         // 
-        // textBox14
-        // 
-        this.textBox14.Border.BottomColor = System.Drawing.Color.Black;
-        this.textBox14.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox14.Border.LeftColor = System.Drawing.Color.Black;
-        this.textBox14.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox14.Border.RightColor = System.Drawing.Color.Black;
-        this.textBox14.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox14.Border.TopColor = System.Drawing.Color.Black;
-        this.textBox14.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox14.Height = 0.1875F;
-        this.textBox14.Left = 4.125F;
-        this.textBox14.Name = "textBox14";
-        this.textBox14.Style = "";
-        this.textBox14.Text = "Nº Form. Seguro:";
-        this.textBox14.Top = 0.625F;
-        this.textBox14.Width = 1.25F;
-        // 
-        // textBox15
-        // 
-        this.textBox15.Border.BottomColor = System.Drawing.Color.Black;
-        this.textBox15.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox15.Border.LeftColor = System.Drawing.Color.Black;
-        this.textBox15.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox15.Border.RightColor = System.Drawing.Color.Black;
-        this.textBox15.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox15.Border.TopColor = System.Drawing.Color.Black;
-        this.textBox15.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox15.Height = 0.1875F;
-        this.textBox15.Left = 5.4375F;
-        this.textBox15.Name = "textBox15";
-        this.textBox15.Style = "";
-        this.textBox15.Text = "textBox15";
-        this.textBox15.Top = 0.625F;
-        this.textBox15.Width = 0.5625F;
-        // 
         // rpt_ContratoPresignacion
         // 
-        this.MasterReport = false;
         this.PageSettings.PaperHeight = 11F;
         this.PageSettings.PaperWidth = 8.5F;
         this.PrintWidth = 6.520833F;
@@ -729,11 +725,11 @@ public class rpt_ContratoPresignacion : DataDynamics.ActiveReports.ActiveReport3
         ((System.ComponentModel.ISupportInitialize)(this.textBox11)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox12)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox13)).EndInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox14)).EndInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox15)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox1)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox36)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.picture1)).EndInit();
-        ((System.ComponentModel.ISupportInitialize)(this.textBox14)).EndInit();
-        ((System.ComponentModel.ISupportInitialize)(this.textBox15)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
 	}

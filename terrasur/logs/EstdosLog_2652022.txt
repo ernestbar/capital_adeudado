@@ -1,0 +1,17 @@
+Consulta estado de cuenta del contrato:|29255|Usuario:|emunoz|Fecha y hora:|26/05/2022 12:44:43|Equipo|:127.0.0.1
+Consulta estado de cuenta del contrato:|29255|Usuario:|emunoz|Fecha y hora:|26/05/2022 12:48:21|Equipo|:127.0.0.1
+Consulta estado de cuenta del contrato:|29255|Usuario:|emunoz|Fecha y hora:|26/05/2022 13:47:47|Equipo|:127.0.0.1
+Consulta estado de cuenta del contrato:|29255|Usuario:|emunoz|Fecha y hora:|26/05/2022 13:56:16|Equipo|:127.0.0.1
+Consulta estado de cuenta del contrato:|29255|Usuario:|emunoz|Fecha y hora:|26/05/2022 13:56:58|Equipo|:127.0.0.1
+Imprime estado de cuenta del contrato:|29255|Usuario:|emunoz|Fecha y hora:|26/05/2022 13:57:01|Equipo|:127.0.0.1
+Consulta estado de cuenta del contrato:|29256|Usuario:|emunoz|Fecha y hora:|26/05/2022 14:01:30|Equipo|:127.0.0.1
+Imprime estado de cuenta del contrato:|29256|Usuario:|emunoz|Fecha y hora:|26/05/2022 14:01:35|Equipo|:127.0.0.1
+Consulta estado de cuenta del contrato:|29256|Usuario:|emunoz|Fecha y hora:|26/05/2022 14:31:59|Equipo|:127.0.0.1
+Consulta estado de cuenta del contrato:|29256|Usuario:|emunoz|Fecha y hora:|26/05/2022 14:34:53|Equipo|:127.0.0.1
+Consulta estado de cuenta del contrato:|29253|Usuario:|emunoz|Fecha y hora:|26/05/2022 15:02:30|Equipo|:127.0.0.1
+Imprime estado de cuenta del contrato:|29253|Usuario:|emunoz|Fecha y hora:|26/05/2022 15:02:34|Equipo|:127.0.0.1
+Consulta estado de cuenta del contrato:|29253|Usuario:|emunoz|Fecha y hora:|26/05/2022 15:23:00|Equipo|:127.0.0.1
+Imprime estado de cuenta del contrato:|29253|Usuario:|emunoz|Fecha y hora:|26/05/2022 15:23:16|Equipo|:127.0.0.1
+Consulta estado de cuenta del contrato:|29253|Usuario:|emunoz|Fecha y hora:|26/05/2022 15:46:08|Equipo|:127.0.0.1
+Consulta estado de cuenta del contrato:|29253|Usuario:|emunoz|Fecha y hora:|26/05/2022 15:47:05|Equipo|:127.0.0.1
+Consulta estado de cuenta del contrato:|29253|Usuario:|emunoz|Fecha y hora:|26/05/2022 15:57:47|Equipo|:127.0.0.1

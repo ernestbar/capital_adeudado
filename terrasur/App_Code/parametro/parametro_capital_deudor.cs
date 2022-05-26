@@ -87,7 +87,7 @@ namespace terrasur
                 db1.AddOutParameter(cmd, "fecha_audit", DbType.DateTime, 200);
                 db1.ExecuteNonQuery(cmd);
 
-                _pocentaje_capital_deudor = (decimal)db1.GetParameterValue(cmd, "pocentaje_capital_deudor");
+                _pocentaje_capital_deudor = (decimal)(double)db1.GetParameterValue(cmd, "pocentaje_capital_deudor");
                 _descripcion = (string)db1.GetParameterValue(cmd, "descripcion");
                 _activo = (bool)db1.GetParameterValue(cmd, "activo");
                 _id_usuario = (int)db1.GetParameterValue(cmd, "id_usuario");

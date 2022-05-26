@@ -99,8 +99,8 @@ namespace terrasur
                 _id_capitaladeudado = (int)db1.GetParameterValue(cmd, "id_capitaladeudado");
                 _id_usuario = (int)db1.GetParameterValue(cmd, "id_usuario");
                 _id_transaccion = (int)db1.GetParameterValue(cmd, "id_transaccion");
-                _monto = (decimal)db1.GetParameterValue(cmd, "monto");
-                _saldo = (decimal)db1.GetParameterValue(cmd, "saldo");
+                _monto = (decimal)(double)db1.GetParameterValue(cmd, "monto");
+                _saldo = (decimal)(double)db1.GetParameterValue(cmd, "saldo");
                 _fecha = (DateTime)db1.GetParameterValue(cmd, "fecha");
                 _anulado = (bool)db1.GetParameterValue(cmd, "anulado");
                 _anulado_id_usuario = (int)db1.GetParameterValue(cmd, "anulado_id_usuario");

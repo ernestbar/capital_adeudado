@@ -63,6 +63,10 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
     private TextBox textBox48;
     private TextBox textBox49;
     private TextBox textBox50;
+    private TextBox textBox51;
+    private TextBox textBox52;
+    private TextBox textBox53;
+    private TextBox textBox54;
 	private DataDynamics.ActiveReports.PageFooter pageFooter;
 
 	public rpt_Encabezado()
@@ -117,7 +121,6 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         //textBox25.Text = descuento.ToString("F");
         textBox38.Text = c.descuento_porcentaje.ToString("F2");
         textBox25.Text = c.descuento_efectivo.ToString("F2");
-        textBox26.Text = c.precio_final.ToString("F2");
         textBox27.Text = c.cuota_inicial.ToString("F2");
         if ((c.id_planpago_vigente > 0) && (Vigente == true))
         {
@@ -181,6 +184,16 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
 
         int num_seguro = new terrasur.seguro_provida(Id_contrato).numero;
         if (num_seguro > 0) { textBox50.Text = num_seguro.ToString(); } else { textBox50.Text = "---"; }
+
+        // Req. Capital Adeudado
+        terrasur.capital_adeudado ca = new terrasur.capital_adeudado(Id_contrato);
+        textBox53.Text = "Precio Financiado: (" + c.codigo_moneda + "):";
+        textBox54.Text = c.precio_final.ToString("F2");
+        textBox51.Text = "Capital Adeudado: (" + c.codigo_moneda + "):";
+        textBox52.Text = ca.monto.ToString("F2");
+        textBox26.Text = (c.precio_final + ca.monto).ToString("F2");
+        //
+
     }
     private void rpt_Encabezado_ReportStart(object sender, EventArgs e)
     {
@@ -257,6 +270,14 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
 
         textBox49.ClassName = "estiloEncabEnun";
         textBox50.ClassName = "estiloEncabDato";
+
+        // Req. Capital Adeudado
+        textBox51.ClassName = "estiloEncabEnun";
+        textBox52.ClassName = "estiloEncabDato";
+        textBox53.ClassName = "estiloEncabEnun";
+        textBox54.ClassName = "estiloEncabDato";
+
+        //
     }
     #region ActiveReport Designer generated code
 	/// <summary>
@@ -265,7 +286,6 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
 	/// </summary>
 	private void InitializeComponent()
 	{
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Resources.rpt_Encabezado));
         this.pageHeader = new DataDynamics.ActiveReports.PageHeader();
         this.detail = new DataDynamics.ActiveReports.Detail();
         this.textBox1 = new DataDynamics.ActiveReports.TextBox();
@@ -316,9 +336,13 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox46 = new DataDynamics.ActiveReports.TextBox();
         this.textBox47 = new DataDynamics.ActiveReports.TextBox();
         this.textBox48 = new DataDynamics.ActiveReports.TextBox();
-        this.pageFooter = new DataDynamics.ActiveReports.PageFooter();
         this.textBox49 = new DataDynamics.ActiveReports.TextBox();
         this.textBox50 = new DataDynamics.ActiveReports.TextBox();
+        this.pageFooter = new DataDynamics.ActiveReports.PageFooter();
+        this.textBox51 = new DataDynamics.ActiveReports.TextBox();
+        this.textBox52 = new DataDynamics.ActiveReports.TextBox();
+        this.textBox53 = new DataDynamics.ActiveReports.TextBox();
+        this.textBox54 = new DataDynamics.ActiveReports.TextBox();
         ((System.ComponentModel.ISupportInitialize)(this.textBox1)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox2)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox3)).BeginInit();
@@ -369,6 +393,10 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         ((System.ComponentModel.ISupportInitialize)(this.textBox48)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox49)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox50)).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox51)).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox52)).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox53)).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox54)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
         // 
         // pageHeader
@@ -429,8 +457,12 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
             this.textBox47,
             this.textBox48,
             this.textBox49,
-            this.textBox50});
-        this.detail.Height = 1.3125F;
+            this.textBox50,
+            this.textBox51,
+            this.textBox52,
+            this.textBox53,
+            this.textBox54});
+        this.detail.Height = 1.375F;
         this.detail.Name = "detail";
         this.detail.Format += new System.EventHandler(this.detail_Format);
         // 
@@ -554,12 +586,12 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox7.Border.TopColor = System.Drawing.Color.Black;
         this.textBox7.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox7.Height = 0.1875F;
-        this.textBox7.Left = 6.3125F;
+        this.textBox7.Left = 6.25F;
         this.textBox7.Name = "textBox7";
         this.textBox7.Style = "";
         this.textBox7.Text = "Primer Titular";
         this.textBox7.Top = 0F;
-        this.textBox7.Width = 2.75F;
+        this.textBox7.Width = 5.395833F;
         // 
         // textBox8
         // 
@@ -664,7 +696,6 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox13.Height = 0.0625F;
         this.textBox13.Left = 3.6875F;
         this.textBox13.Name = "textBox13";
-        this.textBox13.OutputFormat = resources.GetString("textBox13.OutputFormat");
         this.textBox13.Style = "";
         this.textBox13.Text = null;
         this.textBox13.Top = 1.3125F;
@@ -682,12 +713,12 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox14.Border.TopColor = System.Drawing.Color.Black;
         this.textBox14.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox14.Height = 0.1875F;
-        this.textBox14.Left = 6.3125F;
+        this.textBox14.Left = 6.25F;
         this.textBox14.Name = "textBox14";
         this.textBox14.Style = "";
         this.textBox14.Text = null;
         this.textBox14.Top = 0.1875F;
-        this.textBox14.Width = 2.75F;
+        this.textBox14.Width = 5.395833F;
         // 
         // textBox15
         // 
@@ -743,7 +774,7 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox17.Style = "";
         this.textBox17.Text = "Precio Final ($)";
         this.textBox17.Top = 0.4375F;
-        this.textBox17.Width = 1.3125F;
+        this.textBox17.Width = 1.1875F;
         // 
         // textBox18
         // 
@@ -756,12 +787,12 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox18.Border.TopColor = System.Drawing.Color.Black;
         this.textBox18.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox18.Height = 0.1875F;
-        this.textBox18.Left = 1.4375F;
+        this.textBox18.Left = 4.625F;
         this.textBox18.Name = "textBox18";
         this.textBox18.Style = "";
         this.textBox18.Text = "Cuota Inicial ($)";
         this.textBox18.Top = 0.4375F;
-        this.textBox18.Width = 1.3125F;
+        this.textBox18.Width = 1.1875F;
         // 
         // textBox19
         // 
@@ -774,7 +805,7 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox19.Border.TopColor = System.Drawing.Color.Black;
         this.textBox19.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox19.Height = 0.1875F;
-        this.textBox19.Left = 2.8125F;
+        this.textBox19.Left = 5.854167F;
         this.textBox19.Name = "textBox19";
         this.textBox19.Style = "";
         this.textBox19.Text = "Nro. cuotas";
@@ -792,12 +823,12 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox20.Border.TopColor = System.Drawing.Color.Black;
         this.textBox20.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox20.Height = 0.1875F;
-        this.textBox20.Left = 3.6875F;
+        this.textBox20.Left = 6.708333F;
         this.textBox20.Name = "textBox20";
         this.textBox20.Style = "";
         this.textBox20.Text = "Cuota Mensual ($)";
         this.textBox20.Top = 0.4375F;
-        this.textBox20.Width = 1.6875F;
+        this.textBox20.Width = 1.375F;
         // 
         // textBox21
         // 
@@ -810,7 +841,7 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox21.Border.TopColor = System.Drawing.Color.Black;
         this.textBox21.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox21.Height = 0.1875F;
-        this.textBox21.Left = 5.375F;
+        this.textBox21.Left = 8.125F;
         this.textBox21.Name = "textBox21";
         this.textBox21.Style = "";
         this.textBox21.Text = "Seg. (%/mes)";
@@ -828,12 +859,12 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox22.Border.TopColor = System.Drawing.Color.Black;
         this.textBox22.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox22.Height = 0.1875F;
-        this.textBox22.Left = 6.3125F;
+        this.textBox22.Left = 9.104167F;
         this.textBox22.Name = "textBox22";
         this.textBox22.Style = "";
         this.textBox22.Text = "Manten.($/mes)";
         this.textBox22.Top = 0.4375F;
-        this.textBox22.Width = 1.375F;
+        this.textBox22.Width = 1.4375F;
         // 
         // textBox23
         // 
@@ -846,12 +877,12 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox23.Border.TopColor = System.Drawing.Color.Black;
         this.textBox23.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox23.Height = 0.1875F;
-        this.textBox23.Left = 7.75F;
+        this.textBox23.Left = 10.58333F;
         this.textBox23.Name = "textBox23";
         this.textBox23.Style = "";
         this.textBox23.Text = "Interés (%/año)";
         this.textBox23.Top = 0.4375F;
-        this.textBox23.Width = 1.3125F;
+        this.textBox23.Width = 1.0625F;
         // 
         // textBox24
         // 
@@ -866,7 +897,6 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox24.Height = 0.0625F;
         this.textBox24.Left = 1.4375F;
         this.textBox24.Name = "textBox24";
-        this.textBox24.OutputFormat = resources.GetString("textBox24.OutputFormat");
         this.textBox24.Style = "";
         this.textBox24.Text = null;
         this.textBox24.Top = 1.3125F;
@@ -886,7 +916,6 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox25.Height = 0.0625F;
         this.textBox25.Left = 2.9375F;
         this.textBox25.Name = "textBox25";
-        this.textBox25.OutputFormat = resources.GetString("textBox25.OutputFormat");
         this.textBox25.Style = "";
         this.textBox25.Text = null;
         this.textBox25.Top = 1.3125F;
@@ -906,11 +935,10 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox26.Height = 0.1875F;
         this.textBox26.Left = 0.0625F;
         this.textBox26.Name = "textBox26";
-        this.textBox26.OutputFormat = resources.GetString("textBox26.OutputFormat");
         this.textBox26.Style = "";
         this.textBox26.Text = null;
         this.textBox26.Top = 0.625F;
-        this.textBox26.Width = 1.3125F;
+        this.textBox26.Width = 1.1875F;
         // 
         // textBox27
         // 
@@ -923,13 +951,12 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox27.Border.TopColor = System.Drawing.Color.Black;
         this.textBox27.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox27.Height = 0.1875F;
-        this.textBox27.Left = 1.4375F;
+        this.textBox27.Left = 4.625F;
         this.textBox27.Name = "textBox27";
-        this.textBox27.OutputFormat = resources.GetString("textBox27.OutputFormat");
         this.textBox27.Style = "";
         this.textBox27.Text = null;
         this.textBox27.Top = 0.625F;
-        this.textBox27.Width = 1.3125F;
+        this.textBox27.Width = 1.1875F;
         // 
         // textBox28
         // 
@@ -942,7 +969,7 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox28.Border.TopColor = System.Drawing.Color.Black;
         this.textBox28.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox28.Height = 0.1875F;
-        this.textBox28.Left = 2.8125F;
+        this.textBox28.Left = 5.854167F;
         this.textBox28.Name = "textBox28";
         this.textBox28.Style = "";
         this.textBox28.Text = null;
@@ -960,12 +987,12 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox29.Border.TopColor = System.Drawing.Color.Black;
         this.textBox29.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox29.Height = 0.1875F;
-        this.textBox29.Left = 3.6875F;
+        this.textBox29.Left = 6.708333F;
         this.textBox29.Name = "textBox29";
         this.textBox29.Style = "";
         this.textBox29.Text = null;
         this.textBox29.Top = 0.625F;
-        this.textBox29.Width = 1.6875F;
+        this.textBox29.Width = 1.375F;
         // 
         // textBox30
         // 
@@ -978,9 +1005,8 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox30.Border.TopColor = System.Drawing.Color.Black;
         this.textBox30.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox30.Height = 0.1875F;
-        this.textBox30.Left = 5.375F;
+        this.textBox30.Left = 8.125F;
         this.textBox30.Name = "textBox30";
-        this.textBox30.OutputFormat = resources.GetString("textBox30.OutputFormat");
         this.textBox30.Style = "";
         this.textBox30.Text = null;
         this.textBox30.Top = 0.625F;
@@ -997,13 +1023,12 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox31.Border.TopColor = System.Drawing.Color.Black;
         this.textBox31.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox31.Height = 0.1875F;
-        this.textBox31.Left = 6.3125F;
+        this.textBox31.Left = 9.104167F;
         this.textBox31.Name = "textBox31";
-        this.textBox31.OutputFormat = resources.GetString("textBox31.OutputFormat");
         this.textBox31.Style = "";
         this.textBox31.Text = null;
         this.textBox31.Top = 0.625F;
-        this.textBox31.Width = 1.375F;
+        this.textBox31.Width = 1.4375F;
         // 
         // textBox32
         // 
@@ -1016,13 +1041,12 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox32.Border.TopColor = System.Drawing.Color.Black;
         this.textBox32.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox32.Height = 0.1875F;
-        this.textBox32.Left = 7.75F;
+        this.textBox32.Left = 10.58333F;
         this.textBox32.Name = "textBox32";
-        this.textBox32.OutputFormat = resources.GetString("textBox32.OutputFormat");
         this.textBox32.Style = "";
         this.textBox32.Text = null;
         this.textBox32.Top = 0.625F;
-        this.textBox32.Width = 1.3125F;
+        this.textBox32.Width = 1.0625F;
         // 
         // textBox33
         // 
@@ -1094,7 +1118,7 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox36.Style = "";
         this.textBox36.Text = null;
         this.textBox36.Top = 0.875F;
-        this.textBox36.Width = 2.75F;
+        this.textBox36.Width = 5.25F;
         // 
         // textBox37
         // 
@@ -1181,7 +1205,7 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox41.Border.TopColor = System.Drawing.Color.Black;
         this.textBox41.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox41.Height = 0.1875F;
-        this.textBox41.Left = 7.5625F;
+        this.textBox41.Left = 10.08333F;
         this.textBox41.Name = "textBox41";
         this.textBox41.Style = "";
         this.textBox41.Text = "Día de pago:";
@@ -1199,7 +1223,7 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox42.Border.TopColor = System.Drawing.Color.Black;
         this.textBox42.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox42.Height = 0.1875F;
-        this.textBox42.Left = 8.5F;
+        this.textBox42.Left = 11.08333F;
         this.textBox42.Name = "textBox42";
         this.textBox42.Style = "";
         this.textBox42.Text = "textBox42";
@@ -1240,7 +1264,7 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox44.Style = "";
         this.textBox44.Text = "textBox44";
         this.textBox44.Top = 1.125F;
-        this.textBox44.Width = 3.5F;
+        this.textBox44.Width = 6.0625F;
         // 
         // textBox45
         // 
@@ -1253,7 +1277,7 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox45.Border.TopColor = System.Drawing.Color.Black;
         this.textBox45.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox45.Height = 0.1875F;
-        this.textBox45.Left = 5.1875F;
+        this.textBox45.Left = 7.770833F;
         this.textBox45.Name = "textBox45";
         this.textBox45.Style = "";
         this.textBox45.Text = "Pagado (Gestor):";
@@ -1271,7 +1295,7 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox46.Border.TopColor = System.Drawing.Color.Black;
         this.textBox46.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox46.Height = 0.1875F;
-        this.textBox46.Left = 6.4375F;
+        this.textBox46.Left = 9.020833F;
         this.textBox46.Name = "textBox46";
         this.textBox46.Style = "";
         this.textBox46.Text = "textBox46";
@@ -1314,11 +1338,6 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox48.Top = 0.1875F;
         this.textBox48.Width = 1F;
         // 
-        // pageFooter
-        // 
-        this.pageFooter.Height = 0F;
-        this.pageFooter.Name = "pageFooter";
-        // 
         // textBox49
         // 
         this.textBox49.Border.BottomColor = System.Drawing.Color.Black;
@@ -1330,7 +1349,7 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox49.Border.TopColor = System.Drawing.Color.Black;
         this.textBox49.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox49.Height = 0.1875F;
-        this.textBox49.Left = 7.25F;
+        this.textBox49.Left = 9.833333F;
         this.textBox49.Name = "textBox49";
         this.textBox49.Style = "";
         this.textBox49.Text = "Nº Form. Seguro:";
@@ -1348,19 +1367,95 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         this.textBox50.Border.TopColor = System.Drawing.Color.Black;
         this.textBox50.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox50.Height = 0.1875F;
-        this.textBox50.Left = 8.5F;
+        this.textBox50.Left = 11.08333F;
         this.textBox50.Name = "textBox50";
         this.textBox50.Style = "";
         this.textBox50.Text = "textBox50";
         this.textBox50.Top = 1.125F;
         this.textBox50.Width = 0.5625F;
         // 
+        // pageFooter
+        // 
+        this.pageFooter.Height = 0F;
+        this.pageFooter.Name = "pageFooter";
+        // 
+        // textBox51
+        // 
+        this.textBox51.Border.BottomColor = System.Drawing.Color.Black;
+        this.textBox51.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox51.Border.LeftColor = System.Drawing.Color.Black;
+        this.textBox51.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox51.Border.RightColor = System.Drawing.Color.Black;
+        this.textBox51.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox51.Border.TopColor = System.Drawing.Color.Black;
+        this.textBox51.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox51.Height = 0.1875F;
+        this.textBox51.Left = 2.958333F;
+        this.textBox51.Name = "textBox51";
+        this.textBox51.Style = "";
+        this.textBox51.Text = "Capital Adeudado ($)";
+        this.textBox51.Top = 0.4375F;
+        this.textBox51.Width = 1.625F;
+        // 
+        // textBox52
+        // 
+        this.textBox52.Border.BottomColor = System.Drawing.Color.Black;
+        this.textBox52.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox52.Border.LeftColor = System.Drawing.Color.Black;
+        this.textBox52.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox52.Border.RightColor = System.Drawing.Color.Black;
+        this.textBox52.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox52.Border.TopColor = System.Drawing.Color.Black;
+        this.textBox52.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox52.Height = 0.1875F;
+        this.textBox52.Left = 2.958333F;
+        this.textBox52.Name = "textBox52";
+        this.textBox52.Style = "";
+        this.textBox52.Text = null;
+        this.textBox52.Top = 0.625F;
+        this.textBox52.Width = 1.625F;
+        // 
+        // textBox53
+        // 
+        this.textBox53.Border.BottomColor = System.Drawing.Color.Black;
+        this.textBox53.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox53.Border.LeftColor = System.Drawing.Color.Black;
+        this.textBox53.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox53.Border.RightColor = System.Drawing.Color.Black;
+        this.textBox53.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox53.Border.TopColor = System.Drawing.Color.Black;
+        this.textBox53.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox53.Height = 0.1875F;
+        this.textBox53.Left = 1.291667F;
+        this.textBox53.Name = "textBox53";
+        this.textBox53.Style = "";
+        this.textBox53.Text = "Precio Financiado ($)";
+        this.textBox53.Top = 0.4375F;
+        this.textBox53.Width = 1.625F;
+        // 
+        // textBox54
+        // 
+        this.textBox54.Border.BottomColor = System.Drawing.Color.Black;
+        this.textBox54.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox54.Border.LeftColor = System.Drawing.Color.Black;
+        this.textBox54.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox54.Border.RightColor = System.Drawing.Color.Black;
+        this.textBox54.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox54.Border.TopColor = System.Drawing.Color.Black;
+        this.textBox54.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox54.Height = 0.1875F;
+        this.textBox54.Left = 1.289583F;
+        this.textBox54.Name = "textBox54";
+        this.textBox54.Style = "";
+        this.textBox54.Text = null;
+        this.textBox54.Top = 0.625F;
+        this.textBox54.Width = 1.625F;
+        // 
         // rpt_Encabezado
         // 
-        this.MasterReport = false;
         this.PageSettings.PaperHeight = 11F;
         this.PageSettings.PaperWidth = 8.5F;
-        this.PrintWidth = 9.104167F;
+        this.PrintWidth = 12F;
         this.Sections.Add(this.pageHeader);
         this.Sections.Add(this.detail);
         this.Sections.Add(this.pageFooter);
@@ -1421,6 +1516,10 @@ public class rpt_Encabezado : DataDynamics.ActiveReports.ActiveReport3
         ((System.ComponentModel.ISupportInitialize)(this.textBox48)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox49)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox50)).EndInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox51)).EndInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox52)).EndInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox53)).EndInit();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox54)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
 	}
