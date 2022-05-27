@@ -5,6 +5,7 @@ using System.ComponentModel;
 using DataDynamics.ActiveReports;
 using DataDynamics.ActiveReports.Document;
 using System.Web;
+using System.Data; 
 
 /// <summary>
 /// Summary description for srpt_DatosContrato.
@@ -86,9 +87,12 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         textBox16.Text = "Cuota Inicial (" + c.codigo_moneda + "):";
 
         // Req. Capital Adeudado
-        textBox24.Text = "Precio Financiado (" + c.codigo_moneda + "):";
-        textBox22.Text = "Capital Adeudado (" + c.codigo_moneda + "):";
         terrasur.capital_adeudado ca = new terrasur.capital_adeudado(Id_contrato);
+        int IdParametroCapitalDeudor = ca.id_parametrocapitaldeudor;
+        terrasur.parametro_capital_deudor pcd = new terrasur.parametro_capital_deudor(IdParametroCapitalDeudor);
+        decimal porcentajeCapitalDeudor = pcd.pocentaje_capital_deudor;
+        textBox24.Text = "Precio Financiado (" + c.codigo_moneda + "):";
+        textBox22.Text = "Capital Adeudado (" + c.codigo_moneda + ") (" + porcentajeCapitalDeudor.ToString().Replace(",", ".") + "%):";
         textBox25.Text = c.precio_final.ToString("F2");
         textBox23.Text = ca.monto.ToString("F2");
         textBox9.Text = (c.precio_final + ca.monto).ToString("F2");
@@ -154,6 +158,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
 	/// </summary>
 	private void InitializeComponent()
 	{
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Resources.srpt_DatosContrato));
         this.pageHeader = new DataDynamics.ActiveReports.PageHeader();
         this.detail = new DataDynamics.ActiveReports.Detail();
         this.textBox1 = new DataDynamics.ActiveReports.TextBox();
@@ -352,6 +357,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox6.Height = 0.1875F;
         this.textBox6.Left = 1.75F;
         this.textBox6.Name = "textBox6";
+        this.textBox6.OutputFormat = resources.GetString("textBox6.OutputFormat");
         this.textBox6.Style = "";
         this.textBox6.Text = null;
         this.textBox6.Top = 0F;
@@ -371,6 +377,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox7.Height = 0.1875F;
         this.textBox7.Left = 2.0625F;
         this.textBox7.Name = "textBox7";
+        this.textBox7.OutputFormat = resources.GetString("textBox7.OutputFormat");
         this.textBox7.Style = "";
         this.textBox7.Text = null;
         this.textBox7.Top = 0F;
@@ -390,6 +397,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox8.Height = 0.1875F;
         this.textBox8.Left = 2.375F;
         this.textBox8.Name = "textBox8";
+        this.textBox8.OutputFormat = resources.GetString("textBox8.OutputFormat");
         this.textBox8.Style = "";
         this.textBox8.Text = null;
         this.textBox8.Top = 0F;
@@ -409,6 +417,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox9.Height = 0.1875F;
         this.textBox9.Left = 2.375F;
         this.textBox9.Name = "textBox9";
+        this.textBox9.OutputFormat = resources.GetString("textBox9.OutputFormat");
         this.textBox9.Style = "";
         this.textBox9.Text = null;
         this.textBox9.Top = 0.25F;
@@ -520,7 +529,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox15.Style = "";
         this.textBox15.Text = null;
         this.textBox15.Top = 1F;
-        this.textBox15.Width = 1.5F;
+        this.textBox15.Width = 1.625F;
         // 
         // textBox16
         // 
@@ -538,7 +547,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox16.Style = "";
         this.textBox16.Text = "Cuota Inicial:";
         this.textBox16.Top = 0.75F;
-        this.textBox16.Width = 1.8125F;
+        this.textBox16.Width = 1.9375F;
         // 
         // textBox17
         // 
@@ -551,8 +560,9 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox17.Border.TopColor = System.Drawing.Color.Black;
         this.textBox17.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox17.Height = 0.1875F;
-        this.textBox17.Left = 5.3125F;
+        this.textBox17.Left = 5.4375F;
         this.textBox17.Name = "textBox17";
+        this.textBox17.OutputFormat = resources.GetString("textBox17.OutputFormat");
         this.textBox17.Style = "";
         this.textBox17.Text = null;
         this.textBox17.Top = 0.75F;
@@ -593,7 +603,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox19.Style = "";
         this.textBox19.Text = null;
         this.textBox19.Top = 1.25F;
-        this.textBox19.Width = 4.8125F;
+        this.textBox19.Width = 4.9375F;
         // 
         // textBox20
         // 
@@ -629,7 +639,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox21.Style = "";
         this.textBox21.Text = null;
         this.textBox21.Top = 1.5F;
-        this.textBox21.Width = 4.25F;
+        this.textBox21.Width = 4.375F;
         // 
         // textBox22
         // 
@@ -647,7 +657,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox22.Style = "";
         this.textBox22.Text = "Capital Adeudado:";
         this.textBox22.Top = 0.5F;
-        this.textBox22.Width = 1.8125F;
+        this.textBox22.Width = 1.9375F;
         // 
         // textBox23
         // 
@@ -660,7 +670,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox23.Border.TopColor = System.Drawing.Color.Black;
         this.textBox23.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox23.Height = 0.1875F;
-        this.textBox23.Left = 5.3125F;
+        this.textBox23.Left = 5.4375F;
         this.textBox23.Name = "textBox23";
         this.textBox23.Style = "";
         this.textBox23.Text = null;
@@ -710,6 +720,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         // 
         // srpt_DatosContrato
         // 
+        this.MasterReport = false;
         this.PageSettings.PaperHeight = 11F;
         this.PageSettings.PaperWidth = 8.5F;
         this.Sections.Add(this.pageHeader);

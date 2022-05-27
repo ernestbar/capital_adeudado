@@ -11,8 +11,8 @@ using System.Web;
 /// </summary>
 public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
 {
-	private DataDynamics.ActiveReports.PageHeader pageHeader;
-	private DataDynamics.ActiveReports.Detail detail;
+    private DataDynamics.ActiveReports.PageHeader pageHeader;
+    private DataDynamics.ActiveReports.Detail detail;
     private ReportHeader reportHeader1;
     private ReportFooter reportFooter1;
     private TextBox textBox1;
@@ -65,35 +65,35 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
     private Line line1;
     private TextBox textBox45;
     private TextBox textBox46;
-	private DataDynamics.ActiveReports.PageFooter pageFooter;
+    private DataDynamics.ActiveReports.PageFooter pageFooter;
 
-	public rpt_ContratoEstadoCuenta()
-	{
-		//
-		// Required for Windows Form Designer support
-		//
-		InitializeComponent();
-	}
+    public rpt_ContratoEstadoCuenta()
+    {
+        //
+        // Required for Windows Form Designer support
+        //
+        InitializeComponent();
+    }
 
-	/// <summary>
-	/// Required designer variable.
-	/// </summary>
-	private System.ComponentModel.Container components = null;
+    /// <summary>
+    /// Required designer variable.
+    /// </summary>
+    private System.ComponentModel.Container components = null;
 
-	/// <summary>
-	/// Clean up any resources being used.
-	/// </summary>
-	protected override void Dispose( bool disposing )
-	{
-		if( disposing )
-		{
-			if(components != null)
-			{
-				components.Dispose();
-			}
-		}
-		base.Dispose( disposing );
-	}
+    /// <summary>
+    /// Clean up any resources being used.
+    /// </summary>
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing)
+        {
+            if (components != null)
+            {
+                components.Dispose();
+            }
+        }
+        base.Dispose(disposing);
+    }
     public void DatosEstadoCuenta(int Id_contrato, string Nombre_persona)
     {
         rpt_Encabezado encabezado = new rpt_Encabezado();
@@ -101,7 +101,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         subReport1.Report = encabezado;
         textBox44.Text = "Fecha de emisión: " + DateTime.Now.ToString("F");
         textBox46.Text = "Usuario: " + Nombre_persona;
-		textBox45.Text = "";
+        textBox45.Text = "";
         terrasur.contrato c = new terrasur.contrato(Id_contrato);
         textBox8.Text = "Pago (" + c.codigo_moneda + ")";
         textBox12.Text = "Amortización (" + c.codigo_moneda + ")";
@@ -140,7 +140,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
     {
         textBox44.ClassName = "estiloFecha";
         textBox46.ClassName = "estiloFecha";
-        
+
         textBox1.ClassName = "estiloTitulo";
 
         textBox2.ClassName = "estiloDetalleEnun";
@@ -193,13 +193,15 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
 
     }
     #region ActiveReport Designer generated code
-	/// <summary>
-	/// Required method for Designer support - do not modify
-	/// the contents of this method with the code editor.
-	/// </summary>
-	private void InitializeComponent()
-	{
+    /// <summary>
+    /// Required method for Designer support - do not modify
+    /// the contents of this method with the code editor.
+    /// </summary>
+    private void InitializeComponent()
+    {
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Resources.rpt_ContratoEstadoCuenta));
         this.pageHeader = new DataDynamics.ActiveReports.PageHeader();
+        this.textBox2 = new DataDynamics.ActiveReports.TextBox();
         this.textBox8 = new DataDynamics.ActiveReports.TextBox();
         this.textBox11 = new DataDynamics.ActiveReports.TextBox();
         this.textBox7 = new DataDynamics.ActiveReports.TextBox();
@@ -212,7 +214,6 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox14 = new DataDynamics.ActiveReports.TextBox();
         this.textBox13 = new DataDynamics.ActiveReports.TextBox();
         this.textBox12 = new DataDynamics.ActiveReports.TextBox();
-        this.textBox2 = new DataDynamics.ActiveReports.TextBox();
         this.textBox10 = new DataDynamics.ActiveReports.TextBox();
         this.textBox19 = new DataDynamics.ActiveReports.TextBox();
         this.textBox18 = new DataDynamics.ActiveReports.TextBox();
@@ -254,6 +255,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox43 = new DataDynamics.ActiveReports.TextBox();
         this.line1 = new DataDynamics.ActiveReports.Line();
         this.textBox41 = new DataDynamics.ActiveReports.TextBox();
+        ((System.ComponentModel.ISupportInitialize)(this.textBox2)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox8)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox11)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox7)).BeginInit();
@@ -266,7 +268,6 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         ((System.ComponentModel.ISupportInitialize)(this.textBox14)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox13)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox12)).BeginInit();
-        ((System.ComponentModel.ISupportInitialize)(this.textBox2)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox10)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox19)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox18)).BeginInit();
@@ -305,6 +306,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         // pageHeader
         // 
         this.pageHeader.Controls.AddRange(new DataDynamics.ActiveReports.ARControl[] {
+            this.textBox2,
             this.textBox8,
             this.textBox11,
             this.textBox7,
@@ -317,12 +319,29 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
             this.textBox14,
             this.textBox13,
             this.textBox12,
-            this.textBox2,
             this.textBox10,
             this.textBox19,
             this.textBox18});
         this.pageHeader.Height = 0.3854167F;
         this.pageHeader.Name = "pageHeader";
+        // 
+        // textBox2
+        // 
+        this.textBox2.Border.BottomColor = System.Drawing.Color.Black;
+        this.textBox2.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox2.Border.LeftColor = System.Drawing.Color.Black;
+        this.textBox2.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox2.Border.RightColor = System.Drawing.Color.Black;
+        this.textBox2.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox2.Border.TopColor = System.Drawing.Color.Black;
+        this.textBox2.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
+        this.textBox2.Height = 0.3125F;
+        this.textBox2.Left = 0.0625F;
+        this.textBox2.Name = "textBox2";
+        this.textBox2.Style = "";
+        this.textBox2.Text = "No. pago";
+        this.textBox2.Top = 0.0625F;
+        this.textBox2.Width = 0.625F;
         // 
         // textBox8
         // 
@@ -389,7 +408,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox9.Border.TopColor = System.Drawing.Color.Black;
         this.textBox9.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox9.Height = 0.3125F;
-        this.textBox9.Left = 8.25F;
+        this.textBox9.Left = 9.25F;
         this.textBox9.Name = "textBox9";
         this.textBox9.Style = "";
         this.textBox9.Text = "Saldo Cap. Deudor";
@@ -497,7 +516,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox14.Border.TopColor = System.Drawing.Color.Black;
         this.textBox14.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox14.Height = 0.3125F;
-        this.textBox14.Left = 6.25F;
+        this.textBox14.Left = 7.270833F;
         this.textBox14.Name = "textBox14";
         this.textBox14.Style = "";
         this.textBox14.Text = "Capital Deudor";
@@ -515,7 +534,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox13.Border.TopColor = System.Drawing.Color.Black;
         this.textBox13.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox13.Height = 0.3125F;
-        this.textBox13.Left = 9.25F;
+        this.textBox13.Left = 6.260417F;
         this.textBox13.Name = "textBox13";
         this.textBox13.Style = "";
         this.textBox13.Text = "Saldo Capital";
@@ -540,24 +559,6 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox12.Top = 0.0625F;
         this.textBox12.Width = 1F;
         // 
-        // textBox2
-        // 
-        this.textBox2.Border.BottomColor = System.Drawing.Color.Black;
-        this.textBox2.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox2.Border.LeftColor = System.Drawing.Color.Black;
-        this.textBox2.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox2.Border.RightColor = System.Drawing.Color.Black;
-        this.textBox2.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox2.Border.TopColor = System.Drawing.Color.Black;
-        this.textBox2.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox2.Height = 0.3125F;
-        this.textBox2.Left = 0.0625F;
-        this.textBox2.Name = "textBox2";
-        this.textBox2.Style = "";
-        this.textBox2.Text = "No. pago";
-        this.textBox2.Top = 0.0625F;
-        this.textBox2.Width = 0.625F;
-        // 
         // textBox10
         // 
         this.textBox10.Border.BottomColor = System.Drawing.Color.Black;
@@ -569,7 +570,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox10.Border.TopColor = System.Drawing.Color.Black;
         this.textBox10.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox10.Height = 0.3125F;
-        this.textBox10.Left = 7.25F;
+        this.textBox10.Left = 8.260417F;
         this.textBox10.Name = "textBox10";
         this.textBox10.Style = "";
         this.textBox10.Text = "Amort. Cap. Deudor";
@@ -669,6 +670,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox21.Height = 0.1979167F;
         this.textBox21.Left = 0.6875F;
         this.textBox21.Name = "textBox21";
+        this.textBox21.OutputFormat = resources.GetString("textBox21.OutputFormat");
         this.textBox21.Style = "";
         this.textBox21.Text = null;
         this.textBox21.Top = 0F;
@@ -688,6 +690,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox22.Height = 0.1979167F;
         this.textBox22.Left = 1.6875F;
         this.textBox22.Name = "textBox22";
+        this.textBox22.OutputFormat = resources.GetString("textBox22.OutputFormat");
         this.textBox22.Style = "";
         this.textBox22.Text = null;
         this.textBox22.Top = 0F;
@@ -726,6 +729,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox24.Height = 0.1979167F;
         this.textBox24.Left = 3.25F;
         this.textBox24.Name = "textBox24";
+        this.textBox24.OutputFormat = resources.GetString("textBox24.OutputFormat");
         this.textBox24.Style = "";
         this.textBox24.Text = null;
         this.textBox24.Top = 0F;
@@ -743,8 +747,9 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox25.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox25.DataField = "saldo_capital_deudor";
         this.textBox25.Height = 0.1979167F;
-        this.textBox25.Left = 8.25F;
+        this.textBox25.Left = 9.25F;
         this.textBox25.Name = "textBox25";
+        this.textBox25.OutputFormat = resources.GetString("textBox25.OutputFormat");
         this.textBox25.Style = "";
         this.textBox25.Text = null;
         this.textBox25.Top = 0F;
@@ -762,8 +767,9 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox26.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox26.DataField = "amortizacion_capital_deudor";
         this.textBox26.Height = 0.1979167F;
-        this.textBox26.Left = 7.25F;
+        this.textBox26.Left = 8.260417F;
         this.textBox26.Name = "textBox26";
+        this.textBox26.OutputFormat = resources.GetString("textBox26.OutputFormat");
         this.textBox26.Style = "";
         this.textBox26.Text = null;
         this.textBox26.Top = 0F;
@@ -783,6 +789,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox27.Height = 0.1979167F;
         this.textBox27.Left = 5.25F;
         this.textBox27.Name = "textBox27";
+        this.textBox27.OutputFormat = resources.GetString("textBox27.OutputFormat");
         this.textBox27.Style = "";
         this.textBox27.Text = null;
         this.textBox27.Top = 0F;
@@ -802,6 +809,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox28.Height = 0.1979167F;
         this.textBox28.Left = 4.25F;
         this.textBox28.Name = "textBox28";
+        this.textBox28.OutputFormat = resources.GetString("textBox28.OutputFormat");
         this.textBox28.Style = "";
         this.textBox28.Text = null;
         this.textBox28.Top = 0F;
@@ -819,8 +827,9 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox29.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox29.DataField = "saldo";
         this.textBox29.Height = 0.1979167F;
-        this.textBox29.Left = 9.25F;
+        this.textBox29.Left = 6.260417F;
         this.textBox29.Name = "textBox29";
+        this.textBox29.OutputFormat = resources.GetString("textBox29.OutputFormat");
         this.textBox29.Style = "";
         this.textBox29.Text = null;
         this.textBox29.Top = 0F;
@@ -838,8 +847,9 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox30.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox30.DataField = "monto_capital_adeudado";
         this.textBox30.Height = 0.1979167F;
-        this.textBox30.Left = 6.25F;
+        this.textBox30.Left = 7.270833F;
         this.textBox30.Name = "textBox30";
+        this.textBox30.OutputFormat = resources.GetString("textBox30.OutputFormat");
         this.textBox30.Style = "";
         this.textBox30.Text = null;
         this.textBox30.Top = 0F;
@@ -897,6 +907,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox34.Height = 0.1979167F;
         this.textBox34.Left = 11.75F;
         this.textBox34.Name = "textBox34";
+        this.textBox34.OutputFormat = resources.GetString("textBox34.OutputFormat");
         this.textBox34.Style = "";
         this.textBox34.Text = null;
         this.textBox34.Top = 0F;
@@ -916,6 +927,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox35.Height = 0.1979167F;
         this.textBox35.Left = 12.75F;
         this.textBox35.Name = "textBox35";
+        this.textBox35.OutputFormat = resources.GetString("textBox35.OutputFormat");
         this.textBox35.Style = "";
         this.textBox35.Text = null;
         this.textBox35.Top = 0F;
@@ -986,12 +998,12 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.subReport1.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.subReport1.CloseBorder = false;
         this.subReport1.Height = 0.0625F;
-        this.subReport1.Left = 2.125F;
+        this.subReport1.Left = 1.5F;
         this.subReport1.Name = "subReport1";
         this.subReport1.Report = null;
         this.subReport1.ReportName = "subReport1";
         this.subReport1.Top = 0.5625F;
-        this.subReport1.Width = 10.25F;
+        this.subReport1.Width = 12F;
         // 
         // textBox44
         // 
@@ -1163,6 +1175,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox37.Height = 0.1979167F;
         this.textBox37.Left = 3.25F;
         this.textBox37.Name = "textBox37";
+        this.textBox37.OutputFormat = resources.GetString("textBox37.OutputFormat");
         this.textBox37.Style = "";
         this.textBox37.SummaryRunning = DataDynamics.ActiveReports.SummaryRunning.Group;
         this.textBox37.SummaryType = DataDynamics.ActiveReports.SummaryType.GrandTotal;
@@ -1182,8 +1195,9 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox39.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox39.DataField = "amortizacion_capital_deudor";
         this.textBox39.Height = 0.1979167F;
-        this.textBox39.Left = 7.25F;
+        this.textBox39.Left = 8.25F;
         this.textBox39.Name = "textBox39";
+        this.textBox39.OutputFormat = resources.GetString("textBox39.OutputFormat");
         this.textBox39.Style = "";
         this.textBox39.SummaryRunning = DataDynamics.ActiveReports.SummaryRunning.Group;
         this.textBox39.SummaryType = DataDynamics.ActiveReports.SummaryType.GrandTotal;
@@ -1205,6 +1219,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox40.Height = 0.1979167F;
         this.textBox40.Left = 5.25F;
         this.textBox40.Name = "textBox40";
+        this.textBox40.OutputFormat = resources.GetString("textBox40.OutputFormat");
         this.textBox40.Style = "";
         this.textBox40.SummaryRunning = DataDynamics.ActiveReports.SummaryRunning.Group;
         this.textBox40.SummaryType = DataDynamics.ActiveReports.SummaryType.GrandTotal;
@@ -1226,6 +1241,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox42.Height = 0.1979167F;
         this.textBox42.Left = 11.75F;
         this.textBox42.Name = "textBox42";
+        this.textBox42.OutputFormat = resources.GetString("textBox42.OutputFormat");
         this.textBox42.Style = "";
         this.textBox42.SummaryRunning = DataDynamics.ActiveReports.SummaryRunning.Group;
         this.textBox42.SummaryType = DataDynamics.ActiveReports.SummaryType.GrandTotal;
@@ -1247,6 +1263,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox43.Height = 0.1979167F;
         this.textBox43.Left = 12.75F;
         this.textBox43.Name = "textBox43";
+        this.textBox43.OutputFormat = resources.GetString("textBox43.OutputFormat");
         this.textBox43.Style = "";
         this.textBox43.SummaryRunning = DataDynamics.ActiveReports.SummaryRunning.Group;
         this.textBox43.SummaryType = DataDynamics.ActiveReports.SummaryType.GrandTotal;
@@ -1289,6 +1306,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox41.Height = 0.1979167F;
         this.textBox41.Left = 4.25F;
         this.textBox41.Name = "textBox41";
+        this.textBox41.OutputFormat = resources.GetString("textBox41.OutputFormat");
         this.textBox41.Style = "";
         this.textBox41.SummaryRunning = DataDynamics.ActiveReports.SummaryRunning.Group;
         this.textBox41.SummaryType = DataDynamics.ActiveReports.SummaryType.GrandTotal;
@@ -1298,6 +1316,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         // 
         // rpt_ContratoEstadoCuenta
         // 
+        this.MasterReport = false;
         this.PageSettings.PaperHeight = 11F;
         this.PageSettings.PaperWidth = 8.5F;
         this.PrintWidth = 14.54167F;
@@ -1315,6 +1334,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
                     "lic; ", "Heading2", "Normal"));
         this.StyleSheet.Add(new DDCssLib.StyleSheetRule("font-size: 13pt; font-weight: bold; ", "Heading3", "Normal"));
         this.ReportStart += new System.EventHandler(this.rpt_ContratoEstadoCuenta_ReportStart);
+        ((System.ComponentModel.ISupportInitialize)(this.textBox2)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox8)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox11)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox7)).EndInit();
@@ -1327,7 +1347,6 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         ((System.ComponentModel.ISupportInitialize)(this.textBox14)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox13)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox12)).EndInit();
-        ((System.ComponentModel.ISupportInitialize)(this.textBox2)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox10)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox19)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox18)).EndInit();
@@ -1363,13 +1382,13 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         ((System.ComponentModel.ISupportInitialize)(this.textBox41)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
-	}
-	#endregion
+    }
+    #endregion
 
     private void detail_Format(object sender, EventArgs e)
     {
 
     }
 
-    
+
 }

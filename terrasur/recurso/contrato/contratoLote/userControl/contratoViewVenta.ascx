@@ -40,7 +40,7 @@
         If capital_adeudado > 0 Then
             pnlCapAdeudado1.Visible = True
             pnlCapAdeudado2.Visible = True
-            lbl_capital_adeudado_titulo.Text = "Capital Adeudado (" & porcentaje_capital_deudor.ToString.Replace(",", ".") & "%)"
+            lbl_capital_adeudado_titulo.Text = "Capital Adeudado (" & codigo_moneda & ") (" & porcentaje_capital_deudor.ToString.Replace(",", ".") & "%)"
             lbl_capital_adeudado.Text = capital_adeudado.ToString() 
         Else
             pnlCapAdeudado1.Visible = False

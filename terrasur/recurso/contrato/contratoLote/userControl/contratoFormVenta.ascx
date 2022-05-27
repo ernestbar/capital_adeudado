@@ -126,6 +126,7 @@
         lbl_capital_adeudado.Text = "0"
         pnlCapAdeudado1.Visible = False
         pnlCapAdeudado2.Visible = False
+        pnlCapAdeudado3.Visible = False
         '
     End Sub
     
@@ -155,12 +156,13 @@
         End If
         lbl_id_parametro_capital_deudor.Text = idParametroCapitalDeudor.ToString()
         lbl_porcentaje_capital_deudor.Text = porcentajeCapitalDeudor.ToString()
-        lbl_capital_adeudado.Text = "Capital Adeudado (" & porcentajeCapitalDeudor.ToString.Replace(",", ".") & "%)"
+        lbl_capital_adeudado.Text = "Capital Adeudado ($us) (" & porcentajeCapitalDeudor.ToString.Replace(",", ".") & "%)"
         Dim capitalAdeudado As Decimal = Math.Round(_precio * (porcentajeCapitalDeudor / 100), 0)
         txt_capital_adeudado.Text = capitalAdeudado
         txt_precio_final.Text = Math.Round(_precio - capitalAdeudado, 0)
         pnlCapAdeudado1.Visible = True
         pnlCapAdeudado2.Visible = True
+        pnlCapAdeudado3.Visible = True
     End Sub
     
     Protected Sub chkCapitalAdeudado_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles chkCapitalAdeudado.CheckedChanged
@@ -290,7 +292,6 @@
                     <td class="contratoFormTdHorEnun"><asp:Label ID="lbl_precio_enun" runat="server" Text="Precio total ($us)"></asp:Label></td>
                     <asp:Panel ID="pnlCapAdeudado1" runat="server" Visible="false">
                         <td class="contratoFormTdHorEnun"><asp:Label ID="lbl_capital_adeudado" runat="server" Text="Capital Adeudado"></asp:Label></td>
-                        <td class="contratoFormTdHorEnun"></td>
                     </asp:Panel>
                     <td class="contratoFormTdHorEnun">Descuento(%)</td>
                     <td class="contratoFormTdHorEnun"><asp:Label ID="lbl_desc_enun" runat="server" Text="Descuento($us)"></asp:Label></td>
@@ -298,15 +299,24 @@
                     <td class="contratoFormTdHorEnun"><asp:Label ID="lbl_precio_final_enun" runat="server" Text="Precio final ($us)"></asp:Label></td>
                 </tr>
                 <tr>
+                    <td class="contratoFormTdHorEnun"></td>
+                    <asp:Panel ID="pnlCapAdeudado2" runat="server" Visible="false">
+                        <td class="contratoFormTdHorDato">
+                            <asp:CheckBox ID="chkCapitalAdeudado" runat="server" Text="Usar Capital Adeudado" AutoPostBack="True" />
+                        </td>
+                     </asp:Panel>
+                    <td class="contratoFormTdHorEnun"></td> 
+                    <td class="contratoFormTdHorEnun"></td>
+                    <td class="contratoFormTdHorEnun"></td>
+                    <td class="contratoFormTdHorEnun"></td>
+                </tr>
+                <tr>
                     <td class="contratoFormTdHorDato">
                         <asp:TextBox ID="txt_precio" runat="server" SkinID="txtSingleLine100" Enabled="false"></asp:TextBox>
                     </td>
-                    <asp:Panel ID="pnlCapAdeudado2" runat="server" Visible="false">
+                    <asp:Panel ID="pnlCapAdeudado3" runat="server" Visible="false">
                         <td class="contratoFormTdHorDato">
                             <asp:TextBox ID="txt_capital_adeudado" runat="server" SkinID="txtSingleLine100" Enabled="false"></asp:TextBox>
-                        </td>
-                        <td class="contratoFormTdHorDato">
-                            <asp:CheckBox ID="chkCapitalAdeudado" runat="server" Text="Usar Capital Adeudado" AutoPostBack="True" />
                         </td>
                     </asp:Panel>
                     <td class="contratoFormTdHorDato">
@@ -339,11 +349,19 @@
         </td>
     </tr>
     <tr>
-        <td class="contratoFormTdEnun"><asp:Label ID="lbl_inicial_enun" runat="server" Text="Cuota inicial ($us):"></asp:Label></td>
-        <td class="contratoFormTdDato">
-            <asp:TextBox ID="txt_inicial" runat="server" SkinID="txtSingleLine100" MaxLength="8" onkeyup="e=event || window.event;el=e.srcElement || e.target;if(el.value.indexOf('.')>-1){el.value=el.value.split('.').join(',');}"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="rfv_inicial" runat="server" ControlToValidate="txt_inicial" Display="Dynamic" SetFocusOnError="true" Text="*" ErrorMessage="Debe introducir la cuota inicial" ValidationGroup="contrato"></asp:RequiredFieldValidator>
-            <asp:CompareValidator ID="cv_inicial" runat="server" ControlToValidate="txt_inicial" Type="Double" Operator="DataTypeCheck" Display="Dynamic" SetFocusOnError="true" Text="*" ErrorMessage="La cuota inicial debe ser un número entero positivo" ValidationGroup="contrato"></asp:CompareValidator>
+        <td colspan="2">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="contratoFormTdEnun"><asp:Label ID="lbl_inicial_enun" runat="server" Text="Cuota inicial ($us):"></asp:Label></td>
+                    <td class="contratoFormTdDato">
+                        <asp:TextBox ID="txt_inicial" runat="server" SkinID="txtSingleLine100" MaxLength="8" onkeyup="e=event || window.event;el=e.srcElement || e.target;if(el.value.indexOf('.')>-1){el.value=el.value.split('.').join(',');}"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfv_inicial" runat="server" ControlToValidate="txt_inicial" Display="Dynamic" SetFocusOnError="true" Text="*" ErrorMessage="Debe introducir la cuota inicial" ValidationGroup="contrato"></asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="cv_inicial" runat="server" ControlToValidate="txt_inicial" Type="Double" Operator="DataTypeCheck" Display="Dynamic" SetFocusOnError="true" Text="*" ErrorMessage="La cuota inicial debe ser un número entero positivo" ValidationGroup="contrato"></asp:CompareValidator>
+                    </td>
+                    <td class="contratoFormTdHorEnun"></td>
+                    <td class="contratoFormTdDato"></td>
+                </tr>
+            </table>
         </td>
     </tr>
     <tr>
