@@ -55,7 +55,6 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
     private GroupFooter groupFooter1;
     private TextBox textBox36;
     private TextBox textBox37;
-    private TextBox textBox38;
     private TextBox textBox39;
     private TextBox textBox40;
     private TextBox textBox41;
@@ -181,7 +180,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         textBox36.ClassName = "estiloTotalEnun";
 
         textBox37.ClassName = "estiloTotal";
-        textBox38.ClassName = "estiloTotal";
+        //textBox38.ClassName = "estiloTotal";
         textBox39.ClassName = "estiloTotal";
         textBox40.ClassName = "estiloTotal";
         textBox41.ClassName = "estiloTotal";
@@ -249,7 +248,6 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.groupFooter1 = new DataDynamics.ActiveReports.GroupFooter();
         this.textBox36 = new DataDynamics.ActiveReports.TextBox();
         this.textBox37 = new DataDynamics.ActiveReports.TextBox();
-        this.textBox38 = new DataDynamics.ActiveReports.TextBox();
         this.textBox39 = new DataDynamics.ActiveReports.TextBox();
         this.textBox40 = new DataDynamics.ActiveReports.TextBox();
         this.textBox42 = new DataDynamics.ActiveReports.TextBox();
@@ -297,7 +295,6 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         ((System.ComponentModel.ISupportInitialize)(this.textBox45)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox36)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox37)).BeginInit();
-        ((System.ComponentModel.ISupportInitialize)(this.textBox38)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox39)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox40)).BeginInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox42)).BeginInit();
@@ -744,7 +741,6 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox25.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox25.Border.TopColor = System.Drawing.Color.Black;
         this.textBox25.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        //this.textBox25.DataField = "seguro";
         this.textBox25.DataField = "saldo_capital_deudor";
         this.textBox25.Height = 0.1979167F;
         this.textBox25.Left = 8.25F;
@@ -764,7 +760,6 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox26.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox26.Border.TopColor = System.Drawing.Color.Black;
         this.textBox26.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        //this.textBox26.DataField = "mantenimiento_sus";
         this.textBox26.DataField = "amortizacion_capital_deudor";
         this.textBox26.Height = 0.1979167F;
         this.textBox26.Left = 7.25F;
@@ -841,7 +836,6 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox30.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox30.Border.TopColor = System.Drawing.Color.Black;
         this.textBox30.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        //this.textBox30.DataField = "interes_penal";
         this.textBox30.DataField = "monto_capital_adeudado";
         this.textBox30.Height = 0.1979167F;
         this.textBox30.Left = 6.25F;
@@ -1128,7 +1122,6 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.groupFooter1.Controls.AddRange(new DataDynamics.ActiveReports.ARControl[] {
             this.textBox36,
             this.textBox37,
-            this.textBox38,
             this.textBox39,
             this.textBox40,
             this.textBox42,
@@ -1177,27 +1170,6 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox37.Top = 0.0625F;
         this.textBox37.Width = 1F;
         // 
-        // textBox38
-        // 
-        this.textBox38.Border.BottomColor = System.Drawing.Color.Black;
-        this.textBox38.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox38.Border.LeftColor = System.Drawing.Color.Black;
-        this.textBox38.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox38.Border.RightColor = System.Drawing.Color.Black;
-        this.textBox38.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox38.Border.TopColor = System.Drawing.Color.Black;
-        this.textBox38.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox38.DataField = "seguro";
-        this.textBox38.Height = 0.1979167F;
-        this.textBox38.Left = 8.25F;
-        this.textBox38.Name = "textBox38";
-        this.textBox38.Style = "";
-        this.textBox38.SummaryRunning = DataDynamics.ActiveReports.SummaryRunning.Group;
-        this.textBox38.SummaryType = DataDynamics.ActiveReports.SummaryType.GrandTotal;
-        this.textBox38.Text = null;
-        this.textBox38.Top = 0.0625F;
-        this.textBox38.Width = 1F;
-        // 
         // textBox39
         // 
         this.textBox39.Border.BottomColor = System.Drawing.Color.Black;
@@ -1208,7 +1180,7 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         this.textBox39.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox39.Border.TopColor = System.Drawing.Color.Black;
         this.textBox39.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
-        this.textBox39.DataField = "mantenimiento_sus";
+        this.textBox39.DataField = "amortizacion_capital_deudor";
         this.textBox39.Height = 0.1979167F;
         this.textBox39.Left = 7.25F;
         this.textBox39.Name = "textBox39";
@@ -1384,7 +1356,6 @@ public class rpt_ContratoEstadoCuenta : DataDynamics.ActiveReports.ActiveReport3
         ((System.ComponentModel.ISupportInitialize)(this.textBox45)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox36)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox37)).EndInit();
-        ((System.ComponentModel.ISupportInitialize)(this.textBox38)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox39)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox40)).EndInit();
         ((System.ComponentModel.ISupportInitialize)(this.textBox42)).EndInit();

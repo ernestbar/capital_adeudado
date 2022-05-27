@@ -86,8 +86,8 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         textBox16.Text = "Cuota Inicial (" + c.codigo_moneda + "):";
 
         // Req. Capital Adeudado
-        textBox24.Text = "Precio Financiado: (" + c.codigo_moneda + "):";
-        textBox22.Text = "Cap. Adeudado: (" + c.codigo_moneda + "):";
+        textBox24.Text = "Precio Financiado (" + c.codigo_moneda + "):";
+        textBox22.Text = "Capital Adeudado (" + c.codigo_moneda + "):";
         terrasur.capital_adeudado ca = new terrasur.capital_adeudado(Id_contrato);
         textBox25.Text = c.precio_final.ToString("F2");
         textBox23.Text = ca.monto.ToString("F2");
@@ -337,7 +337,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox5.Style = "";
         this.textBox5.Text = "Precio Final:";
         this.textBox5.Top = 0.25F;
-        this.textBox5.Width = 1.5625F;
+        this.textBox5.Width = 2.0625F;
         // 
         // textBox6
         // 
@@ -407,7 +407,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox9.Border.TopColor = System.Drawing.Color.Black;
         this.textBox9.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox9.Height = 0.1875F;
-        this.textBox9.Left = 1.875F;
+        this.textBox9.Left = 2.375F;
         this.textBox9.Name = "textBox9";
         this.textBox9.Style = "";
         this.textBox9.Text = null;
@@ -448,7 +448,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox11.Style = "";
         this.textBox11.Text = null;
         this.textBox11.Top = 0.75F;
-        this.textBox11.Width = 1.3125F;
+        this.textBox11.Width = 1.8125F;
         // 
         // textBox12
         // 
@@ -520,7 +520,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox15.Style = "";
         this.textBox15.Text = null;
         this.textBox15.Top = 1F;
-        this.textBox15.Width = 1F;
+        this.textBox15.Width = 1.5F;
         // 
         // textBox16
         // 
@@ -533,12 +533,12 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox16.Border.TopColor = System.Drawing.Color.Black;
         this.textBox16.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox16.Height = 0.1875F;
-        this.textBox16.Left = 2.9375F;
+        this.textBox16.Left = 3.4375F;
         this.textBox16.Name = "textBox16";
         this.textBox16.Style = "";
         this.textBox16.Text = "Cuota Inicial:";
         this.textBox16.Top = 0.75F;
-        this.textBox16.Width = 1.625F;
+        this.textBox16.Width = 1.8125F;
         // 
         // textBox17
         // 
@@ -551,12 +551,12 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox17.Border.TopColor = System.Drawing.Color.Black;
         this.textBox17.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox17.Height = 0.1875F;
-        this.textBox17.Left = 4.625F;
+        this.textBox17.Left = 5.3125F;
         this.textBox17.Name = "textBox17";
         this.textBox17.Style = "";
         this.textBox17.Text = null;
         this.textBox17.Top = 0.75F;
-        this.textBox17.Width = 1.1875F;
+        this.textBox17.Width = 1F;
         // 
         // textBox18
         // 
@@ -593,7 +593,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox19.Style = "";
         this.textBox19.Text = null;
         this.textBox19.Top = 1.25F;
-        this.textBox19.Width = 4.3125F;
+        this.textBox19.Width = 4.8125F;
         // 
         // textBox20
         // 
@@ -629,7 +629,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox21.Style = "";
         this.textBox21.Text = null;
         this.textBox21.Top = 1.5F;
-        this.textBox21.Width = 3.75F;
+        this.textBox21.Width = 4.25F;
         // 
         // textBox22
         // 
@@ -642,12 +642,12 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox22.Border.TopColor = System.Drawing.Color.Black;
         this.textBox22.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox22.Height = 0.1875F;
-        this.textBox22.Left = 2.9375F;
+        this.textBox22.Left = 3.4375F;
         this.textBox22.Name = "textBox22";
         this.textBox22.Style = "";
-        this.textBox22.Text = "Cap. Adeudado:";
+        this.textBox22.Text = "Capital Adeudado:";
         this.textBox22.Top = 0.5F;
-        this.textBox22.Width = 1.625F;
+        this.textBox22.Width = 1.8125F;
         // 
         // textBox23
         // 
@@ -660,12 +660,12 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox23.Border.TopColor = System.Drawing.Color.Black;
         this.textBox23.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox23.Height = 0.1875F;
-        this.textBox23.Left = 4.625F;
+        this.textBox23.Left = 5.3125F;
         this.textBox23.Name = "textBox23";
         this.textBox23.Style = "";
         this.textBox23.Text = null;
         this.textBox23.Top = 0.5F;
-        this.textBox23.Width = 1.1875F;
+        this.textBox23.Width = 1F;
         // 
         // textBox24
         // 
@@ -681,9 +681,9 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox24.Left = 0.25F;
         this.textBox24.Name = "textBox24";
         this.textBox24.Style = "";
-        this.textBox24.Text = "Precio Financ.:";
+        this.textBox24.Text = "Precio Financiado:";
         this.textBox24.Top = 0.5F;
-        this.textBox24.Width = 1.5625F;
+        this.textBox24.Width = 2.0625F;
         // 
         // textBox25
         // 
@@ -696,7 +696,7 @@ public class srpt_DatosContrato : DataDynamics.ActiveReports.ActiveReport3
         this.textBox25.Border.TopColor = System.Drawing.Color.Black;
         this.textBox25.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None;
         this.textBox25.Height = 0.1875F;
-        this.textBox25.Left = 1.875F;
+        this.textBox25.Left = 2.375F;
         this.textBox25.Name = "textBox25";
         this.textBox25.Style = "";
         this.textBox25.Text = null;
