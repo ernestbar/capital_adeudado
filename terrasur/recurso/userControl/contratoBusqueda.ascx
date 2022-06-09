@@ -7,8 +7,8 @@
         bool correcto = true;
         if (buscar_contrato == true)
         {
-            //334 (S. MAYTA) ; 332 (C. Navarro) ; 610 (B.Huanca) ; 7 (M.Tejerina); 353 (N. Burgos; 340 Jcusicanqui)  
-            if (Profile.id_usuario == 334 || Profile.id_usuario == 332 || Profile.id_usuario == 687 || Profile.id_usuario == 7 || Profile.id_usuario == 353 || Profile.id_usuario == 340 || Profile.id_usuario == 645 || Profile.id_usuario == 336 || Profile.id_usuario == 656 || Profile.id_usuario == 512 ||  Profile.id_usuario == 702)
+            //  7 (M.Tejerina); ; 709 (Carlos Mercado)
+            if (Profile.id_usuario == 7 || Profile.id_usuario == 709)
             { correcto = true; }
             else
             {

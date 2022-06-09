@@ -1,0 +1,2 @@
+Consulta estado de cuenta del contrato:|29260|Usuario:|emunoz|Fecha y hora:|08/06/2022 9:50:54|Equipo|:127.0.0.1
+Imprime estado de cuenta del contrato:|29260|Usuario:|emunoz|Fecha y hora:|08/06/2022 9:51:18|Equipo|:127.0.0.1

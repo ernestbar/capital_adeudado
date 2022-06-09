@@ -374,7 +374,7 @@ namespace terrasur
         {
             try
             {
-                string email_terra = "sistemas@terrasur.com.bo";
+                string email_terra = "sistemas.bbr.renacer@gmail.com";
                 System.Net.Mail.MailAddress eTerrasur = new MailAddress(email_terra);
                 string linkFactura = urlFactura;
                 System.Net.Mail.MailMessage mensaje = new System.Net.Mail.MailMessage();
@@ -383,7 +383,7 @@ namespace terrasur
                 mensaje.Subject = subject;
                 mensaje.IsBodyHtml = true;
                 mensaje.Body = "Gracias por su pago, haciendo click en el link puede descargar su <b>FACTURA:</b> <br />" + linkFactura;
-                System.Net.NetworkCredential nt = new System.Net.NetworkCredential("sistemas.bbr.renacer@gmail.com", "$erV1dorNube##Bk%%BbR&&RenaceR");
+                System.Net.NetworkCredential nt = new System.Net.NetworkCredential("sistemas.bbr.renacer@gmail.com", "vxbfwiitkeswnncg");
                 SmtpClient sc = new SmtpClient("smtp.gmail.com", 465);
                 sc.Port = 25;
                 sc.EnableSsl = true;
@@ -402,7 +402,7 @@ namespace terrasur
         {
             try
             {
-                string email_terra = "sistemas@terrasur.com.bo";
+                string email_terra = "sistemas.bbr.renacer@gmail.com";
                 System.Net.Mail.MailAddress eTerrasur = new MailAddress(email_terra);
                 System.Net.Mail.MailMessage mensaje = new System.Net.Mail.MailMessage();
                 mensaje.From = eTerrasur;
@@ -415,7 +415,7 @@ namespace terrasur
                     mensaje.Body = mensaje.Body + linkFactura + "<br />";
                 }
 
-                System.Net.NetworkCredential nt = new System.Net.NetworkCredential("sistemas.bbr.renacer@gmail.com", "$erV1dorNube##Bk%%BbR&&RenaceR");
+                System.Net.NetworkCredential nt = new System.Net.NetworkCredential("sistemas.bbr.renacer@gmail.com", "vxbfwiitkeswnncg");
                 SmtpClient sc = new SmtpClient("smtp.gmail.com", 465);
                 sc.Port = 25;
                 sc.EnableSsl = true;

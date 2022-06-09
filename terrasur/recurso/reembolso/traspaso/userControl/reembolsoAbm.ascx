@@ -133,7 +133,7 @@
         if (correcto)
         {
             int _id_reem = terrasur.traspaso.reembolso.VerificarContrato(insertar, id_reembolso, _Id_contrato);
-            if (_id_reem >1)
+            if (_id_reem <0)
             {
                 Msg1.Text = "El contrato " + txt_num_contrato.Text.Trim() + " ya tiene asociado un reembolso";
                 correcto = false;
